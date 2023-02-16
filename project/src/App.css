@@ -331,3 +331,47 @@ header .mobile-toggler{
 
 /* Navbar css end  */
 
+
+
+/* home page or carousel css 👇 */
+@media(max-width:1492px){
+
+    .imgclass{
+
+        height:470px;
+    }
+}
+
+@media(max-width:992px){
+
+    .imgclass{
+
+        height:350px;
+    }
+}
+
+@media(max-width:620px){
+
+    .imgclass{
+
+        height:250px;
+    }
+}
+
+
+
+/* for seaarch bar in home page carousel 👇 */
+@media(max-width:620px){
+
+    .searchbar{
+
+       width:540px;
+       display: flex;
+       flex-direction: column;
+       
+       
+    }
+   .searchbtn{
+    margin-left: 70px;
+   }
+}
