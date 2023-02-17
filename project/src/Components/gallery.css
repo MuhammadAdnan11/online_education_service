@@ -64,3 +64,11 @@
   width: 100%;
   padding: 0px 0 40px;
 }
+
+@media(max-width: 370px){
+
+  .gal_heading img{
+
+      width: 100%;
+  }
+}
