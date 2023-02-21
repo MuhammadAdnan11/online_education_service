@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container-fluid mobile-toggler d-none d-xl-block ">
         <div className="row p-3 ">
           <div className="col d-flex flex-row gap-3 align-self-center justify-content-center ">
-            <h6>WELCOME </h6>
+            <h6 >WELCOME </h6>
             <h6>
               {" "}
               CALL <span className="iconcolor1">+44 300 303 0266</span>
@@ -46,6 +46,8 @@ const Navbar = () => {
         </div>
       </div>
 
+
+
       <header>
         <div className="container-fluid">
           <div className="navb-logo ">
@@ -53,9 +55,14 @@ const Navbar = () => {
           </div>
 
           <div className="navb-items d-none d-xl-flex">
+          
             <div className="item">
-              <a href="/">HOME</a>
+              <a href="/">HOME
+              </a>
+              
             </div>
+
+            
 
             <div className="item">
               <a href="/services">COURSES</a>
