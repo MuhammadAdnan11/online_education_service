@@ -11,8 +11,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid ">
-        <div className="container mt-5">
+      <div className="container-fluid mt-5 ">
+        <div className="container mt-5 pt-5">
           <div className="row  ">
             <div className="col-md-5  ">
               <h1 className="text-start">Contact Details</h1>
@@ -23,7 +23,7 @@ const Contact = () => {
                 ubique admodum euripidis has no, in luptatum nominati.
               </p>
               <h6 className="fw-bold">New York Office</h6>
-              <p className="mt-3">1-677-124-44227</p>
+               <p className="mt-3"> 1-677-124-44227</p>
               <p> esmarts@qodeinteractive.com</p>
               <p>184 Main Collins Street, West Victoria</p>
 
@@ -39,12 +39,12 @@ const Contact = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <div className="row col-md-12 mt-4">
                     <div className="col mt-3 ">
-                      <Form.Control type="text" placeholder="Your Name" />
+                      <Form.Control className="p-2" type="text"placeholder="Your Name" />
                     </div>
                     <div className="col mt-3 ">
                       <Form.Control
                         type="email"
-                        placeholder="Your email address"
+                        placeholder="Your email address" className="p-2"
                       />
                     </div>
                   </div>
@@ -52,18 +52,18 @@ const Contact = () => {
                   <Form.Control
                     type="address"
                     placeholder="Your website address"
-                    className="mt-4 mb-4"
+                    className="mt-4 mb-4 p-2"
                   />
                 </Form.Group>
 
                 <Form.Group
-                  className="mb-5"
+                  className="mb-3 mt-4 p-2"
                   controlId="exampleForm.ControlTextarea1"
                 >
                   <Form.Control
                     as="textarea"
-                    rows={3}
-                    placeholder="Your message"
+                    rows={5}
+                    placeholder="Your message" 
                   />
                 </Form.Group>
 
@@ -80,12 +80,11 @@ const Contact = () => {
         </div>
 
         {/* Map */}
+      <iframe className="mt-5 mb-5" style={{width:"100%", height:"600px"}} src="https://maps.google.com/maps?q=islamia college peshawar&t=&z=10&ie=UTF8&iwloc=&output=embed" ></iframe>
+       
 
-        <div className="row">
-          <div className="col-md-12">
-           
-          </div>
-        </div>
+          
+        
 
         {/* Container fluid end */}
       </div>
