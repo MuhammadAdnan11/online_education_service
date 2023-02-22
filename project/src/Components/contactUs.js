@@ -82,10 +82,9 @@ const Contact = () => {
         {/* Map */}
 
         <div className="row">
-                  <div className="col-md-12">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.717946512139!2d71.47414231455393!3d33.999777827941756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d911701e1f93d1%3A0x54738ba5261f0cae!2sIslamia%20College%20Peshawar!5e0!3m2!1sen!2s!4v1677046810355!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-                      </div>
+          <div className="col-md-12">
+           
+          </div>
         </div>
 
         {/* Container fluid end */}
