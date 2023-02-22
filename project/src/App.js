@@ -5,7 +5,8 @@ import React from 'react';
 // import Gallery from './Components/Gallery';
 // import Error_page from './Components/error_page';
 
-import Faq from './Components/Faq';
+// import Faq from './Components/Faq';
+import Contact from './Components/contactUs';
 
 import './App.css';
 
@@ -18,8 +19,9 @@ function App() {
 <Home/> */}
       {/* <Gallery/> */}
       {/* <Error_page/> */}
-      <Faq/>
-   </>
+      {/* <Faq /> */}
+      <Contact/>
+  </>
   );
 }
 

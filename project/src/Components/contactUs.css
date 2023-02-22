@@ -1,0 +1,17 @@
+.imgbg{
+    background-image: url("E:\final_year\online_education_service\project\public\Images\contactUs\contact-title-img.jpg");
+    width: 100%;
+    height: 537px;
+    background-position: center 0px;
+    background-attachment: fixed;    
+}
+.btn{
+    background-color: #04d2c8;;
+}
+.btn:hover{
+    background: #00b9b0;
+    
+}
+.fm{
+    background-color: rgb(252, 251, 251);
+}
