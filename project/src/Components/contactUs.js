@@ -87,31 +87,36 @@ const Contact = () => {
       </div>
       <div className="container-fluid bg " >
         <div className="container mt-4">
-          <div className="row col-md-12  bg-success  ">
-          <div className="col-md-5 bg-primary p-3  ">
+          <div className="row col-md-12   justify-content-evenly ">
+          <div className="col-md-5  mt-4 text-white ">
             <div className="row col-md-12">
               <div className="col-7 ">
                   <h6 className="fw-bold">Subscribe to Newsletter</h6>
                   <p>Get Updates for All Courses</p>
               </div>
                 <div className="col-5 ">
-                <Form.Control className="rounded-pill "style={{width:"100%", height:"70px"}} type="email" placeholder="Enter your email" />
+                <Form.Control className="rounded-pill "style={{width:"100%", height:"60px"}} type="email" placeholder="Enter your email" />
               </div>
             </div>
             </div>
-            <div className="col-md-3 bg-warning ">
+            <div className="col-md-3  text-white">
               <div className="d-flex mt-4">
               <h6 className="fw-bold "><span >Follow Us:</span></h6>
-              <span className="ps-2">  <a href="#" ><BsTwitter /></a></span>
+              <span className="ps-2">  <a href="#" id="icon" ><BsTwitter /></a></span>
           <span className="ps-2 ">    <a href="#"><BsInstagram /></a></span>
            <span className="ps-2">   <a href="#"><BsFacebook /></a></span>  
                 </div>
                 <p>Glad to hear from you!</p>
                 
             </div>
-            <div className="col-md-3  bg-primary">
-            
-            
+            <div className="col-md-3   text-white">
+              <div className="mt-4 d-flex ">
+                <h6 className="fw-bold">Call Us:</h6>
+                <a href="#">0382848274</a>
+              </div>
+              <p>Don't hesitate to contact us</p>
+                
+
           </div>
           </div>
         </div>
