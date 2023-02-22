@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <>
       <div className="container-fluid  imgbg">
-        <div className="container  ">
-          <div className="row   ">
+        <div className="container ">
+          <div className="row col-md-12  ">
             <h1 className="col-md-4 text-white text-center  ">Contact Us</h1>
           </div>
         </div>
