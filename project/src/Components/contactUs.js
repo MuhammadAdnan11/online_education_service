@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <>
       <div className="container-fluid  imgbg">
-        <div className="container">
-          <div className="row col-md-12  ">
-            <h1 className="col-md-4 text-white text-center  ">Contact Us</h1>
+        
+          <div className="row   ">
+            <h1 className="aligntext text-white display-3 fw-bolder  ">Contact Us</h1>
           </div>
-        </div>
+        
       </div>
-      
+
       <div className="container-fluid mt-5 mb-0 ">
         <div className="container mt-5 mb-4 pt-5">
           <div className="row  ">

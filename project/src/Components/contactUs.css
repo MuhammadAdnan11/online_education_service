@@ -5,6 +5,10 @@
     background-position: center 0px;
     background-attachment: fixed;    
 }
+.aligntext{
+    text-align: center;
+    margin-top: 13rem;
+}
 .btn{
     background-color: #04d2c8;;
 }
