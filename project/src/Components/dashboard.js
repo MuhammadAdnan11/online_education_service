@@ -17,6 +17,7 @@ const Dashboard = () => {
             </div>
 
             {/* Login */}
+        
             <div className='container mt-5 pt-5 '>
                 <div className='row col-md-12  justify-content-evenly'>
 
@@ -71,7 +72,7 @@ const Dashboard = () => {
                 </div>
         </div>
             
-
+        
         
         </>
     )

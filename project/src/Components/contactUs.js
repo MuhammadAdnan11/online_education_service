@@ -31,7 +31,7 @@ const Contact = () => {
 
               <h6 className="fw-bold mt-4">Hamburg Office</h6>
               <p className="mt-3"><BsTelephone/><span className="ps-2">1-677-124-44227</span></p>
-              <p> <BsChat/><span className="ps-2">esmarts@qodeinteractive.com</span></p>
+              <p> <BsChat/><span className="ps-2">AdSami@qodeinteractive.com</span></p>
               <p><BsBuilding/> <span className="ps-2">184 Main Collins Street, West Victoria</span></p>
             </div>
 

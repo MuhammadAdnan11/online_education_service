@@ -22,7 +22,7 @@ const Cart = () => {
                 </div>
                 <div className='row justify-content-center pt-5 mt-4'style={{height:"100px"}}>
                     <div className='col-md-5 text-center '>
-                        {/* <button className='btn rounded-pill  text-center bg-warning  '>RETURN TO SHOP</button> */}
+   
                         
                         <Button className='rounded-pill btncol p-2 ' size="lg" style={{width:"180px", height:"50px"}}> RETURN TO SHOP
                         </Button>
