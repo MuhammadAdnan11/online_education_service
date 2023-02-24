@@ -6,8 +6,8 @@ import React from 'react';
 // import Error_page from './Components/error_page';
 
 // import Faq from './Components/Faq';
-import Contact from './Components/contactUs';
-
+// import Contact from './Components/contactUs';
+import Cart from './Components/cart';
 import './App.css';
 
 
@@ -20,8 +20,9 @@ function App() {
       {/* <Gallery/> */}
       {/* <Error_page/> */}
       {/* <Faq /> */}
-      <Contact/>
-  </>
+      {/* <Contact/> */}
+      <Cart />
+  </>    
   );
 }
 
