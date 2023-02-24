@@ -7,7 +7,8 @@ import React from 'react';
 
 // import Faq from './Components/Faq';
 // import Contact from './Components/contactUs';
-import Cart from './Components/cart';
+// import Cart from './Components/cart';
+import Dashboard from './Components/dashboard';
 import './App.css';
 
 
@@ -21,7 +22,8 @@ function App() {
       {/* <Error_page/> */}
       {/* <Faq /> */}
       {/* <Contact/> */}
-      <Cart />
+      {/* <Cart /> */}
+      <Dashboard/>
   </>    
   );
 }
