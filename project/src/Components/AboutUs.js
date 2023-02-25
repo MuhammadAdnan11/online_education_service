@@ -5,7 +5,8 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import {GrCheckmark} from "react-icons/gr";
 import Footer from ".././Components/Footer"
-import ScrollButton from ".././Components/ScrollButton"
+import ScrollButton from ".././Components/ScrollButton";
+
 
 
 const AboutUs=({className, ...rest})=> {

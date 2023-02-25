@@ -19,7 +19,9 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Navbar = (props) => {
+  
  
   return (
     <>
@@ -37,19 +39,20 @@ const Navbar = (props) => {
             <FaFacebookF className="iconcolor1" />
           </div>
           <div className="col d-flex namargin flex-row justify-content-end ">
-            <button
+          <Link to="/login" > <button
               type="button"
               className="btn btn-col btn-sm text-white rounded-pill" 
-              
             >
-              <RiAdminLine className="iconcolor" /> Login
-            </button>
-            <button
+              <RiAdminLine className="iconcolor" /> 
+              Login 
+            </button></Link>
+
+           <Link to="/register"> <button
               type="button"
               className="btn btn-col btn-sm text-white rounded-pill"
             >
               <BsPencil className="iconcolor" /> Register
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
