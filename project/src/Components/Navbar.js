@@ -12,14 +12,23 @@ import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineMedicalServices } from "react-icons/md";
 import { BiBookReader } from "react-icons/bi";
 import { AiOutlineInsertRowAbove } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+
+
+
+
+
+
+const Navbar = (props) => {
+  
+ 
   return (
     <>
       <div className="container-fluid mobile-toggler d-none d-xl-block ">
         <div className="row p-3 ">
           <div className="col d-flex flex-row gap-3 align-self-center justify-content-center ">
-            <h6>WELCOME </h6>
+            <h6 >WELCOME </h6>
             <h6>
               {" "}
               CALL <span className="iconcolor1">+44 300 303 0266</span>
@@ -30,21 +39,25 @@ const Navbar = () => {
             <FaFacebookF className="iconcolor1" />
           </div>
           <div className="col d-flex namargin flex-row justify-content-end ">
-            <button
+          <Link to="/login" > <button
               type="button"
-              className="btn btn-col btn-sm text-white rounded-pill"
+              className="btn btn-col btn-sm text-white rounded-pill" 
             >
-              <RiAdminLine className="iconcolor" /> Login
-            </button>
-            <button
+              <RiAdminLine className="iconcolor" /> 
+              Login 
+            </button></Link>
+
+           <Link to="/register"> <button
               type="button"
               className="btn btn-col btn-sm text-white rounded-pill"
             >
               <BsPencil className="iconcolor" /> Register
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
+
+
 
       <header>
         <div className="container-fluid">
@@ -53,29 +66,78 @@ const Navbar = () => {
           </div>
 
           <div className="navb-items d-none d-xl-flex">
+          
             <div className="item">
-              <a href="/">HOME</a>
+            <a className="nav-link " href="/#" data-bs-toggle="dropdown">HOME  </a>
+		    <ul class="dropdown-menu">
+			  <li> <Link className="dropdown-item" to="/">HOME 1</Link></li>
+			  <li><Link className="dropdown-item" to="#"> HOME 2 </Link></li>
+			  <li><Link className="dropdown-item" to="#"> HOME 3 </Link></li>
+		    </ul>
             </div>
 
-            <div className="item">
-              <a href="/services">COURSES</a>
+
+             <div className="item">
+             <a class="nav-link " to="#" data-bs-toggle="dropdown">COURSES</a>
+		    <ul class="dropdown-menu">
+			  <li><a className="dropdown-item" to="#"> FEATURERED</a></li>
+			  <li><a className="dropdown-item" to="#"> ALL COURSES </a></li>
+			  <li><a className="dropdown-item" to="#"> DASHBOARD </a></li>
+		    </ul>
             </div>
 
-            <div className="item">
-              <a href="/cases">INSTRUCTORS</a>
-            </div>
 
             <div className="item">
-              <a href="/about">EVENTS</a>
+            <a class="nav-link " to="#" data-bs-toggle="dropdown">INSTRUCTORS</a>
+		    <ul class="dropdown-menu">
+			  <li><a className="dropdown-item" to="#">BECOME AN INSTRUCTOR</a></li>
+			  <li><a className="dropdown-item" to="#"> INSTRUCTOR SINGLE </a></li>
+			  
+		    </ul>
             </div>
 
-            <div className="item">
-              <a href="/about">PAGES</a>
-            </div>
+
+
 
             <div className="item">
+            <a class="nav-link  " to="#" data-bs-toggle="dropdown">EVENTS</a>
+		    <ul class="dropdown-menu">
+			  <li><a className="dropdown-item" to="#"> EVENT CALENDER</a></li>
+			  <li><a className="dropdown-item" to="#"> EVENT LIST </a></li>
+			  <li><a className="dropdown-item" to="#"> EVENT SINGLE </a></li>
+		    </ul>
+            </div>
+
+            
+             <div className="item">
+             <a class="nav-link " to="#" data-bs-toggle="dropdown">PAGES</a>
+		    <ul class="dropdown-menu">
+			  <li><Link className="dropdown-item" to="/about" > ABOUT US</Link></li>
+			  <li><a className="dropdown-item" to="#"> CONTACT US </a></li>
+			  <li><a className="dropdown-item" to="#"> FAQ PAGE </a></li>
+			  <li><a className="dropdown-item" to="#"> 404 ERROR PAGE </a></li>
+			  <li><a className="dropdown-item" to="#"> GALLERY</a></li>
+			  <li><a className="dropdown-item" to="#"> SHOP </a></li>
+
+
+		    </ul>
+            </div> 
+
+            <div className="item">
+            <a class="nav-link " to="#" data-bs-toggle="dropdown">ELEMENTS</a>
+		    <ul class="dropdown-menu">
+			  <li><a className="dropdown-item" to="#"> EDUCATION SHORTCODE</a></li>
+			  <li><a className="dropdown-item" to="#"> CLASSIC </a></li>
+			  <li><a className="dropdown-item" to="#"> INFOGRAPHIC </a></li>
+			  <li><a className="dropdown-item"  to="#"> PRESENTATION </a></li>
+
+		    </ul>
+            </div>
+
+
+            {/* <div className="item">
               <a href="/about">ELEMENTS</a>
-            </div>
+            </div> */}
 
             <div className="item">
               <a href="/about">
@@ -199,6 +261,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+      
     </>
   );
 };
