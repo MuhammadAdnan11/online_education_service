@@ -1,0 +1,30 @@
+.imgbg{
+    background-image: url("./Images/contactUs/contact-title-img.jpg");
+    width: 100%;
+    height: 537px;
+    background-position: center 0px;
+    background-attachment: fixed;    
+}
+.aligntext{
+    text-align: center;
+    margin-top: 13rem;
+}
+.btn{
+    background-color: #04d2c8;;
+}
+.btn:hover{
+    background: #00b9b0;
+    
+}
+.fm{
+    background-color: rgb(252, 251, 251);
+}
+.bg{
+    background-color: #04d2c8;
+    width: 100%;
+    height: 160px;
+    display: flex;
+}
+a:hover{
+    color:  rgb(69, 69, 255);
+}
