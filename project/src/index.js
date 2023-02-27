@@ -7,6 +7,13 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
 import LoginForm from "./Components/LoginForm"
 import Register from "./Components/Register"
+import ContactUs from "./Components/ContactUs"
+import Dashboard from "./Components/Dashboard"
+import Gallery from "./Components/Gallery"
+import Cart from "./Components/Cart"
+import Error_page from "./Components/Error_page"
+import Faq from './Components/Faq';
+
 
 
 
@@ -20,6 +27,42 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <AboutUs/>,
+    
+    
+  },
+  {
+    path: "contact",
+    element: <ContactUs/>,
+    
+    
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard/>,
+    
+    
+  },
+  {
+    path: "cart",
+    element: <Cart/>,
+    
+    
+  },
+  {
+    path: "*",
+    element: <Error_page/>,
+    
+    
+  },
+  {
+    path: "faq",
+    element: <Faq/>,
+    
+    
+  },
+  {
+    path: "gallery",
+    element: <Gallery/>,
     
     
   },
