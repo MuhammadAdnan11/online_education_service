@@ -1,9 +1,12 @@
 import React from "react";
 import "./Faq.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Faq = () => {
   return (
     <>
+      <Navbar/>
       <div className="container-fluid  imgbg"  style={{backgroundColor:"#fafafa"}} >
         <div className="container ">
           <div className="row ">
@@ -153,6 +156,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

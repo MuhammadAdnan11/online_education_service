@@ -1,14 +1,20 @@
 import React from "react";
 import "./contactUs.css";
 import Form from "react-bootstrap/Form";
-import { BsTelephone,BsChat,BsBuilding,BsTwitter,BsInstagram,BsFacebook } from 'react-icons/bs';
+import { BsTelephone, BsChat, BsBuilding, BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 const Contact = () => {
   return (
+    
     <>
-      <div className="container-fluid  imgbg">
+    <Navbar/>
+      
+      <div className="container-fluid  imgbgg">
         
-          <div className="row   ">
-            <h1 className="aligntext text-white display-3 fw-bolder  ">Contact Us</h1>
+          <div className="row ">
+            <h1 className=" aligntextt text-white display-3 fw-bolder  ">Contact Us</h1>
           </div>
         
       </div>
@@ -121,7 +127,8 @@ const Contact = () => {
           </div>
           </div>
         </div>
-        </div>
+      </div>
+      <Footer/>
     
       </>
   

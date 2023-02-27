@@ -3,9 +3,13 @@ import "./dashboard.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { BsFacebook } from 'react-icons/bs';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Dashboard = () => {
     return (
         <>
+            <Navbar/>
          <div className='container-fluid  imgbg '>
                 <div className='container'>
                     <div className='row'>
@@ -72,7 +76,7 @@ const Dashboard = () => {
                 </div>
         </div>
             
-        
+        <Footer/>
         
         </>
     )

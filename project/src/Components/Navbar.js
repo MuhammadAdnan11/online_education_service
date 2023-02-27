@@ -82,7 +82,7 @@ const Navbar = (props) => {
 		    <ul class="dropdown-menu">
 			  <li><a className="dropdown-item" to="#"> FEATURERED</a></li>
 			  <li><a className="dropdown-item" to="#"> ALL COURSES </a></li>
-			  <li><a className="dropdown-item" to="#"> DASHBOARD </a></li>
+			  <li><Link className="dropdown-item" to="/dashboard"> DASHBOARD </Link></li>
 		    </ul>
             </div>
 
@@ -113,10 +113,10 @@ const Navbar = (props) => {
              <a class="nav-link " to="#" data-bs-toggle="dropdown">PAGES</a>
 		    <ul class="dropdown-menu">
 			  <li><Link className="dropdown-item" to="/about" > ABOUT US</Link></li>
-			  <li><a className="dropdown-item" to="#"> CONTACT US </a></li>
-			  <li><a className="dropdown-item" to="#"> FAQ PAGE </a></li>
-			  <li><a className="dropdown-item" to="#"> 404 ERROR PAGE </a></li>
-			  <li><a className="dropdown-item" to="#"> GALLERY</a></li>
+			  <li><Link className="dropdown-item" to="/contact"> CONTACT US </Link></li>
+			  <li><Link className="dropdown-item" to="/faq"> FAQ PAGE </Link></li>
+			  <li><Link className="dropdown-item" to="/error"> 404 ERROR PAGE </Link></li>
+			  <li><Link className="dropdown-item" to="/gallery"> GALLERY</Link></li>
 			  <li><a className="dropdown-item" to="#"> SHOP </a></li>
 
 

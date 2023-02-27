@@ -1,11 +1,11 @@
-.imgbg{
-    background-image: url("./Images/contactUs/contact-title-img.jpg");
+.imgbgg{
+    background-image: url("E:\final_year\online_education_service\project\public\Images\contactUs\contact-title-img.jpg");
     width: 100%;
     height: 537px;
     background-position: center 0px;
     background-attachment: fixed;    
 }
-.aligntext{
+.aligntextt{
     text-align: center;
     margin-top: 13rem;
 }

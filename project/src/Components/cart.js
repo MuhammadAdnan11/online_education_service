@@ -1,9 +1,13 @@
 import React from 'react';
 import "./cart.css";
 import Button from 'react-bootstrap/Button';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Cart = () => {
     return (
         <>
+            <Navbar/>
             <div className='container-fluid  imgbg '>
                 <div className='container'>
                     <div className='row'>
@@ -29,7 +33,7 @@ const Cart = () => {
                      </div>
                     </div>
             </div>
-           
+           <Footer/>
         </>
     )
 }
