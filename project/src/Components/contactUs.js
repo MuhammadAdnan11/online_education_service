@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="row   ">
             <h1 className="aligntext text-white display-3 fw-bolder  ">Contact Us</h1>
           </div>
-        
+        {/* ok done */}
       </div>
 
       <div className="container-fluid mt-5 mb-0 ">

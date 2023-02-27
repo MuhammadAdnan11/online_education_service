@@ -8,7 +8,7 @@ import React from 'react';
 // import Faq from './Components/Faq';
 // import Contact from './Components/contactUs';
 // import Cart from './Components/cart';
-import Dashboard from './Components/dashboard';
+// import Dashboard from './Components/dashboard';
 import './App.css';
 
 
@@ -23,7 +23,7 @@ function App() {
       {/* <Faq /> */}
       {/* <Contact/> */}
       {/* <Cart /> */}
-      <Dashboard/>
+      {/* <Dashboard/> */}
   </>    
   );
 }
