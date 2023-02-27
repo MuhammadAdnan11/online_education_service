@@ -71,8 +71,6 @@ const Navbar = (props) => {
             <a className="nav-link " href="/#" data-bs-toggle="dropdown">HOME  </a>
 		    <ul class="dropdown-menu">
 			  <li> <Link className="dropdown-item" to="/">HOME 1</Link></li>
-			  <li><Link className="dropdown-item" to="#"> HOME 2 </Link></li>
-			  <li><Link className="dropdown-item" to="#"> HOME 3 </Link></li>
 		    </ul>
             </div>
 
