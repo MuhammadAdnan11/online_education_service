@@ -6,6 +6,16 @@ import VisibilitySensor from 'react-visibility-sensor';
 import {GrCheckmark} from "react-icons/gr";
 import Footer from ".././Components/Footer"
 import ScrollButton from ".././Components/ScrollButton";
+ 
+const Aboutbackimage=require('../AssetsFolder/AboutUs/about.jpg');
+const Aboutbg={
+    width: '100%',
+    height: '33.56rem',
+   backgroundImage: `url(${Aboutbackimage})`,
+    backgroundSize:'cover',
+    backgroundAttachment:'fixed',
+    backgroundPosition:'center'
+};
 
 
 
@@ -15,7 +25,7 @@ const AboutUs=({className, ...rest})=> {
     <>
     <Navbar/>
 
-    <div className="container-fluid aboutbg">
+    <div className="container-fluid " style={Aboutbg}>
       <div className="row ">
       <h1 className=" aligntext text-white display-3 fw-bolder">About Us</h1>
       </div>

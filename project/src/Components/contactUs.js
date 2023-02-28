@@ -5,13 +5,24 @@ import { BsTelephone, BsChat, BsBuilding, BsTwitter, BsInstagram, BsFacebook } f
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+
+const Contactbackimage=require('../AssetsFolder/contactUs/contact-title-img.jpg');
+const Contactbg={
+    width: '100%',
+    height: '33.56rem',
+   backgroundImage: `url(${Contactbackimage})`,
+    backgroundSize:'cover',
+    backgroundAttachment:'fixed',
+    backgroundPosition:'center'
+};
+
 const Contact = () => {
   return (
     
     <>
     <Navbar/>
       
-      <div className="container-fluid  imgbgg">
+      <div className="container-fluid  imgbgg" style={Contactbg}>
         
           <div className="row ">
             <h1 className=" aligntextt text-white display-3 fw-bolder  ">Contact Us</h1>

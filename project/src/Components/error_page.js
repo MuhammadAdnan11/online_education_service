@@ -1,10 +1,22 @@
 import React from "react";
 // import Button from 'react-bootstrap/Button';
 import "./error_page.css";
-const error_page = () => {
+
+const Errorbackimage=require('../AssetsFolder/error-404/404-background.png');
+const Errorbg={
+    width: '100%',
+    height: '100vh',
+   backgroundImage: `url(${Errorbackimage})`,
+    backgroundPosition:'center',
+    backgroundRepeat:'no-repeat',
+    backgroundSize:'cover'
+};
+
+
+const Error_page = () => {
   return (
     <>
-      <div className="container-fluid  bgimg">
+      <div className="container-fluid  bgimg" style={Errorbg}>
         <div className="container">
           <div className="row align-self-center justify-content-center ">
             <img  src="./Images/error-404/404-image.png" alt="" style={{ width: 459, height: 178 }} className="mt-5"></img>
@@ -24,4 +36,4 @@ const error_page = () => {
     </>
   );
 };
-export default error_page;
+export default Error_page;

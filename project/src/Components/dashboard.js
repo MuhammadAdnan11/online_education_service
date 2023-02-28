@@ -5,15 +5,28 @@ import Form from 'react-bootstrap/Form';
 import { BsFacebook } from 'react-icons/bs';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
+const Dashboardbackimage=require('../AssetsFolder/DashboardImage/dashboard.png');
+const Dashboardbg={
+    width: '100%',
+    height: '35vh',
+   backgroundImage: `url(${Dashboardbackimage})`,
+    backgroundSize:'cover'
+};
 
 const Dashboard = () => {
     return (
         <>
             <Navbar/>
-         <div className='container-fluid  imgbg '>
+         <div className='container-fluid  imgbg ' style={Dashboardbg}>
                 <div className='container'>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >User dashboard</h1>
+                    <div className='d-flex flex-row gap-2'>
+                   <span className='text-white'><Link to="/">Home</Link></span> 
+                  <span className='text-white'> /</span>
+                  <span className='text-white'><Link to="/courses">All Courses</Link></span>
+                  </div>
                     </div>
                     
                 </div>
