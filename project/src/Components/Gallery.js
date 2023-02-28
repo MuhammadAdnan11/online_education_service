@@ -2,6 +2,7 @@ import React from 'react'
 import "./gallery.css";
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Gallery=()=> {
   return (
@@ -12,6 +13,11 @@ const Gallery=()=> {
                 <div className='container'>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >Gallery</h1>
+                    <div className='d-flex flex-row gap-2'>
+                  <span className='text-white'><Link to="/">Home</Link></span> 
+                <span className='text-white'> /</span>
+               <span className='text-white'><Link to="/courses">All Courses</Link></span>
+              </div>
                     </div>
                     
                 </div>

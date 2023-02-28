@@ -13,6 +13,7 @@ import Gallery from "./Components/Gallery"
 import Cart from "./Components/Cart"
 import Error_page from "./Components/Error_page"
 import Faq from './Components/Faq';
+import AllCourses from './Components/AllCourses';
 
 
 
@@ -33,6 +34,13 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <ContactUs/>,
+    
+    
+  },
+
+  {
+    path: "courses",
+    element: <AllCourses/>,
     
     
   },
