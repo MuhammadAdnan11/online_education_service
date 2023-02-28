@@ -3,15 +3,29 @@ import "./cart.css";
 import Button from 'react-bootstrap/Button';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
+
+const Cartbackimage=require('../AssetsFolder/CartImage/cartbg.png');
+const Cartbg={
+    width: '100%',
+    height: '35vh',
+   backgroundImage: `url(${Cartbackimage})`,
+    backgroundSize:'cover'
+};
 
 const Cart = () => {
     return (
         <>
             <Navbar/>
-            <div className='container-fluid  imgbg '>
+            <div className='container-fluid  imgbg ' style={Cartbg}>
                 <div className='container'>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >Cart</h1>
+                    <div className='d-flex flex-row gap-2'>
+                    <span className='text-white'><Link to="/">Home</Link></span> 
+                   <span className='text-white'> /</span>
+                   <span className='text-white'><Link to="/courses">All Courses</Link></span>
+                  </div>
                     </div>
                     
                 </div>
