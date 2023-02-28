@@ -4,12 +4,21 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
+const gallerybackimage=require('../AssetsFolder/Gallery/title-area-background.png');
+const gallerybg={
+  width: '100%',
+    height: '35vh',
+  backgroundImage: `url(${gallerybackimage})`,
+  backgroundSize:'cover'
+};
+
+
 const Gallery=()=> {
   return (
     
     <>
       <Navbar/>
-       <div className='container-fluid  imgbg '>
+       <div className='container-fluid'  style={gallerybg}>
                 <div className='container'>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >Gallery</h1>
