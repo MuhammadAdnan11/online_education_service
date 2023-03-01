@@ -14,7 +14,7 @@ import Cart from "./Components/Cart"
 import Error_page from "./Components/Error_page"
 import Faq from './Components/Faq';
 import AllCourses from './Components/AllCourses';
-
+import Instructor from './Components/Instructor';
 
 
 
@@ -71,6 +71,12 @@ const router = createBrowserRouter([
   {
     path: "gallery",
     element: <Gallery/>,
+    
+    
+  },
+  {
+    path: "instructor",
+    element: <Instructor/>,
     
     
   },

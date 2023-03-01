@@ -88,7 +88,7 @@ const Navbar = (props) => {
             <div className="item">
             <a class="nav-link " to="#" data-bs-toggle="dropdown">INSTRUCTORS</a>
 		    <ul class="dropdown-menu">
-			  <li><a className="dropdown-item" to="#">BECOME AN INSTRUCTOR</a></li>
+			  <li><Link className="dropdown-item" to="/instructor">BECOME AN INSTRUCTOR</Link></li>
 			  <li><a className="dropdown-item" to="#"> INSTRUCTOR SINGLE </a></li>
 			  
 		    </ul>
