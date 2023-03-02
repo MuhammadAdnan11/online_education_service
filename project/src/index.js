@@ -14,6 +14,7 @@ import Cart from "./Components/Cart"
 import Error_page from "./Components/Error_page"
 import Faq from './Components/Faq';
 import AllCourses from './Components/AllCourses';
+import AllCoursesGrid from './Components/AllCoursesGrid';
 
 
 
@@ -78,6 +79,13 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register/>,
+    
+    
+  },
+
+  {
+    path: "grid",
+    element: <AllCoursesGrid/>,
     
     
   },

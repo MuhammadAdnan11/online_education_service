@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import "./AllCourses.css"
 import {CiStar} from "react-icons/ci";
 
-
-
 const coursesbackimage=require('../AssetsFolder/AllCourses/allcoursespagebg.png');
 const coursesbg={
     width: '100%',
@@ -15,7 +13,7 @@ const coursesbg={
     backgroundSize:'cover'
 };
 
-const AllCourses = () => {
+const AllCoursesGrid = () => {
 
   const [users, setUsers] = useState([]);
 
@@ -55,56 +53,44 @@ const AllCourses = () => {
       </div>
 
 
-<div className='container mt-5'>
-    <div className='row justify-content-center'>
-        filter section
-        <Link to="/grid">Grid</Link>
-    </div>
-</div>
 
-
-
-
-           
-
-      <div className="container container1">
-        
-               
-               {
+       
+      <div className='container mt-5'>
+      {
                    users.map((curElem) => {
                        return (
+      <div className='row '>
+        <div className='col-6'>
+        <img src={curElem.image} alt="" style={{width:400,height:220}}/>
+        </div>
 
-                           <div className="card_item HoverDiv" key={curElem.id} >
-                               <div className="card_inner">
-                                   <img src={curElem.image} alt="" />
-                                   <div className="userName">{curElem.course}</div>
-                                   <div className="userUrl">{curElem.instructor}</div>
+        <div className='col-6 justify-content-center'>
+        <div>{curElem.course}</div>
+        <div>{curElem.instructor}</div>
                                    
-                                   <p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                    lorem quis.</p>
-                                    <div className='d-flex flex-row justify-content-between'>
-                                    <p className='rating'><CiStar className='fs-5'/>{curElem.Rating} Ratings </p>
-                                    <span className='bgspan'>{curElem.price}</span>
-                                     </div>
-                               </div>
+       <p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+        lorem quis.</p>
+        <div className='d-flex flex-row justify-content-between'>
+        <p className='rating'><CiStar className='fs-5'/>{curElem.Rating} Ratings </p>
+       <span className='bgspan'>{curElem.price}</span>
+       </div>
 
-                           </div>
-                       )
-                   })
-               }
+        </div>
 
-           </div>   
-           
-
-           
-          
         
-                
+       </div>
+      
 
+                       )}
+                   )
+      }
+</div>
+      
+      
     <Footer/>
 
 </>
   )
 }
 
-export default AllCourses;
+export default AllCoursesGrid;
