@@ -4,6 +4,8 @@ import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import "./AllCourses.css"
 import {CiStar} from "react-icons/ci";
+import {IoIosSearch} from "react-icons/io";
+
 
 
 
@@ -15,17 +17,23 @@ const coursesbg={
     backgroundSize:'cover'
 };
 
+
+const API_URL ="https://samiullah191014.github.io/MyApi/MyAPI.json";
+
 const AllCourses = () => {
 
+  const [searchTerm, setSearchTerm] = useState('')
   const [users, setUsers] = useState([]);
 
 
 
   const getUsers = async () => {
-      const response = await fetch("https://samiullah191014.github.io/MyApi/MyAPI.json");
+      const response = await fetch(`${API_URL}`);
       const FinalData = await response.json();
       setUsers(FinalData)
+      
   }
+
 
 
 
@@ -53,13 +61,31 @@ const AllCourses = () => {
       </div>
 
       </div>
+      
 
-
-<div className='container mt-5'>
-    <div className='row justify-content-center'>
-        filter section
         <Link to="/grid">Grid</Link>
-    </div>
+ 
+
+
+<div className="container mt-5 ">
+    <br/>
+	<div className="row justify-content-center">
+                        <div className="col-12 col-md-10 col-lg-8 ">
+                            <form className="card card-sm rounded-pill ">
+                                <div className="card-body row no-gutters align-items-center ">
+                                    <div className="col-auto ">
+                                        <IoIosSearch className='fs-3'/>
+                                    </div>
+                                    
+                                    <div className="col ">
+                                        <input className="form-control form-control-sm form-control-borderless  " type="search" onChange={(e)=>setSearchTerm(e.target.value)} placeholder="Search for courses"/>
+                                    </div>
+                
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
 </div>
 
 
@@ -70,8 +96,14 @@ const AllCourses = () => {
       <div className="container container1">
         
                
-               {
-                   users.map((curElem) => {
+               {users.filter((val)=>{
+                if (searchTerm == ""){
+                    return val 
+                }
+                else if (val.course.toLowerCase().includes(searchTerm.toLowerCase())){
+                    return val
+                }
+               }).map((curElem) => {
                        return (
 
                            <div className="card_item HoverDiv" key={curElem.id} >
@@ -108,3 +140,4 @@ const AllCourses = () => {
 }
 
 export default AllCourses;
+

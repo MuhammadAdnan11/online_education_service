@@ -112,8 +112,9 @@ body {
 @media screen and (max-width: 568px) {
 	.container1 .card_item {
 		width: 80%;
-		margin: auto;
+		margin-left: -20px;
 		justify-content: center;
+
 
 	}
 }
@@ -127,20 +128,24 @@ body {
 }
 
 
+/* all courses search bar css 👇 */
 
-.containerAB{
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-	justify-content: center;
-	text-align: center;
+.form-control-borderless {
+    border: none;
 }
 
-.containerA
-{
-	width: 50%;
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 
-}
-.containerB{
-	width: 50;
-}
+
+/* all courses search bar css end here  */
+
+
+
+
+/* all courses grid css start here 👇 */
+
+

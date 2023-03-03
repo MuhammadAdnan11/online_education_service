@@ -55,16 +55,17 @@ const AllCoursesGrid = () => {
 
 
        
-      <div className='container mt-5'>
+      <div className='container mt-5' >
+      
       {
                    users.map((curElem) => {
                        return (
-      <div className='row '>
-        <div className='col-6'>
+          <div className='row  justify-content-center'>
+        <div className='col-4 '>
         <img src={curElem.image} alt="" style={{width:400,height:220}}/>
         </div>
 
-        <div className='col-6 justify-content-center'>
+        <div className='col-4  '>
         <div>{curElem.course}</div>
         <div>{curElem.instructor}</div>
                                    
@@ -77,14 +78,17 @@ const AllCoursesGrid = () => {
 
         </div>
 
-        
-       </div>
+        </div>
+      
       
 
                        )}
                    )
+                   
       }
-</div>
+      </div>
+      
+
       
       
     <Footer/>
