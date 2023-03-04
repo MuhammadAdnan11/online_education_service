@@ -10,3 +10,11 @@
 .bgCarasoul{
     background-image: linear-gradient(to bottom right, rgb(65 72 90), rgb(81, 70, 92));
 }
+.pic-parag{
+    font-size: 18px;
+    
+}
+.teac-card-bor{
+    border-radius: .6rem;
+    background-color: #fcf9f6
+}
