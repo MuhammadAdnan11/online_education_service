@@ -13,6 +13,7 @@
   margin-top: 21%;
   margin-left: 43%;
 }
+/* Form button */
 #instformbtn{
     background-color: #04d2c8;
     border: none;
@@ -20,6 +21,23 @@
 #instformbtn:hover{
     background: #00b9b0;
 }
+/* second part */
+.inst-sec-heading{
+    color: #04d2c8;
+}
+
+
+/* Card transition */
+.instbox img{
+    transition: 1s;
+    cursor: pointer;
+  }
+.instbox img:hover{
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+/* Carsoul */
 
 .carasoul-img{
     margin-left: 45%;

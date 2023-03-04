@@ -51,7 +51,7 @@ const Instructor = () => {
         <div className="container ">
           <div className="row-md-12 d-flex justify-content-evenly ">
             <div className="col-md-9 instrvideo mt-5" style={instructorimg}>
-              <img src={imgbg} alt="" className="d-flex imgplyIcon" />
+           <a href="#"  > <img src={imgbg} alt="" className="d-flex imgplyIcon" /></a>
             </div>
 
             {/* FORM */}
@@ -95,8 +95,8 @@ const Instructor = () => {
       {/* Second Part */}
       <div className="container-fluid " style={starbg}>
         <div className="container">
-          <h5 className="text-center mt-5">What's New</h5>
-          <h1 className="text-center">The Best Tutors in Town</h1>
+          <h5 className="text-center mt-5 inst-sec-heading">What's New</h5>
+          <h1 className="text-center fw-bold">The Best Tutors in Town</h1>
           <p className="text-center mb-5">
             Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum neque,
             facilisis vel <br /> mollis vitae, mollis nec ante. Quisque aliquam
@@ -105,7 +105,7 @@ const Instructor = () => {
 
           {/* Card */}
 
-          <div className="row-md-12 d-flex justify-content-evenly pb-5 ">
+          <div className="row-md-12 d-flex justify-content-evenly pb-5 instbox">
             <div className="col-md-3 ps-2 mt-4">
               <div className="text-center">
                 <a href="#">
@@ -298,8 +298,8 @@ const Instructor = () => {
         <div className="container mt-5 mb-5 ">
           
             <div className="text-center mb-5">
-              <h5 className="mt-5 pt-5 fw-bold">Our Difference</h5>
-              <h1 className="mt-3">Top Teachers in Every Field</h1>
+              <h5 className="mt-5 pt-5 fw-bold inst-sec-heading">Our Difference</h5>
+              <h1 className="mt-3 fw-bold">Top Teachers in Every Field</h1>
               <p className="mt-2 pic-parag">
                 Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum neque,
                 facilisis vel<br/> mollis vitae, mollis nec ante. Quisque aliquam
