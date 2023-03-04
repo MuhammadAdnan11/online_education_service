@@ -1,4 +1,12 @@
 #cardimg{
-    width: 200px;
-    height:200px;
+    width: 163px;
+    height:163px;
+}
+
+.carasoul-img{
+    margin-left: 45%;
+    
+}
+.bgCarasoul{
+    background-image: linear-gradient(to bottom right, rgb(65 72 90), rgb(81, 70, 92));
 }

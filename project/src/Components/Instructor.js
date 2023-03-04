@@ -4,11 +4,17 @@ import "./Instructor.css";
 import Footer from "./Footer";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+
 import img1 from "../AssetsFolder/Instructor/instructor-img-2.jpg";
 import img2 from "../AssetsFolder/Instructor/instructor-img-3.jpg";
 import img3 from "../AssetsFolder/Instructor/instructor-img-4.jpg";
+import Carousel from 'react-bootstrap/Carousel';
 
 import imgbg from "../AssetsFolder/Instructor/play-button.png";
+import car1 from "../AssetsFolder/Instructor/carasoul1.png";
+import car2 from "../AssetsFolder/Instructor/carasoul2.png";
+import car3 from "../AssetsFolder/Instructor/carasoul3.png";
+
 import { BsFacebook,BsTwitter,BsInstagram } from 'react-icons/bs';
 
 
@@ -21,7 +27,7 @@ const instructorimg = {
 
 const starimg = require("../AssetsFolder/Instructor/h2-backgoround-3.png");
 const starbg = {
-  height: "70vh",
+//   height: "70vh",
   backgroundImage: `url(${starimg})`,
   backgroundSize: "cover",
 };
@@ -151,9 +157,67 @@ const Instructor = () => {
         
         {/* container end */}
           </div>
-          
+    
+
           {/* Carousel */}
+          <div className="container-fluid p-5 bgCarasoul mt-5">
+              <div className="container ">
+              <Carousel>
+      <Carousel.Item interval={1000}>
+        <img
+          className="d-block w-auto carasoul-img mt-5"
+          src={car1} style={{width:"121px",height:"121px"}}
+          alt="First slide"
+        />
+            <h6 className="text-center text-white pt-4 pb-3">
+          Donec iaculis mi eget tempus lobortis. Maecenas vitae velit
+                  neque. <br/>Pellentesque suscipit facilisis sapien. Suspen auctor
+                          </h6>
+                          <h3 className="text-center text-white">Cecily Brown</h3>
+                          <p className="text-center text-white pb-5">STUDENT</p>
+         
+       
+      </Carousel.Item>
+      <Carousel.Item interval={500}>
+        <img
+          className="d-block w-auto carasoul-img mt-5"
+          src={car2}style={{width:"121px",height:"121px"}}
+          alt="Second slide"
+        />
+            <h6 className="text-center text-white pt-4 pb-3">
+          Donec iaculis mi eget tempus lobortis. Maecenas vitae velit
+                  neque. <br/>Pellentesque suscipit facilisis sapien. Suspen auctor
+                          </h6>
+                          <h3 className="text-center text-white">John Ewans</h3>
+                          <p className="text-center text-white pb-5">STUDENT</p>
+         
+        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-auto carasoul-img mt-5"
+          src={car3} style={{width:"121px",height:"121px"}}
+          alt="Third slide"
+        />
+        
           
+          <h6 className="text-center text-white pt-4 pb-3">
+          Donec iaculis mi eget tempus lobortis. Maecenas vitae velit
+                  neque. <br/>Pellentesque suscipit facilisis sapien. Suspen auctor
+                          </h6>
+                          <h3 className="text-center text-white">First slide label</h3>
+                          <p className="text-center text-white pb-5">STUDENT</p>
+        
+      </Carousel.Item>
+    </Carousel>
+              </div>
+          </div>
+          {/* Carasoul Finished */}✔✔✔
+          
+          {/* Teacher pictures */}👇
+          <div className="container-fluid">
+              <div className=""></div>
+      </div>
 
       {/* <Footer/> */}
     </>
