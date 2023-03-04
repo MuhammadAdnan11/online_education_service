@@ -51,22 +51,22 @@ const Instructor = () => {
         <div className="container ">
           <div className="row-md-12 d-flex justify-content-evenly ">
             <div className="col-md-9 instrvideo mt-5" style={instructorimg}>
-              <img src={imgbg} alt="" />
+              <img src={imgbg} alt="" className="d-flex imgplyIcon" />
             </div>
 
             {/* FORM */}
-            <div className="col-md-3 mt-5 text-center ps-4">
+            <div className="col-md-3 mt-5 text-center inst-form-bg">
               <h4 className="fw-bold text-center mt-4">Fill This Form</h4>
-              <Form>
-                <Form.Group className="mb-3 mt-4" controlId="formBasictext">
+              <Form className="p-3">
+                <Form.Group className="mb-3 mt-4 formfont" controlId="formBasictext">
                   <Form.Control type="text" placeholder="Enter Name" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 formfont" controlId="formBasicEmail">
                   <Form.Control type="email" placeholder="Enter email" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasictext">
+                <Form.Group className="mb-3 formfont" controlId="formBasictext">
                   <Form.Control type="text" placeholder="Phone Number" />
                 </Form.Group>
 
@@ -81,9 +81,9 @@ const Instructor = () => {
                   />
                 </Form.Group>
                 <Button
-                  className="mt-3  rounded-pill  text-center text-white"
-                  type="submit"
-                  style={{ width: "70%", height: "70px" }}
+                  className="mt-3  rounded-pill  text-center text-white fw-bold" id="instformbtn"
+                  type="button"
+                  style={{ width: "70%", height: "60px" }}
                 >
                   Submit
                 </Button>

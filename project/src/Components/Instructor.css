@@ -2,6 +2,24 @@
     width: 163px;
     height:163px;
 }
+.formfont{
+    font-size: 12px;
+
+}
+.inst-form-bg{
+    background-color: #fcf9f6;
+}
+.imgplyIcon{
+  margin-top: 21%;
+  margin-left: 43%;
+}
+#instformbtn{
+    background-color: #04d2c8;
+    border: none;
+}
+#instformbtn:hover{
+    background: #00b9b0;
+}
 
 .carasoul-img{
     margin-left: 45%;
@@ -16,5 +34,5 @@
 }
 .teac-card-bor{
     border-radius: .6rem;
-    background-color: #fcf9f6
+    background-color: #fcf9f6;
 }
