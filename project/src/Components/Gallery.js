@@ -18,7 +18,11 @@ const Gallery=()=> {
     
     <>
       <Navbar/>
+
+       <div className='container-fluid'  style={gallerybg}>
+
        <div className='container-fluid' style={gallerybg}>
+
                 <div className='container'>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >Gallery</h1>

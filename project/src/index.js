@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter,RouterProvider,Route} from "react-router-dom";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
 import LoginForm from "./Components/LoginForm"
 import Register from "./Components/Register"
@@ -14,7 +14,7 @@ import Cart from "./Components/Cart"
 import Error_page from "./Components/Error_page"
 import Faq from './Components/Faq';
 import AllCourses from './Components/AllCourses';
-
+import Instructor from './Components/Instructor';
 
 
 
@@ -71,6 +71,12 @@ const router = createBrowserRouter([
   {
     path: "gallery",
     element: <Gallery/>,
+    
+    
+  },
+  {
+    path: "instructor",
+    element: <Instructor/>,
     
     
   },

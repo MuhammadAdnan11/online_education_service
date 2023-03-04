@@ -16,7 +16,7 @@ import { BiTimeFive } from "react-icons/bi";
   <div class="row">
     	<div class="col-md-12">
     	    <footer class="footer">				
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
       <div class="col-md-3 m-b-30">
 					<div class="footer-title m-t-5 m-b-20 p-b-8">
