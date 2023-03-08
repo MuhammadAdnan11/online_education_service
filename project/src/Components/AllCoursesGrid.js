@@ -4,6 +4,11 @@ import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import "./AllCourses.css"
 import {CiStar} from "react-icons/ci";
+import {AiOutlineUnorderedList} from "react-icons/ai";
+import {CiGrid42} from "react-icons/ci";
+
+
+
 
 const coursesbackimage=require('../AssetsFolder/AllCourses/allcoursespagebg.png');
 const coursesbg={
@@ -14,6 +19,7 @@ const coursesbg={
 };
 
 const AllCoursesGrid = () => {
+  const [searchTerm, setSearchTerm] = useState('')
 
   const [users, setUsers] = useState([]);
 
@@ -49,23 +55,60 @@ const AllCoursesGrid = () => {
 
         </div>
       </div>
-
       </div>
 
 
 
-       
-      <div className='container mt-5' >
+
       
-      {
-                   users.map((curElem) => {
+
+
+      <div class="container mt-5">
+
+<div className="row height d-flex justify-content-center align-items-center">
+
+  <div className="col-md-8">
+
+    <div className="search">
+      <i className="fa fa-search"></i>
+      <input type="text" className="form-control rounded-pill" onChange={(e)=>setSearchTerm(e.target.value)} placeholder="Search for course"/>
+      
+    </div>
+    
+  </div>
+  
+</div>
+</div>
+
+
+
+<div className='container'>
+           <div class=" ">
+            <Link to="/courses" class=" btn-default btn-sm "><span class="glyphicon glyphicon-th-list ">
+            </span><AiOutlineUnorderedList className='fw-bolder fs-4'/></Link> <Link to="/grid" class=" btn-default btn-sm "><span
+                class="glyphicon glyphicon-th "></span><CiGrid42 className='fw-bolder fs-4'/></Link>
+           </div>
+           </div>
+
+
+      
+      <div className='container mt-5 ' >
+      
+      {users.filter((val)=>{
+                if (searchTerm === ""){
+                    return val 
+                }
+                else if (val.course.toLowerCase().includes(searchTerm.toLowerCase())){
+                    return val
+                }
+               }).map((curElem) => {
                        return (
           <div className='row  justify-content-center'>
-        <div className='col-4 '>
+        <div className='col-md-4 col-md-6 '>
         <img src={curElem.image} alt="" style={{width:400,height:220}}/>
         </div>
 
-        <div className='col-4  '>
+        <div className='col-md-4 col-md-6 '>
         <div>{curElem.course}</div>
         <div>{curElem.instructor}</div>
                                    
@@ -87,7 +130,12 @@ const AllCoursesGrid = () => {
                    
       }
       </div>
-      
+       
+
+
+
+        
+                
 
       
       
