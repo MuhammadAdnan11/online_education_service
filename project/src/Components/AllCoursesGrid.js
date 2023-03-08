@@ -103,7 +103,7 @@ const AllCoursesGrid = () => {
                 }
                }).map((curElem) => {
                        return (
-          <div className='row  justify-content-center'>
+          <div className='row  justify-content-center '>
         <div className='col-md-4 col-md-6 '>
         <img src={curElem.image} alt="" style={{width:400,height:220}}/>
         </div>
@@ -121,7 +121,7 @@ const AllCoursesGrid = () => {
 
         </div>
 
-        </div>
+        </div> 
       
       
 

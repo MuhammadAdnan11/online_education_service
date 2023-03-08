@@ -142,7 +142,7 @@ const AllCourses = () => {
 
                            <div className="card_item HoverDiv " key={curElem.id} >
                                <div className="card_inner ">
-                                   <img src={curElem.image} alt="" />
+                                   <Link to="/specificCourse"><img src={curElem.image} alt="" /></Link>
                                    <div className="userName ">{curElem.course}</div>
                                    <div className="userUrl">{curElem.instructor}</div>
                                    
