@@ -15,11 +15,11 @@ const gallerybg={
 
 const Gallery=()=> {
   return (
-    
     <>
+  
       <Navbar/>
 
-       <div className='container-fluid'  style={gallerybg}>
+       
 
        <div className='container-fluid' style={gallerybg}>
 
@@ -51,13 +51,14 @@ const Gallery=()=> {
           <img className='pb-4' src="./Images/Gallery/gallery-img-10.jpg" alt="" style={{ width: 265, height: 230}}></img>
           <img className='pb-4' src="./Images/Gallery/gallery-img-11.jpg" alt="" style={{ width: 265, height: 230}}></img>
           <img className='pb-4' src="./Images/Gallery/gallery-img-12.jpg" alt="" style={{ width: 265, height: 230}}></img>
-          
+          </div>
           
         </div>
-      </div>
+      
       <Footer/>
+
     </>
   )
 }
 
-export default Gallery;
+export default Gallery

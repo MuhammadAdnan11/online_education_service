@@ -41,12 +41,12 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "courses",
-    element: <AllCourses/>,
+  // {
+  //   path: "courses",
+  //   element: <AllCourses/>,
     
     
-  },
+  // },
   {
     path: "dashboard",
     element: <Dashboard/>,
@@ -60,12 +60,30 @@ const router = createBrowserRouter([
     
   },
 
+  // {
+  //   path: "/specificCourse/:id",
+  //   element: <SpecificCourse/>,
+    
+    
+  // },
+
+
+
   {
-    path: "specificCourse",
+    path: "/specificCourse/:productId",
     element: <SpecificCourse/>,
     
-    
   },
+
+
+  {
+    path: "/courses",
+    element: <AllCourses/>,
+ 
+  },
+
+
+
   {
     path: "*",
     element: <Error_page/>,
