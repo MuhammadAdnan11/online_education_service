@@ -180,5 +180,31 @@ body {
 }
 
 
-/* all courses grid css start here 👇 */
+/* specific courses  css start here 👇 */
+
+.courseImage{
+	width: 100%;
+	height: 70vh;
+}
+
+.userUrl {
+	font-size: 15px;
+	font-weight: 100;
+	margin: 5px 0 10px;
+	word-wrap: break-word;
+	color: #888B9E;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.perDescr{
+	font-size: 15px;
+	font-weight: 100;
+	margin: 5px 0 10px;
+	word-wrap: break-word;
+	color: #888B9E;
+}
+
+.buycourse{
+	width: 15rem;
+}
 

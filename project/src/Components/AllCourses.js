@@ -11,6 +11,7 @@ import {CiGrid42} from "react-icons/ci";
 
 
 
+
 const coursesbackimage=require('../AssetsFolder/AllCourses/allcoursespagebg.png');
 const coursesbg={
     width: '100%',
@@ -26,15 +27,7 @@ const AllCourses = () => {
 
   const [searchTerm, setSearchTerm] = useState('')
   const [users, setUsers] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-
-//   const recordsPerPage=6;
-//   const lastIndex = currentPage * recordsPerPage;
-//   const firstIndex= lastIndex-recordsPerPage;
-//   const records = users.slice(firstIndex,lastIndex);
-//   const npage = Math.ceil(users.length / recordsPerPage);
-//   const numbers = [...Array(npage +1).keys()].slice(1);
-
+  
 
 
   const getUsers = async () => {
@@ -53,25 +46,6 @@ const AllCourses = () => {
   }, [])
 
 
-//   function prePage(){
-//     if(currentPage !== 1){
-//         setCurrentPage(currentPage -1)
-//     }
-
-//   }
-
-
-//   function nextPage(){
-//     if(currentPage !== npage){
-//         setCurrentPage(currentPage + 1)
-//     }
-
-//   }
-
-//   function changePage(id){
-//     setCurrentPage(id);
-
-//   }
 
   return (
     <>
@@ -142,7 +116,7 @@ const AllCourses = () => {
 
                            <div className="card_item HoverDiv " key={curElem.id} >
                                <div className="card_inner ">
-                                   <Link to="/specificCourse"><img src={curElem.image} alt="" /></Link>
+                                   <Link to={`/specificCourse/${curElem.id}`}><img src={curElem.image} alt="" /></Link>
                                    <div className="userName ">{curElem.course}</div>
                                    <div className="userUrl">{curElem.instructor}</div>
                                    
@@ -161,33 +135,7 @@ const AllCourses = () => {
 
 
            </div>   
-           
-                          {/* <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-end">
-    <li class="page-item ">
-      <a class="page-link" href="#" tabindex="-1" onClick={prePage}>Previous</a>
-    </li>
-    {
-        numbers.map((n,i)=>{
-            <li className={`page-item ${currentPage===n ? 'active' : ''}`} key={i}>
-                <a href="#" className='page-link' onClick={()=> changePage(n)} >{n}</a>
-            </li>
-        })
-    }
-    
-    <li class="page-item">
-      <a class="page-link" href="#" onClick={nextPage}>Next</a>
-    </li>
-  </ul>
-</nav> */}
-
-
-
-            
-     
-
-
-           
+               
 
     <Footer/>
 
@@ -198,4 +146,46 @@ const AllCourses = () => {
 }
 
 export default AllCourses;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import productsData from "./productsData";
+// import { Link } from "react-router-dom";
+
+// const AllCourses = () => {
+//   const products = productsData.map(product => {
+//     return (
+//       <div key={product.id}>
+//         <h3>
+//           <Link to={`/specificCourse/${product.id}`}>{product.course}</Link>
+//         </h3>
+//         <p>Price: ${product.price}</p>
+//         <img src={product.image} alt=""  />
+//         <hr />
+//       </div>
+//     );
+//   });
+
+//   return (
+//     <>
+//       <h1>Products Page</h1>
+//       {products}
+//     </>
+//   );
+// }
+
+// export default AllCourses
 
