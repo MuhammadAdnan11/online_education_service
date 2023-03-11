@@ -14,7 +14,10 @@ import Cart from "./Components/Cart"
 import Error_page from "./Components/Error_page"
 import Faq from './Components/Faq';
 import AllCourses from './Components/AllCourses';
+import AllCoursesGrid from './Components/AllCoursesGrid';
+import SpecificCourse from './Components/SpecificCourse';
 import Instructor from './Components/Instructor';
+
 
 
 
@@ -38,12 +41,12 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "courses",
-    element: <AllCourses/>,
+  // {
+  //   path: "courses",
+  //   element: <AllCourses/>,
     
     
-  },
+  // },
   {
     path: "dashboard",
     element: <Dashboard/>,
@@ -56,6 +59,31 @@ const router = createBrowserRouter([
     
     
   },
+
+  // {
+  //   path: "/specificCourse/:id",
+  //   element: <SpecificCourse/>,
+    
+    
+  // },
+
+
+
+  {
+    path: "/specificCourse/:productId",
+    element: <SpecificCourse/>,
+    
+  },
+
+
+  {
+    path: "/courses",
+    element: <AllCourses/>,
+ 
+  },
+
+
+
   {
     path: "*",
     element: <Error_page/>,
@@ -84,6 +112,13 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register/>,
+    
+    
+  },
+
+  {
+    path: "grid",
+    element: <AllCoursesGrid/>,
     
     
   },
