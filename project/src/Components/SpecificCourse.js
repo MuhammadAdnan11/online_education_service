@@ -9,6 +9,7 @@ import {TbBellRinging} from "react-icons/tb";
 import {CiBookmarkPlus} from "react-icons/ci";
 import {BsHandThumbsUp} from "react-icons/bs";
 import {AiOutlineStar} from "react-icons/ai";
+import SpecificCourseNavbar from '../SpecificCourseNavbar';
 
 
 
@@ -145,6 +146,7 @@ const SpecificCourse = () => {
 
 
          </div>
+         <SpecificCourseNavbar/>
 
       <Footer/>
 
