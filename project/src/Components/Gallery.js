@@ -18,7 +18,7 @@ const Gallery=()=> {
   <>
       <Navbar/>
 
-       <div className='container-fluid'  style={gallerybg}>
+       
 
        <div className='container-fluid' style={gallerybg}>
 
@@ -56,7 +56,7 @@ const Gallery=()=> {
       </div>
       <Footer/>
       </>
-  )
-}
+  );
+};
 
 export default Gallery;
