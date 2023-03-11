@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+
 import img1 from "../AssetsFolder/Instructor/instructor-img-2.jpg";
 import img2 from "../AssetsFolder/Instructor/instructor-img-3.jpg";
 import img3 from "../AssetsFolder/Instructor/instructor-img-4.jpg";
@@ -26,6 +27,7 @@ import inst6 from "../AssetsFolder/Instructor/instructor-6.png";
 import inst7 from "../AssetsFolder/Instructor/instructor-7.png";
 import inst8 from "../AssetsFolder/Instructor/instructor-8.png";
 import inst9 from "../AssetsFolder/Instructor/instructor-11.png";
+import InstructorCard from "./InstructorCard";
 
 
 const instrbackimage = require("../AssetsFolder/Instructor/become-instructor-video-img-1.png");
@@ -305,80 +307,79 @@ const Instructor = () => {
                 facilisis vel<br/> mollis vitae, mollis nec ante. Quisque aliquam
                 dictum condim.
               </p>
-                  </div> 
-        
-        {/* teacher Pictures👇 */}
-             <div className="row  d-flex gap-4 flex-row pb-4 justify-content-center ">
-                      <div className="col d-flex justify-content-evenly ">
-                         <div className="text-center pt-4"> <a href="#"><img src={inst1} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst2} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst3} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          
-                      </div> 
-
-              <div className="col d-flex justify-content-evenly ">
-                         <div className="text-center pt-4"><a href="#"> <img src={inst3} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst5} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst6} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          
-                      </div> 
-
-              <div className="col d-flex justify-content-evenly ">
-                         <div className="text-center pt-4"><a href="#"> <img src={inst7} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst8} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          <div className="text-center pt-4"><a href="#"> <img src={inst9} style={{ width: 80, height: 80 }} /></a></div>
-                          <div className="ps-3  p-4 teac-card-bor" style={{height:"110px", width:"240px"}}>
-                             <a href="#" ><h5 className="fw-bold">Jacke Masatie</h5></a>
-                              <p>STUDENT</p>
-                          </div>
-
-                          
-              </div>        
-                          
-           
+          </div> 
           </div>
-        </div>
       </div>
+      <div className="container d-flex ">
+        <div className="row justify-content-evenly gap-3">
+        {/* teacher Pictures👇 */}
+             
+
+          <InstructorCard
+            imginsrc={inst1}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst2}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst3}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst4}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst5}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst6}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst7}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst8}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+
+<InstructorCard
+            imginsrc={inst9}
+            inname="Jackie Macito"
+            instr="Teacher"
+          
+          />
+</div>
+</div>
+        
       <Footer/>
     </>
   );
