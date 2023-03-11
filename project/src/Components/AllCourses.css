@@ -277,6 +277,13 @@ body {
 	.textmedia p{
 		font-size: 25px;
 	}
+	.mediaa2{
+		display: flex;
+		flex-direction: column;
+	}
+	.mediaa2 span{
+		font-size: 25px;
+	}
    
 }
 
@@ -294,6 +301,10 @@ body {
 	.textmedia {
 		width: 350px;
 		justify-content: center;
+	}
+	.mediaa2{
+		display: flex;
+		flex-direction: column;
 	}
 
 

@@ -51,7 +51,7 @@ const Instructor = () => {
       {/* video */}
       <div className="container-fluid mt-5 mb-5">
         <div className="container ">
-          <div className="row-md-12 d-flex justify-content-evenly ">
+          <div className="row-md-12 d-flex flex-md-row  flex-sm-column justify-content-evenly instrResponsive">
             <div className="col-md-9 instrvideo mt-5" style={instructorimg}>
            <a href="#"  > <img src={imgbg} alt="" className="d-flex imgplyIcon" /></a>
             </div>
