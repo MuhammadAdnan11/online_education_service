@@ -68,14 +68,14 @@ const SpecificCourse = () => {
               <span className='align-self-center bgspan text-white'>{thisProduct.price}</span>
               </div>
 
-              <div className='d-flex flex-row mt-5 gap-5 flex-md-row flex-sm-column '>
-
-              <div className='col-2 d-flex flex-row gap-2 flex-md-row flex-sm-column '>
+              <div className='mediaa2 d-flex  mt-5 gap-5  '>
+              <div className='col-2 mediaa2 d-flex  gap-2 '>
                 <img src={thisProduct.image} alt="" style={{width:70, height:70}} />
                 <div className='d-flex flex-column '>
                 <span>Instructor:</span>
                  <span className='userUrl'>{thisProduct.instructor}</span>
                 </div>
+                
                 </div>
                 
                 <div className='col-2 d-flex flex-column text-center'>
@@ -98,7 +98,7 @@ const SpecificCourse = () => {
               <div className='mt-4 '>
                     <img src={thisProduct.image} alt="" className='courseImage'/>
                     </div>
-
+                   
                  </div>
 
 
