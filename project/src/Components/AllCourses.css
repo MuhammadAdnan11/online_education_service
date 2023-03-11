@@ -200,7 +200,6 @@ body {
 	font-size: 15px;
 	font-weight: 100;
 	margin: 5px 0 10px;
-	word-wrap: break-word;
 	color: #888B9E;
 }
 
@@ -208,3 +207,95 @@ body {
 	width: 15rem;
 }
 
+
+
+@media(max-width:1010px){
+	.media1{
+		display: flex;
+		flex-direction: column;
+	}
+	.perDescr{
+		display: flex;
+		
+	}
+	.courseImage{
+		width: fit-content;
+		height: 400px;
+	}
+	
+
+	/* .media1 img{
+		width: fit-content;
+		height: 400px;
+	} */
+}
+
+
+/* @media(max-width:400px){
+	.media1 img{
+		width: 399px;
+		height: 250px;
+	}
+} */
+
+
+
+@media(max-width:1000px){
+	.buycourse{
+		width: 10rem;
+	}
+}
+
+@media(max-width:570px){
+	.buycourse{
+		width: 8rem;
+	}
+}
+
+@media(max-width:912px){
+	.media1 .img3{
+		width: 620px;
+		height: 350px;
+		text-align: center;
+	}
+	.media1 .courseImage{
+		width: fit-content;
+		height: 400px;
+		text-align: center;
+	}
+	.textmedia {
+		width: 620px;
+		justify-content: center;
+		
+	}
+	.textmedia h5{
+		font-size: 30px;
+	}
+	.textmedia span{
+		font-size: 23px;
+	}
+	.textmedia p{
+		font-size: 25px;
+	}
+   
+}
+
+@media(max-width:400px){
+	.media1 .img3{
+		width: 350px;
+		height: 200px;
+		text-align: center;
+	}
+	.media1 .courseImage{
+		width: 350px;
+		height: 250px;
+		text-align: center;
+	}
+	.textmedia {
+		width: 350px;
+		justify-content: center;
+	}
+
+
+	
+}

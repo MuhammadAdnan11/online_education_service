@@ -47,7 +47,7 @@ const SpecificCourse = () => {
         <span className='text-white'> /</span>
         <span className='text-white'><Link to="/courses">All Courses</Link></span>
         <span className='text-white'> /</span>
-        <span className='text-white'><Link to="/specificCourses">Selected Course</Link></span>
+        <span className='text-white'><Link to="/specificCourses">{thisProduct.course}</Link></span>
 
 
         </div>
@@ -59,8 +59,8 @@ const SpecificCourse = () => {
 
       
 
-      <div className='container marginclass'>
-           <div className='row '>
+      <div className='container marginclass '>
+           <div className='row media1'>
               <div className='col-10 '>
 
               <div className='d-flex flex-row gap-5 '>
@@ -68,11 +68,11 @@ const SpecificCourse = () => {
               <span className='align-self-center bgspan text-white'>{thisProduct.price}</span>
               </div>
 
-              <div className='d-flex flex-row mt-5 gap-5 '>
+              <div className='d-flex flex-row mt-5 gap-5 flex-md-row flex-sm-column '>
 
-              <div className='col-2 d-flex flex-row gap-2'>
-                <img src={thisProduct.image} alt="" style={{width:70, height:70}} className="circle"/>
-                <div className='d-flex flex-column'>
+              <div className='col-2 d-flex flex-row gap-2 flex-md-row flex-sm-column '>
+                <img src={thisProduct.image} alt="" style={{width:70, height:70}} />
+                <div className='d-flex flex-column '>
                 <span>Instructor:</span>
                  <span className='userUrl'>{thisProduct.instructor}</span>
                 </div>
@@ -84,7 +84,7 @@ const SpecificCourse = () => {
                 </div>
 
                 <div className='col-2 d-flex flex-column text-center'>
-                  <span>Reviews :</span>
+                  <span>Reviews:</span>
                   <span className='userUrl text-warning fw-bold'><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></span>
                 </div>
 
@@ -103,9 +103,9 @@ const SpecificCourse = () => {
 
 
 
-                 <div className='col-2 '>
+                 <div className='col-2 textmedia'>
                  <h5 className=' mt-5'>Course Features</h5>
-                 <div className='d-flex flex-column gap-3'>
+                 <div className='d-flex flex-column gap-3 '>
                  <div className='d-flex flex-row justify-content-between mt-2'>
                   <span><TfiTimer className='fs-4 text-info'/> Duration</span>
                   <span>{thisProduct.duration}</span>
@@ -131,10 +131,10 @@ const SpecificCourse = () => {
                   <span>{thisProduct.maxRetake}</span>
                  </div>
 
-                 <h5 className='mt-5'>Certification</h5>
-                 <p className='mt-3 perDescr'>{thisProduct.certificateDescription}</p>
+                 <h5 className='mt-5 '>Certification</h5>
+                 <p className='mt-3 perDescr '>{thisProduct.certificateDescription}</p>
 
-                 <img src={thisProduct.certificate} alt=""/>
+                 <img src={thisProduct.certificate} alt="" className='img3'/>
 
                  </div>
 
