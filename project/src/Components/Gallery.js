@@ -15,8 +15,7 @@ const gallerybg={
 
 const Gallery=()=> {
   return (
-    
-    <>
+  <>
       <Navbar/>
 
        <div className='container-fluid'  style={gallerybg}>
@@ -56,7 +55,7 @@ const Gallery=()=> {
         </div>
       </div>
       <Footer/>
-    </>
+      </>
   )
 }
 
