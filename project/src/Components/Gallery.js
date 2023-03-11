@@ -15,8 +15,10 @@ const gallerybg={
 
 const Gallery=()=> {
   return (
-    <>
+
+  <>
   
+
       <Navbar/>
 
        
@@ -57,8 +59,10 @@ const Gallery=()=> {
       
       <Footer/>
 
+
     </>
   )
 }
+
 
 export default Gallery
