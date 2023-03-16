@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom'
 import InstructorDataAPI from './InstructorDataAPI';
 
+
 const coursesbackimage=require('../AssetsFolder/AllCourses/allcoursespagebg.png');
 const coursesbg={
     width: '100%',
@@ -42,8 +43,18 @@ const InstructorSpecific = () => {
    </div>  
         {/* Banner End */}
 
-      <div>{ thisInstructor.experience1h1}</div>
-        
+            <div className='container'>
+                <div className='row-md-12 mt-5 '> 
+                    <div className='col-md-3 mt-2 mb-2 text-center px-3'>
+                        <div><img src={thisInstructor.image} style={{ width: 251, height: 256 }} alt /></div>
+                        <div className='mt-5' >
+                         <span>  <h4 className='fw-bold'> {thisInstructor.name}</h4></span>
+                         <span>    {thisInstructor.profession}</span><br/><br/>
+                         <span>   {thisInstructor.description}</span>
+                        </div>
+            </div>
+                </div>
+                </div>
         </>
       
   )

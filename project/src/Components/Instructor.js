@@ -326,7 +326,7 @@ const Instructor = () => {
           <InstructorCard
             id="2"
             imginsrc={inst2}
-            inname="Luckasz "
+            inname="Lukasz "
             instr="Special Assistant"
           
           />

@@ -14,11 +14,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
-        
+        "image": "../Images/InstructorDataApi/instructor1.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
     },
 
 
@@ -37,10 +36,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor2.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -60,10 +59,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor6.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -83,10 +82,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor5.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -106,10 +105,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor-img-2.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -129,10 +128,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor7.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -153,10 +152,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor5.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -176,10 +175,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor-img-3.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-3.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     },
 
@@ -199,10 +198,10 @@ export default [
         "experience1p1": "Head of Industry",
         "experience2h1": "Self - employed",
         "experience2p1": "Professor and Consultant",
-        "image": "../AssetsFolder/InstructorDataApi/instructor-img-2.jpg",
-        "certificate1": "../AssetsFolder/InstructorDataApi/certificate-img-1.jpg",
-        "certificate2":"../AssetsFolder/InstructorDataApi/certificate-img-2.jpg",
-        "certificate3":"../AssetsFolder/InstructorDataApi/certificate-img-3.jpg"
+        "image": "../Images/InstructorDataApi/instructor-img-5.jpg",
+        "certificate1": "../Images/InstructorDataApi/certificate-img-1.jpg",
+        "certificate2":"../Images/InstructorDataApi/certificate-img-2.jpg",
+        "certificate3":"../Images/InstructorDataApi/certificate-img-3.jpg"
         
     }
 
