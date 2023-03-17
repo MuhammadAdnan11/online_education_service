@@ -18,7 +18,7 @@ import AllCoursesGrid from './Components/AllCoursesGrid';
 import SpecificCourse from './Components/SpecificCourse';
 import Instructor from './Components/Instructor';
 import InstructorSpecific from './Components/InstructorSpecific';
-import Instdetailcard from './Components/Instdetailcard';
+
 
 
 
@@ -117,12 +117,7 @@ const router = createBrowserRouter([
     
     
   },
-  {
-    path: "instcard",
-    element: <Instdetailcard/>,
-    
-    
-  },
+ 
 
   {
     path: "register",
