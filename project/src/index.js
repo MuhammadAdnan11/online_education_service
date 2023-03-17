@@ -17,6 +17,8 @@ import AllCourses from './Components/AllCourses';
 import AllCoursesGrid from './Components/AllCoursesGrid';
 import SpecificCourse from './Components/SpecificCourse';
 import Instructor from './Components/Instructor';
+import InstructorSpecific from './Components/InstructorSpecific';
+
 
 
 
@@ -81,6 +83,13 @@ const router = createBrowserRouter([
     element: <AllCourses/>,
  
   },
+  {
+    path: "/specificInstructor/:InstructorId",
+    element: <InstructorSpecific/>,
+    
+  },
+
+  
 
 
 
@@ -108,6 +117,7 @@ const router = createBrowserRouter([
     
     
   },
+ 
 
   {
     path: "register",
