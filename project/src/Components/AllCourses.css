@@ -224,19 +224,10 @@ body {
 	}
 	
 
-	/* .media1 img{
-		width: fit-content;
-		height: 400px;
-	} */
+
 }
 
 
-/* @media(max-width:400px){
-	.media1 img{
-		width: 399px;
-		height: 250px;
-	}
-} */
 
 
 
@@ -277,6 +268,13 @@ body {
 	.textmedia p{
 		font-size: 25px;
 	}
+	.mediaa2{
+		display: flex;
+		flex-direction: column;
+	}
+	.mediaa2 span{
+		font-size: 25px;
+	}
    
 }
 
@@ -295,7 +293,15 @@ body {
 		width: 350px;
 		justify-content: center;
 	}
+	.mediaa2{
+		display: flex;
+		flex-direction: column;
+	}
 
 
 	
 }
+
+
+
+/* specificCourse navbar css start here 👇 */
