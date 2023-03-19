@@ -17,6 +17,9 @@ import AllCourses from './Components/AllCourses';
 import AllCoursesGrid from './Components/AllCoursesGrid';
 import SpecificCourse from './Components/SpecificCourse';
 import Instructor from './Components/Instructor';
+import CoursesCart from './CoursesCart';
+import { Context } from './Components/context/Context';
+import StripeContainer from './Components/StripeContainer';
 
 
 
@@ -59,6 +62,15 @@ const router = createBrowserRouter([
     
     
   },
+
+
+  {
+    path: "coursecart",
+    element: <CoursesCart/>,
+    
+    
+  },
+
 
   // {
   //   path: "/specificCourse/:id",
@@ -108,6 +120,12 @@ const router = createBrowserRouter([
     
     
   },
+  {
+    path: "stripe",
+    element: <StripeContainer/>,
+    
+    
+  },
 
   {
     path: "register",
@@ -142,8 +160,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
   <React.StrictMode>
- 
-  <RouterProvider router={router} /> 
+ <Context>
+ <RouterProvider router={router} /> 
+
+ </Context>
+  
   
   </React.StrictMode>
   
