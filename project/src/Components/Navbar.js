@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Navbar = (props) => {
+const Navbar = ({props, setShow}) => {
   
  
   return (
@@ -143,10 +143,11 @@ const Navbar = (props) => {
               </a>
             </div>
 
-            <div className="item">
-              <a href="/about">
+            <div className="item d-flex cart1">
+              <span onClick={()=>setShow(false)}>
                 <AiOutlineShoppingCart />
-              </a>
+              </span>
+              <span>0</span>
             </div>
 
             <button

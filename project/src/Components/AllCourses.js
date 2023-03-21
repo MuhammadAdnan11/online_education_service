@@ -124,7 +124,7 @@ const AllCourses = () => {
                                     lorem quis.</p>
                                     <div className='d-flex flex-row justify-content-between'>
                                     <p className='rating'><CiStar className='fs-5'/>{curElem.Rating} Ratings </p>
-                                    <span className='bgspan'>{curElem.price}</span>
+                                    <span className='bgspan'>${curElem.price}</span>
                                      </div>
                                </div>
 
