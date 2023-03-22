@@ -58,7 +58,7 @@ const Instructor = () => {
             </div>
 
             {/* FORM */}
-            <div className="col-md-3 mt-5 text-center inst-form-bg">
+            <div className="col-md-3 mt-5 text-center inst-form-bg "  >
               <h4 className="fw-bold text-center mt-4">Fill This Form</h4>
               <Form className="p-3">
                 <Form.Group className="mb-3 mt-4 formfont" controlId="formBasictext">
@@ -317,65 +317,81 @@ const Instructor = () => {
              
 
           <InstructorCard
+            id="1"
             imginsrc={inst1}
             inname="Jackie Macito"
             instr="Teacher"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="2"
             imginsrc={inst2}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname="Lukasz "
+            instr="Special Assistant"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="3"
+            
             imginsrc={inst3}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname="Ewa Szutko"
+            instr="Education Assistant"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="4"
+            
             imginsrc={inst4}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname="Sophie Jahner "
+            instr="Program Coordinator"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="5"
+            
             imginsrc={inst5}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname=" Nichole Butler"
+            instr="Professor"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="6"
+            
             imginsrc={inst6}
             inname="Jackie Macito"
             instr="Teacher"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="7"
+            
             imginsrc={inst7}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname=" Laura Reese"
+            instr="Teaching Assistant"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="8"
+            
             imginsrc={inst8}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname="Anna Murphy "
+            instr="Tutor"
           
           />
 
-<InstructorCard
+          <InstructorCard
+            id="9"
+            
             imginsrc={inst9}
-            inname="Jackie Macito"
-            instr="Teacher"
+            inname="Jack Stewen"
+            instr="Education Coordinator"
           
           />
 </div>
