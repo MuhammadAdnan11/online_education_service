@@ -12,6 +12,7 @@
  import {AiOutlineStar} from "react-icons/ai";
  import SpecificCourseNavbar from '../SpecificCourseNavbar';
  import { Cartcontext } from "./context/Context";
+ import ScrollButton from "./ScrollButton";
  
 
 
@@ -107,7 +108,8 @@ const fetchData = async () => {
                  </div>
 
                  <div className='col-2 text-center'>
-                  <Link to="/coursecart" > <button className='btn btn-info rounded-pill text-white fw-bold buycourse' onClick={() => dispatch({ type: "ADD", payload: thisProduct })}  > Buy Course</button></Link>
+                  <Link to="/coursecart" > <button className='btn btn-info rounded-pill text-white fw-bold buycourse' onClick=
+                  {() => dispatch({ type: "ADD", payload: thisProduct })}  > Buy Course</button></Link>
                  </div>    
 
                   
@@ -165,6 +167,7 @@ const fetchData = async () => {
 
           </div>
           <SpecificCourseNavbar/>
+          <ScrollButton/>
 
        <Footer/>
 

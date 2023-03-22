@@ -105,11 +105,11 @@ const AllCoursesGrid = () => {
                        return (
           <div className='row  justify-content-center '>
         <div className='col-md-4 col-md-6 '>
-        <img src={curElem.image} alt="" style={{width:400,height:220}}/>
+        <Link to={`/specificCourse/${curElem.id}`}><img src={curElem.image} alt="" style={{width:400,height:220}}/></Link>
         </div>
 
         <div className='col-md-4 col-md-6 '>
-        <div>{curElem.course}</div>
+        <Link to={`/specificCourse/${curElem.id}`}><div>{curElem.course}</div></Link>
         <div>{curElem.instructor}</div>
                                    
        <p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin,

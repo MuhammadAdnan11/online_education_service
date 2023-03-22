@@ -3,7 +3,7 @@ import "./gallery.css";
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
+import ScrollButton from './ScrollButton';
 const gallerybackimage=require('../AssetsFolder/Gallery/title-area-background.png');
 const gallerybg={
   width: '100%',
@@ -56,7 +56,7 @@ const Gallery=()=> {
           </div>
           
         </div>
-      
+      <ScrollButton/>
       <Footer/>
 
 

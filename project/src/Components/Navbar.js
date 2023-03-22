@@ -144,10 +144,10 @@ const Navbar = ({props, setShow}) => {
             </div>
 
             <div className="item d-flex cart1">
-              <span onClick={()=>setShow(false)}>
+             <Link to="/coursecart"> <span onClick={()=>setShow(false)}>
                 <AiOutlineShoppingCart />
-              </span>
-              <span>0</span>
+              </span></Link>
+              {/* <span>0</span> */}
             </div>
 
             <button

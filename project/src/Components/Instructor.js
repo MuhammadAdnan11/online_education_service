@@ -15,6 +15,7 @@ import imgbg from "../AssetsFolder/Instructor/play-button.png";
 import car1 from "../AssetsFolder/Instructor/carasoul1.png";
 import car2 from "../AssetsFolder/Instructor/carasoul2.png";
 import car3 from "../AssetsFolder/Instructor/carasoul3.png";
+import ScrollButton from "./ScrollButton";
 
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 //  Teacher Pictures👇
@@ -379,7 +380,7 @@ const Instructor = () => {
           />
 </div>
 </div>
-        
+        <ScrollButton/>
       <Footer/>
     </>
   );
