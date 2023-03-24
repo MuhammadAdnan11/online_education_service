@@ -25,6 +25,9 @@ import StripeContainer from './Components/StripeContainer';
 import InstructorSpecific from './Components/InstructorSpecific';
 
 
+import InstructorSpecific from './Components/InstructorSpecific';
+
+
 
 
 
@@ -108,7 +111,11 @@ const router = createBrowserRouter([
 
   
   
-
+  {
+    path: "/specificInstructor/:InstructorId",
+    element: <InstructorSpecific/>,
+    
+  },
 
 
   {
