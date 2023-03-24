@@ -17,10 +17,18 @@ import AllCourses from './Components/AllCourses';
 import AllCoursesGrid from './Components/AllCoursesGrid';
 import SpecificCourse from './Components/SpecificCourse';
 import Instructor from './Components/Instructor';
+
 import CoursesCart from './CoursesCart';
 import { Context } from './Components/context/Context';
 import StripeContainer from './Components/StripeContainer';
+
 import InstructorSpecific from './Components/InstructorSpecific';
+
+
+import InstructorSpecific from './Components/InstructorSpecific';
+
+
+
 
 
 
@@ -93,6 +101,13 @@ const router = createBrowserRouter([
     element: <AllCourses/>,
  
   },
+  {
+    path: "/specificInstructor/:InstructorId",
+    element: <InstructorSpecific/>,
+    
+  },
+
+  
 
   
   
@@ -127,12 +142,14 @@ const router = createBrowserRouter([
     
     
   },
+
   {
     path: "stripe",
     element: <StripeContainer/>,
     
     
   },
+
 
   {
     path: "register",
