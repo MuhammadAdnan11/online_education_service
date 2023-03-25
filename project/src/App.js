@@ -4,7 +4,6 @@ import Home from "./Components/Home";
 import Counter from "./Components/Counter";
 import Footer from "./Components/Footer";
 import ScrollButton from "./Components/ScrollButton";
-import SpecificCourse from "./Components/SpecificCourse";
 // import StripeContainer from './Components/StripeContainer';
 // import spatula from "./AssetsFolder/Instructor/carasoul1.png"
 
@@ -21,7 +20,7 @@ function App() {
       <Counter />
       <Footer />
       <ScrollButton />
-    
+  
       
       
 		
