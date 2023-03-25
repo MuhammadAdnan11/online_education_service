@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import InstructorDataAPI from "./InstructorDataAPI";
 import "./InstructorSpecific.css";
+
 import {AiOutlineTwitter} from "react-icons/ai"
 import {FaFacebookF} from "react-icons/fa"
 import {TiSocialInstagram} from "react-icons/ti"
 import Footer from './Footer'
+
 
 
 
@@ -57,19 +59,29 @@ const InstructorSpecific = () => {
       {/* Banner End */}
 
       <div className="container">
+
         <div className="row-md-12 mt-5 d-flex mediaquery ">
 
           <div className="col-md-3 mt-2 mb-2  px-3">
+
+        <div className="row-md-12 mt-5 d-flex ">
+          <div className="col-md-3 mt-2 mb-2 text-center px-3">
+
             <div>
               <img
                 src={thisInstructor.image}
                 style={{ width: 251, height: 256 }}
+
                 alt className="img3"
+
+                alt
+
               />
             </div>
             <div className="mt-5">
               <span>
                 {" "}
+
                 <h4 className="fw-bold widclass1">{thisInstructor.name}</h4>
               </span>
               <span className="span1 ">{thisInstructor.profession}</span>
@@ -131,8 +143,27 @@ const InstructorSpecific = () => {
         </div>
       </div>
       <Footer/>
+
+                <h4 className="fw-bold"> {thisInstructor.name}</h4>
+              </span>
+              <span> {thisInstructor.profession}</span>
+              <br />
+              <br />
+              <span> {thisInstructor.description}</span>
+            </div>
+          </div>
+
+                  <div className="col-md-8 ">
+                    {/* Here you can insert Cards    */}
+          </div>
+        </div>
+      </div>
+
     </>
   );
 };
 
 export default InstructorSpecific;
+
+export default InstructorSpecific;
+
