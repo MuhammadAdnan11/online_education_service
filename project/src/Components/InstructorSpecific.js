@@ -144,26 +144,11 @@ const InstructorSpecific = () => {
       </div>
       <Footer/>
 
-                <h4 className="fw-bold"> {thisInstructor.name}</h4>
-              </span>
-              <span> {thisInstructor.profession}</span>
-              <br />
-              <br />
-              <span> {thisInstructor.description}</span>
-            </div>
-          </div>
-
-                  <div className="col-md-8 ">
-                    {/* Here you can insert Cards    */}
-          </div>
-        </div>
-      </div>
+      
 
     </>
   );
 };
-
-export default InstructorSpecific;
 
 export default InstructorSpecific;
 
