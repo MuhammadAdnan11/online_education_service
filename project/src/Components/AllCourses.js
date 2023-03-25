@@ -6,6 +6,7 @@ import "./AllCourses.css"
 import {CiStar} from "react-icons/ci";
 import {AiOutlineUnorderedList} from "react-icons/ai";
 import {CiGrid42} from "react-icons/ci";
+import ScrollButton from './ScrollButton'
 
 
 
@@ -117,7 +118,7 @@ const AllCourses = () => {
                            <div className="card_item HoverDiv " key={curElem.id} >
                                <div className="card_inner ">
                                    <Link to={`/specificCourse/${curElem.id}`}><img src={curElem.image} alt="" /></Link>
-                                   <div className="userName ">{curElem.course}</div>
+                                   <Link to={`/specificCourse/${curElem.id}`}><div className="userName ">{curElem.course}</div></Link>
                                    <div className="userUrl">{curElem.instructor}</div>
                                    
                                    <p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
@@ -136,7 +137,7 @@ const AllCourses = () => {
 
            </div>   
                
-
+    <ScrollButton/>
     <Footer/>
 
     

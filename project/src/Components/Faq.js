@@ -3,6 +3,7 @@ import "./Faq.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import ScrollButton from "./ScrollButton";
 
 const Faqbackimage=require('../AssetsFolder/CartImage/cartbg.png');
 const Faqbg={
@@ -171,6 +172,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
+      <ScrollButton/>
       <Footer/>
     </>
   );

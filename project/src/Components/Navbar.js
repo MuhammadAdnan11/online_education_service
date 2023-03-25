@@ -145,10 +145,10 @@ const Navbar = ({props, setShow}) => {
             </div>
 
             <div className="item d-flex cart1">
-              <span onClick={()=>setShow(false)}>
+             <Link to="/coursecart"> <span onClick={()=>setShow(false)}>
                 <AiOutlineShoppingCart />
-              </span>
-              <span>0</span>
+              </span></Link>
+              {/* <span>0</span> */}
             </div>
 
             <button
@@ -232,7 +232,7 @@ const Navbar = ({props, setShow}) => {
 
                   <div className="modal-line">
                     <BiBookReader classNameName="fs-1 colo  " />
-                    <a href="/cases">Courses</a>
+                    <a href="/courses">Courses</a>
                   </div>
 
                   <div className="modal-line">

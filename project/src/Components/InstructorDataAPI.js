@@ -26,11 +26,19 @@ export default [
         "name": "Luckasz",
         "profession": "Special Assistant",
         "description": "Lorem Ipsn gravida nibh vel velit auctoret. Aenean sollicit, lorem quis bibum auci elit consequat ipsutis sem nibh id elit",
+
+        "unih1":"Peshawar University",
+        "unip1": "MBA from Islamia Colligate School",
+        "uni2h1": "University of Lahore",
+        "uni2p1": "BBA (2009)",
+        "uni3h1": "Islamia College University",
+
         "unih1":"Harvard University",
         "unip1": "MBA from Harvard Business School",
         "uni2h1": "University of Michigan",
         "uni2p1": "BBA (2006)",
         "uni3h1": "Harvard University",
+
         "uni3p1": "Section UX & UI design (2008)",
         "experience1h1": "google",
         "experience1p1": "Head of Industry",
@@ -72,11 +80,19 @@ export default [
         "name": "Sophie Jahner ",
         "profession": "Program Coordinator",
         "description": "Lorem Ipsn gravida nibh vel velit auctoret. Aenean sollicit, lorem quis bibum auci elit consequat ipsutis sem nibh id elit",
+
+        "unih1":"Peshawar University",
+        "unip1": "MBA from Islamia Colligate School",
+        "uni2h1": "University of Lahore",
+        "uni2p1": "BBA (2009)",
+        "uni3h1": "Islamia College University",
+
         "unih1":"Harvard University",
         "unip1": "MBA from Harvard Business School",
         "uni2h1": "University of Michigan",
         "uni2p1": "BBA (2006)",
         "uni3h1": "Harvard University",
+
         "uni3p1": "Section UX & UI design (2008)",
         "experience1h1": "google",
         "experience1p1": "Head of Industry",
@@ -118,11 +134,19 @@ export default [
         "name": "Jackie Macito",
         "profession": "Teacher",
         "description": "Lorem Ipsn gravida nibh vel velit auctoret. Aenean sollicit, lorem quis bibum auci elit consequat ipsutis sem nibh id elit",
+
+        "unih1":"Peshawar University",
+        "unip1": "MBA from Islamia Colligate School",
+        "uni2h1": "University of Lahore",
+        "uni2p1": "BBA (2009)",
+        "uni3h1": "Islamia College University",
+
         "unih1":"Harvard University",
         "unip1": "MBA from Harvard Business School",
         "uni2h1": "University of Michigan",
         "uni2p1": "BBA (2006)",
         "uni3h1": "Harvard University",
+
         "uni3p1": "Section UX & UI design (2008)",
         "experience1h1": "google",
         "experience1p1": "Head of Industry",
@@ -165,11 +189,19 @@ export default [
         "name": "Anna Murphy",
         "profession": "Tutor",
         "description": "Lorem Ipsn gravida nibh vel velit auctoret. Aenean sollicit, lorem quis bibum auci elit consequat ipsutis sem nibh id elit",
+
+        "unih1":"Peshawar University",
+        "unip1": "MBA from Islamia Colligate School",
+        "uni2h1": "University of Lahore",
+        "uni2p1": "BBA (2009)",
+        "uni3h1": "Islamia College University",
+
         "unih1":"Harvard University",
         "unip1": "MBA from Harvard Business School",
         "uni2h1": "University of Michigan",
         "uni2p1": "BBA (2006)",
         "uni3h1": "Harvard University",
+
         "uni3p1": "Section UX & UI design (2008)",
         "experience1h1": "google",
         "experience1p1": "Head of Industry",

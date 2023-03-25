@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { BsTelephone, BsChat, BsBuilding, BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ScrollButton from "./ScrollButton";
 
 
 const Contactbackimage=require('../AssetsFolder/contactUs/contact-title-img.jpg');
@@ -139,6 +140,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ScrollButton/>
       <Footer/>
     
       </>

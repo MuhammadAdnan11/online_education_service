@@ -1,6 +1,8 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 import axios from "axios"
 import React, { useState } from 'react'
+import {BsArrowLeft} from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 const CARD_OPTIONS = {
@@ -58,23 +60,48 @@ export default function PaymentForm() {
     }
 }
 
+
+function hideDef() {
+    
+    document.getElementById("text").style.display = "none";
+}
+
+
+
     return (
         <>
-        {!success ? 
-        <form onSubmit={handleSubmit}>
+        <h2 className="text-center" id="text" style={{display:'block'}}> Add your card detail here to proceed to checkout 👇</h2>
+        <div className="container mt-5">
+            <div className="row">
+                <div className="col col-md-6 offset-md-3 paycol">
+                {!success ? 
+        <form onSubmit={handleSubmit} >
             <fieldset className="FormGroup">
                 <div className="FormRow">
                     <CardElement options={CARD_OPTIONS}/>
                 </div>
             </fieldset>
-            <button>Pay</button>
+            
+            <button className="paybtn " id="paybtn" onClick={hideDef} >Pay</button>
+            
         </form>
         :
        <div>
-           <h2>You just bought a sweet spatula congrats this is the best decision of you're life</h2>
+           <h2 className="text-green">You just bought a course, congrats this is the best decision of you're life, We will notify you on eamil soon.</h2>
+           <Link to="/courses"><span><BsArrowLeft className="fs-2 fw-bold text-green"/></span></Link>
        </div> 
         }
+                </div>
+            </div>
+        </div>
+       
+
+
+
+       
             
         </>
     )
 }
+
+

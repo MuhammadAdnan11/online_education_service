@@ -6,6 +6,7 @@ import { BsFacebook } from 'react-icons/bs';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import ScrollButton from './ScrollButton';
 const Dashboardbackimage=require('../AssetsFolder/DashboardImage/dashboard.png');
 const Dashboardbg={
     width: '100%',
@@ -88,6 +89,7 @@ const Dashboard = () => {
                     </div>
                 </div>
         </div>
+        <ScrollButton/>
             
         <Footer/>
         
