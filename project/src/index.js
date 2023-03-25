@@ -21,8 +21,17 @@ import Instructor from './Components/Instructor';
 import CoursesCart from './CoursesCart';
 import { Context } from './Components/context/Context';
 import StripeContainer from './Components/StripeContainer';
-import { CourseVideos } from './Components/CourseVideos';
+
+
+
+
 import InstructorSpecific from './Components/InstructorSpecific';
+
+
+
+
+
+
 const router = createBrowserRouter([
  
   {
