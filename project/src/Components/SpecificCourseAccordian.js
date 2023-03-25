@@ -5,7 +5,7 @@ const SpecificCourseAccordian = () => {
     <>
        <div className='container mt-5'>
         <div className='row'>
-            <div className='col-8'>
+            <div className='col-10'>
             <h5 className='mt-2 widclass1 fs-2'>FAQS</h5>
             <div className="accordion" id="accordionExample">
   <div className="accordion-item">

@@ -72,3 +72,15 @@
         flex-direction: column;
     }
   }
+
+  @media (max-width:600px)
+  {
+    .instbox{
+    
+     display: flex;
+     flex-direction: column;
+
+    }
+
+  }
+

@@ -12,7 +12,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { Cartcontext } from "./context/Context";
 import ScrollButton from "./ScrollButton";
 import SpecificCourseAccordian from "./SpecificCourseAccordian";
-// import SpecificCourseProgressBar from "./SpecificCourseProgressBar";
+import SpecificCourseProgressBar from "./SpecificCourseProgressBar";
 
 const coursesbackimage = require("../AssetsFolder/AllCourses/allcoursespagebg.png");
 const coursesbg = {
@@ -212,8 +212,9 @@ const SpecificCourse = () => {
           </div>
         </div>
       </div>
+      <SpecificCourseProgressBar/>
       <SpecificCourseAccordian/>
-      {/* <SpecificCourseProgressBar/> */}
+      
 
       <ScrollButton />
 
