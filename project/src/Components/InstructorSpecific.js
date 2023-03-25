@@ -141,6 +141,7 @@ const InstructorSpecific = () => {
                  </div>
                  
         </div>
+          
       </div>
       <Footer/>
 
