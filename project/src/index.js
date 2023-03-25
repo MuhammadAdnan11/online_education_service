@@ -22,11 +22,11 @@ import CoursesCart from './CoursesCart';
 import { Context } from './Components/context/Context';
 import StripeContainer from './Components/StripeContainer';
 
+
+
+
 import InstructorSpecific from './Components/InstructorSpecific';
-
-
-import InstructorSpecific from './Components/InstructorSpecific';
-
+import { CourseVideos } from './Components/CourseVideos';
 
 
 
@@ -78,7 +78,12 @@ const router = createBrowserRouter([
     
     
   },
-
+  {
+    path: "coursevideo",
+    element: <CourseVideos/>,
+    
+    
+  },
 
   // {
   //   path: "/specificCourse/:id",
