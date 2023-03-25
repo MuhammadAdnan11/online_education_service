@@ -231,7 +231,7 @@ const Navbar = ({props, setShow}) => {
 
                   <div className="modal-line">
                     <BiBookReader classNameName="fs-1 colo  " />
-                    <a href="/cases">Courses</a>
+                    <a href="/courses">Courses</a>
                   </div>
 
                   <div className="modal-line">

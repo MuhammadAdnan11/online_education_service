@@ -782,6 +782,13 @@ color: rgb(51, 51, 233);
 
 }
 
+@media (max-width:600px)
+{
+    .scrollbtn{
+        left: 85%;
+    }
+}
+
 
 
 
