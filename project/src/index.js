@@ -26,7 +26,7 @@ import StripeContainer from './Components/StripeContainer';
 
 
 import InstructorSpecific from './Components/InstructorSpecific';
-
+import { CourseVideos } from './Components/CourseVideos';
 
 
 

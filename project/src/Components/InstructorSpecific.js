@@ -31,7 +31,7 @@ const InstructorSpecific = () => {
   // End
     
   return (
-    <>
+ <>
       <Navbar />
       {/* banner */}
       <div className="container-fluid " style={coursesbg}>
@@ -64,8 +64,7 @@ const InstructorSpecific = () => {
 
           <div className="col-md-3 mt-2 mb-2  px-3">
 
-        <div className="row-md-12 mt-5 d-flex ">
-          <div className="col-md-3 mt-2 mb-2 text-center px-3">
+       
 
             <div>
               <img
@@ -74,7 +73,7 @@ const InstructorSpecific = () => {
 
                 alt className="img3"
 
-                alt
+               
 
               />
             </div>
@@ -141,13 +140,13 @@ const InstructorSpecific = () => {
                  </div>
                  
         </div>
+     </div>
           
-      </div>
       <Footer/>
 
       
-
-    </>
+      </>
+  
   );
 };
 
