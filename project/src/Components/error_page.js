@@ -1,7 +1,7 @@
 import React from "react";
 // import Button from 'react-bootstrap/Button';
 import "./error_page.css";
-
+import { Link } from "react-router-dom";
 const Errorbackimage = require("../AssetsFolder/error-404/404-background.png");
 const Errorbg = {
   width: "100%",
@@ -32,14 +32,14 @@ const Error_page = () => {
               home.
             </p>
             <di className="text-center">
-              <button 
+             <Link to="/"> <button 
                 className="rounded-pill text-center bg-white fw-bold mt-3 "
                 id="btnstyle"
               
                 style={{ height: "47px", width: "200px" }}
               >
                 BACK TO HOME
-              </button>
+              </button></Link>
             </di>
           </div>
         </div>

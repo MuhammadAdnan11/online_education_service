@@ -68,10 +68,11 @@ const Navbar = ({props, setShow}) => {
           <div className="navb-items d-none d-xl-flex">
           
             <div className="item">
-            <a className="nav-link " href="/#" data-bs-toggle="dropdown">HOME  </a>
-		    <ul class="dropdown-menu">
+              <Link to="/" className="nav-link">HOME</Link>
+         {/* <a className="nav-link " href="/" data-bs-toggle="dropdown">HOME   </a> */}
+		    {/* <ul class="dropdown-menu">
 			  <li> <Link className="dropdown-item" to="/">HOME 1</Link></li>
-		    </ul>
+		    </ul> */}
             </div>
 
 
@@ -87,12 +88,14 @@ const Navbar = ({props, setShow}) => {
 
 
             <div className="item">
-            <a class="nav-link " to="#" data-bs-toggle="dropdown">INSTRUCTORS</a>
-		    <ul class="dropdown-menu">
+              <Link to="/instructor" class="nav-link">INSTRUCTOR</Link>
+            {/* <Link class="nav-link " to="/instructor" data-bs-toggle="dropdown">INSTRUCTORS</Link> */}
+              {/* <ul class="dropdown-menu">
+                
 			  <li><Link className="dropdown-item" to="/instructor">BECOME AN INSTRUCTOR</Link></li>
 			  <li><a className="dropdown-item" to="#"> INSTRUCTOR SINGLE </a></li>
 			  
-		    </ul>
+		    </ul> */}
             </div>
 
 
@@ -114,7 +117,7 @@ const Navbar = ({props, setShow}) => {
 			  <li><Link className="dropdown-item" to="/about" > ABOUT US</Link></li>
 			  <li><Link className="dropdown-item" to="/contact"> CONTACT US </Link></li>
 			  <li><Link className="dropdown-item" to="/faq"> FAQ PAGE </Link></li>
-			  <li><Link className="dropdown-item" to="/error"> 404 ERROR PAGE </Link></li>
+			  {/* <li><Link className="dropdown-item" to="/error"> 404 ERROR PAGE </Link></li> */}
 			  <li><Link className="dropdown-item" to="/gallery"> GALLERY</Link></li>
 			  <li><a className="dropdown-item" to="#"> SHOP </a></li>
 
