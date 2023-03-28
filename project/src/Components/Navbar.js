@@ -80,7 +80,8 @@ const Navbar = ({props, setShow}) => {
              <a class="nav-link " to="#" data-bs-toggle="dropdown">COURSES</a>
 		    <ul class="dropdown-menu">
 			  <li><a className="dropdown-item" to="#"> FEATURERED</a></li>
-			  <li><Link className="dropdown-item" to="/courses"> ALL COURSES </Link></li>
+         <li><Link className="dropdown-item" to="/courses"> ALL COURSES </Link></li>
+        
         <li><Link className="dropdown-item" to="/dashboard"> DASHBOARD </Link></li>
         <li><Link className="dropdown-item" to="/coursevideo">Video Lectures</Link></li>  
 		    </ul>
