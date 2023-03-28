@@ -203,10 +203,10 @@ const SpecificCourse = () => {
             <br />
 
             <p className="userUrl1">
-              Sed non mauris vitae erat consequat auctor eu in elit. Class
+              Sed non mauris vitae erat consequat auctor en in elit. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis
-              dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut
+              inceptos himenaeos. Mauris in erat juste. Nullam ac urna eu felis
+              dapibus condimentum sit amet a augue. Sed non neque ejit. Sed ut
               imperdiet nisi. Proin condimentum fermentum nunc.
             </p>
           </div>
