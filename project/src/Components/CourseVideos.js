@@ -1,6 +1,8 @@
 import React from 'react'
 import './CourseVideos.css';
 import Navbar from './Navbar';
+import ScrollButton from './ScrollButton';
+import Footer from './Footer';
 
 export const CourseVideos = () => {
 
@@ -79,8 +81,8 @@ listVideo.forEach(video=> {
           </div>
 
           
-  
-
+  <ScrollButton/>
+   <Footer/>
           
       </>
     )

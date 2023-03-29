@@ -9,6 +9,7 @@ import {AiOutlineTwitter} from "react-icons/ai"
 import {FaFacebookF} from "react-icons/fa"
 import {TiSocialInstagram} from "react-icons/ti";
 import Footer from './Footer';
+import ScrollButton from "./ScrollButton";
 
 
 
@@ -141,7 +142,8 @@ const InstructorSpecific = () => {
                  
         </div>
      </div>
-          
+
+         <ScrollButton/> 
       <Footer/>
 
       
