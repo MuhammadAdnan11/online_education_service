@@ -21,13 +21,12 @@ import Instructor from './Components/Instructor';
 import CoursesCart from './CoursesCart';
 import { Context } from './Components/context/Context';
 import StripeContainer from './Components/StripeContainer';
-
-
-
-
 import InstructorSpecific from './Components/InstructorSpecific';
 import { CourseVideos } from './Components/CourseVideos';
-
+import Header from './Components/AdminDashboard/Header';
+import Profile from './Components/AdminDashboard/Profile';
+import Users from './Components/AdminDashboard/Users';
+import Analytics from './Components/AdminDashboard/Analytics';
 
 
 
@@ -38,10 +37,19 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>
   },
+
+  
   
   {
     path: "about",
     element: <AboutUs/>,
+    
+    
+  },
+
+  {
+    path: "analytic",
+    element: <Analytics/>,
     
     
   },
@@ -129,6 +137,16 @@ const router = createBrowserRouter([
     
     
   },
+
+  {
+    path: "admin",
+    element: <Header/>,
+    
+    
+  },
+
+  
+
   {
     path: "faq",
     element: <Faq/>,
@@ -155,6 +173,13 @@ const router = createBrowserRouter([
     
   },
 
+  {
+    path: "users",
+    element: <Users/>,
+    
+    
+  },
+
 
   {
     path: "register",
@@ -166,6 +191,13 @@ const router = createBrowserRouter([
   {
     path: "grid",
     element: <AllCoursesGrid/>,
+    
+    
+  },
+
+  {
+    path: "profile",
+    element: <Profile/>,
     
     
   },
