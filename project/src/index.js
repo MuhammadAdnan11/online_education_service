@@ -27,7 +27,7 @@ import Header from './Components/AdminDashboard/Header';
 import Profile from './Components/AdminDashboard/Profile';
 import Users from './Components/AdminDashboard/Users';
 import Analytics from './Components/AdminDashboard/Analytics';
-
+import Settings from './Components/AdminDashboard/Settings';
 
 
 
@@ -82,10 +82,17 @@ const router = createBrowserRouter([
 
   {
     path: "coursecart",
-    element: <CoursesCart/>,
-    
+    element: <CoursesCart/>, 
     
   },
+
+  {
+    path: "setting",
+    element: <Settings/>, 
+    
+  },
+  
+
   {
     path: "coursevideo",
     element: <CourseVideos/>,

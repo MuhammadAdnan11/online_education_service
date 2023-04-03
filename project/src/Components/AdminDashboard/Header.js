@@ -163,7 +163,7 @@ const Header =()=> {
               </ListItemButton>
             </ListItem>
 
-            <ListItem  disablePadding sx={{ display: 'block' }}>
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/setting")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,

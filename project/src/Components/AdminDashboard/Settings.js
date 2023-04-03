@@ -8,7 +8,7 @@ import AccordianDash from "./AccordianDash";
 import CountUp from 'react-countup';
 
 
-const Profile = () => {
+const Settings = () => {
   return (
     <>
       <div className="bgcolor23">
@@ -107,4 +107,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Settings;

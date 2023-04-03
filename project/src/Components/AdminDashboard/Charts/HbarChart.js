@@ -13,6 +13,7 @@ export const data = [
 export const options = {
   title: "Population of Largest PAK Cities",
   chartArea: { width: "50%" },
+  
   hAxis: {
     title: "Total Population",
     minValue: 0,
@@ -21,13 +22,14 @@ export const options = {
     title: "City",
   },
   colors:["rgb(53,138,148)", "rgb(40, 34, 70)"],
+  
 };
 
 export default function HbarChart() {
   return (
     <Chart
       chartType="BarChart"
-      width="100%"
+      width="90%"
       height="270px"
       data={data}
       options={options}

@@ -29,8 +29,9 @@ export default function GeoChart() {
         },
       ]}
       chartType="GeoChart"
-      width="100%"
+      width="90%"
       height="300px"
+      
       data={data}
     />
   );
