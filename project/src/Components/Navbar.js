@@ -84,6 +84,8 @@ const Navbar = ({props, setShow}) => {
         
         <li><Link className="dropdown-item" to="/dashboard"> DASHBOARD </Link></li>
         <li><Link className="dropdown-item" to="/coursevideo">Video Lectures</Link></li>  
+        <li><Link className="dropdown-item" to="/admin">Admin Dashboard</Link></li>  
+
 		    </ul>
             </div>
 
