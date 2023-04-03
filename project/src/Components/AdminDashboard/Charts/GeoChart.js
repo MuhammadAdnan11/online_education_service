@@ -30,7 +30,7 @@ export default function GeoChart() {
       ]}
       chartType="GeoChart"
       width="90%"
-      height="300px"
+      height="270px"
       
       data={data}
     />
