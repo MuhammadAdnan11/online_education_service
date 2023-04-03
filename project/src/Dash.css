@@ -1,0 +1,165 @@
+.paddingall{
+    padding: 10px 10px 10px 10px;
+}
+.paddingall1{
+    margin-top: -11px;
+
+}
+
+.pricetitle{
+    font-weight: 600;
+}
+.pricesubtitle{
+    font-weight: 14px;
+}
+.iconstyle{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.iconstyle1{
+    margin-top: 0px;
+    margin-left: 20px;
+    
+}
+.iconstyleblack{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.gradient{
+    background: rgb(40,34,70);
+    background: linear-gradient(158deg, rgba(40,34,70,1) 0% , rgba(30,47,141,1) 100%);
+}
+
+.gradientlight{
+    background: rgb(53,138,148);
+    background: linear-gradient(158deg, rgba(51,138,148,1) 0% , rgba(91,180,96,1) 100%);
+}
+
+.bgcolor23{
+    min-height: 100vh;
+    background: #ECEFF1;
+    background: linear-gradient(158deg, rgb(224, 223, 223) 0%, rgba(233,237,254)100%);
+}
+
+.setheight{
+    height: 70px;
+}
+.heightone{
+    height: 150px;
+}
+.cardsmall{
+    width: 50%;
+}
+
+
+@media (max-width:983px)
+{
+    .colwidthcl2{
+        width: 700px;
+        
+    }
+    .settingquery{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:930px){
+    .settingquery{
+        display: flex;
+        flex-direction: column;
+    }
+    .accordheight{
+        height: fit-content;
+        
+    }
+    .cardsmall{
+        width: 400px;
+    }
+    .colwidthcl{
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .colwidthcl1{
+        width: 700px;
+    }
+    .colwidthcl2{
+        width: 690px;
+        align-items: center;
+    }
+    
+
+}
+
+@media (max-width:765px)
+{
+    .colwidthcl2{
+        width: 520px;
+        
+    }
+}
+
+
+
+
+@media (max-width:630px){
+    .settingquery{
+        display: flex;
+        flex-direction: column;
+    }
+    .accordheight{
+        height: fit-content;
+        width: 500px;
+
+    }
+    .colwidthcl{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .colwidthcl1{
+        width: 500px;
+    }
+    .colwidthcl2{
+        width: 430px;
+        
+    }
+   
+}
+
+
+@media (max-width:430px){
+    .settingquery{
+        display: flex;
+        flex-direction: column;
+    }
+    .accordheight{
+        height: fit-content;
+        width: 300px;
+
+    }
+    .colwidthcl{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .colwidthcl1{
+        width: 300px;
+    }
+    .colwidthcl2{
+        width: 375px;
+        
+    }
+   
+}
