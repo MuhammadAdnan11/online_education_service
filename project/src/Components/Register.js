@@ -25,12 +25,12 @@ const Register = () => {
             
           })
           .then(res=>{
-            if(res.data=="exist"){
+            if(res.data==="exist"){
                 alert("user already exists")
             //   history("/admin")
             }
 
-            else if(res.data=="notexist"){
+            else if(res.data==="notexist"){
                 history("/login")
               }
           })
@@ -56,7 +56,7 @@ const Register = () => {
         <div class="text-center mt-4 name">
             User Registration
         </div>
-        <form class="p-3 mt-3 " action="POST">
+        <form class="p-3 mt-3 " action="/signup" method="post">
       
             <div class="form-field d-flex align-items-center ">
                 <span class="far fa-user"></span>
@@ -78,7 +78,8 @@ const Register = () => {
                 <input type="cpassword" name="cpassword" id="cpassword" onChange={(e)=>{setCpassword(e.target.value)}}  placeholder="Confirm Password"/>
             </div>
             
-            <button type='submit' class="btn mt-3" onClick={Submit}>Register</button>
+          <button type='submit' class="btn mt-3" onClick={Submit}>Register</button>
+          
         </form>
        
     </div>
