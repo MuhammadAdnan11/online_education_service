@@ -47,7 +47,7 @@ const LoginForm = () => {
         <div class="text-center mt-4 name">
             User Login
         </div>
-        <form class="p-3 mt-3" action="POST">
+        <form class="p-3 mt-3" action="/login" method='post'>
             <div class="form-field d-flex align-items-center">
             <span><MdOutlineEmail/></span>
                 <input type="email" name="email" id="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email"/>
