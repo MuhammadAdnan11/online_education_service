@@ -170,7 +170,7 @@ const  Counter=({className, ...rest})=> {
           bulk of the card's content."
           price="Free"
           cents=""
-          btn="Go To Course"
+          btn="GoToCourse"
        />
 
 
@@ -182,7 +182,7 @@ const  Counter=({className, ...rest})=> {
           bulk of the card's content."
           price="$79"
           cents=".60"
-          btn="Go To Course"
+          btn="GoToCourse"
          
        />
 
@@ -195,7 +195,7 @@ const  Counter=({className, ...rest})=> {
           bulk of the card's content."
           price="66"
           cents=".50"
-          btn="Go To Course"
+          btn="GoToCourse"
        />
     </div>
 </div>

@@ -52,7 +52,7 @@ const AllCourses = () => {
     <>
 
     <Navbar/>
-      
+    
       <div className='container-fluid ' style={coursesbg}>
       <div className='container'>
         <div className='row'>

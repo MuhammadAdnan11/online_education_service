@@ -17,7 +17,7 @@ export const data = [
 export const options = {
   chart: {
     title: "Company Performance",
-    subtitle: "Sales, Expenses, and Profit: 2014-2017",
+    subtitle: "Sales, Expenses, and Profit: 2022-2023",
   },
   colors :["rgb(53,138,148)", "rgb(37,11,165)", "#188310"]
 };

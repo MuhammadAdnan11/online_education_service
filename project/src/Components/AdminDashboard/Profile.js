@@ -8,11 +8,13 @@ import AccordianDash from "./AccordianDash";
 import CountUp from 'react-countup';
 
 
+
 const Profile = () => {
   return (
     <>
       <div className="bgcolor23">
         <App_Bar />
+       
         <div className="d-flex">
           <Header />
           <div className="container marginclass">
@@ -52,14 +54,14 @@ const Profile = () => {
                   
                 >
                   <div class="card-body d-flex flex-row gap-2">
-                    <span className="iconstyle1 text-black fs-3">
+                    <span className="iconstyle1 text-white fs-3">
                       <AiOutlineIdcard />
                     </span>
                     <div className="  d-flex flex-column mt-2">
-                      <span className="text-black paddingall1 fs-6 fw-bold">
+                      <span className="text-white paddingall1 fs-6 fw-bold">
                         230k
                       </span>
-                      <span className="text-black ">Total Earning</span>
+                      <span className="text-white ">Total Earning</span>
                     </div>
                   </div>
                 </div>
@@ -99,6 +101,7 @@ const Profile = () => {
                 </div>
 
             </div>
+            
           </div>
           
         </div>

@@ -186,6 +186,7 @@ export default function App_Bar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
+          
             Online Education Service
           </Typography>
           <Search>
