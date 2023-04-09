@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function HomeCard(props) {
   return (
@@ -14,7 +15,7 @@ function HomeCard(props) {
         <Card.Text>
           {props.cardText}
         </Card.Text>
-        <Button className="btn-col">{props.btn}</Button>
+        <Link to="/courses"><Button className="btn-col">{props.btn}</Button></Link>
         <div className="row p-3 ">
                     <p className="price ">{props.price}<span className="sm-text ">{props.cents}</span></p>
                     <div className="stars ">

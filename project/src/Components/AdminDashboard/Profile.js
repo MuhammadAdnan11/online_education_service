@@ -8,11 +8,13 @@ import AccordianDash from "./AccordianDash";
 import CountUp from 'react-countup';
 
 
+
 const Profile = () => {
   return (
     <>
       <div className="bgcolor23">
         <App_Bar />
+       
         <div className="d-flex">
           <Header />
           <div className="container marginclass">
@@ -99,6 +101,7 @@ const Profile = () => {
                 </div>
 
             </div>
+            
           </div>
           
         </div>

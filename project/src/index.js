@@ -28,9 +28,10 @@ import Profile from './Components/AdminDashboard/Profile';
 import Users from './Components/AdminDashboard/Users';
 import Analytics from './Components/AdminDashboard/Analytics';
 import Settings from './Components/AdminDashboard/Settings';
-
-
-
+import DarkMode_1 from './Components/AdminDashboard/DarkMode_1';
+import ResetPassword from './Components/ResetPassword';
+import UsersDetail from './Components/AdminDashboard/UsersDetail';
+const isLoggedIn = window.localStorage.getItem("loggedIn");
 const router = createBrowserRouter([
  
   {
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
     element: <AboutUs/>,
     
     
+    
   },
 
   {
@@ -53,6 +55,28 @@ const router = createBrowserRouter([
     
     
   },
+
+  {
+    path: "darkmode",
+    element: <DarkMode_1/>,
+    
+    
+  },
+
+  {
+    path: "resetpassword",
+    element: <ResetPassword/>,
+    
+    
+  },
+
+  {
+    path: "userdetails",
+    element: <UsersDetail/>,
+    
+    
+  },
+
   {
     path: "contact",
     element: <ContactUs/>,
@@ -183,6 +207,11 @@ const router = createBrowserRouter([
   {
     path: "users",
     element: <Users/>,
+    children:[
+      {
+        isLoggedIn:true ? <Users/> : <LoginForm/>
+      }
+    ]
     
     
   },
@@ -222,6 +251,8 @@ const router = createBrowserRouter([
     
   },
 ])
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -20,9 +20,10 @@ import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import AssessmentIcon from '@mui/icons-material/Assessment';
-
-
-
+import DarkMode_1 from './DarkMode_1';
+import Logout from './Logout';
+import LogoutIcon from '@mui/icons-material/Logout';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const drawerWidth = 240;
 
@@ -100,7 +101,7 @@ const Header =()=> {
         </DrawerHeader>
         <Divider />
         <List>
-        <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/users")}}>
+        <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/userdetails")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -205,6 +206,57 @@ const Header =()=> {
               </ListItemButton>
             </ListItem>
 
+
+
+            <ListItem  disablePadding sx={{ display: 'block' }} >
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+               <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <LogoutIcon />
+                </ListItemIcon>
+                
+                <ListItemText primary=<Logout/> sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+
+
+
+
+            <ListItem  disablePadding sx={{ display: 'block' }} >
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <DarkModeIcon />
+                </ListItemIcon>
+                
+                <ListItemText primary=<DarkMode_1/> sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+            
+
         </List>
         
       </Drawer>
@@ -213,3 +265,8 @@ const Header =()=> {
 }
 
 export default Header
+
+
+
+ 
+
