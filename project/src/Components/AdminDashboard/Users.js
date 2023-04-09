@@ -1,7 +1,4 @@
 import React from 'react'
-import Header from './Header'
-import Box from '@mui/material/Box';
-import App_Bar from './App_Bar';
 import UserData from './UserData';
 
 
@@ -9,19 +6,10 @@ import UserData from './UserData';
 const Users = () => {
   return (
     <>
-    <App_Bar/>
-    <Box height={100} />
-   <Box sx={{ display: 'flex' }}>
     
-   <Header/>
-   
-   <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
    <UserData/>
         
-      </Box>
-
-   </Box>
-       
+      
 
     
     </>
