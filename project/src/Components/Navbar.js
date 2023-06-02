@@ -62,7 +62,8 @@ const Navbar = ({props, setShow}) => {
       <header>
         <div className="container-fluid">
           <div className="navb-logo ">
-            <img src="./Images/Oes Logo/logo7.jpeg" alt="Logo" />
+            <img src="./Images/Oes Logo/logo8.png" alt="Logo"  style={{height:"300px", width:"300px"
+            }}/>
           </div>
 
           <div className="navb-items d-none d-xl-flex">
@@ -243,7 +244,7 @@ const Navbar = ({props, setShow}) => {
 
                   <div className="modal-line">
                     <AiOutlineInsertRowAbove classNameName="fs-1 colo " />
-                    <a href="/about">About</a>
+                    <a href="#">About</a>
                   </div>
 
                   <a href="/contact" className="navb-button" type="button">
