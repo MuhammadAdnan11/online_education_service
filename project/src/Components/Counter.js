@@ -193,7 +193,7 @@ const  Counter=({className, ...rest})=> {
        cardName="Jill King"
         cardText="Some quick example text to build on the card title and make up the
           bulk of the card's content."
-          price="66"
+          price="$66"
           cents=".50"
           btn="GoToCourse"
        />

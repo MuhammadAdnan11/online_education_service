@@ -14,7 +14,7 @@ import { BiBookReader } from "react-icons/bi";
 import { AiOutlineInsertRowAbove } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-
+// import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 
 
@@ -34,7 +34,7 @@ const Navbar = ({props, setShow}) => {
               CALL <span className="iconcolor1">+44 300 303 0266</span>
             </h6>
             <h6>FOLLOW US</h6>
-            <AiOutlineTwitter className="iconcolor1" />
+             <AiOutlineTwitter className="iconcolor1" />
             <FaInstagramSquare className="iconcolor1" />
             <FaFacebookF className="iconcolor1" />
           </div>
