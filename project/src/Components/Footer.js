@@ -85,13 +85,13 @@ import { BiTimeFive } from "react-icons/bi";
 					<div class="footer-social-links m-t-30">
           
 						<li>
-							<a href="#">
+							<a href="https://twitter.com/Samiull72617599?s=09" target='blank'>
 								<i><AiOutlineTwitter/></i>
 							</a>
-							<a href="#">
+							<a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">
 								<i><FaInstagramSquare/></i>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">
 								<i><FaFacebookF/></i>
 							</a>
 							<a href="#">
