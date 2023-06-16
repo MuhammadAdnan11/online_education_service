@@ -144,7 +144,7 @@ const Navbar = ({props, setShow}) => {
             </div> */}
 
             <div className="item">
-              <a href="/about">
+              <a href="">
                 <VscSearch />
               </a>
             </div>

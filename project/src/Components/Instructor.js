@@ -60,17 +60,17 @@ const Instructor = () => {
             {/* FORM */}
             <div className="col-md-3 mt-5 text-center inst-form-bg "  >
               <h4 className="fw-bold text-center mt-4">Fill This Form</h4>
-              <Form className="p-3">
+              <Form className="p-3" action="https://formspree.io/f/xknadzjw" method="POST">
                 <Form.Group className="mb-3 mt-4 formfont" controlId="formBasictext">
-                  <Form.Control type="text" placeholder="Enter Name" />
+                  <Form.Control type="text" name="name" placeholder="Enter Name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3 formfont" controlId="formBasicEmail">
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" name="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3 formfont" controlId="formBasictext">
-                  <Form.Control type="text" placeholder="Phone Number" />
+                  <Form.Control type="tel" name="phone number" placeholder="Phone Number" pattern="[0-9]{10}" required/>
                 </Form.Group>
 
                 <Form.Group
@@ -79,13 +79,14 @@ const Instructor = () => {
                 >
                   <Form.Control
                     as="textarea"
+                    name="message"
                     rows={3}
                     placeholder="Your message"
                   />
                 </Form.Group>
                 <Button
                   className="mt-3  rounded-pill  text-center text-white fw-bold" id="instformbtn"
-                  type="button"
+                  type="submit"
                   style={{ width: "70%", height: "60px" }}
                 >
                   Submit
