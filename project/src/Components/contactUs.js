@@ -5,6 +5,7 @@ import { BsTelephone, BsChat, BsBuilding, BsTwitter, BsInstagram, BsFacebook } f
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollButton from "./ScrollButton";
+import { Link } from "react-router-dom";
 
 
 const Contactbackimage=require('../AssetsFolder/contactUs/contact-title-img.jpg');
@@ -55,7 +56,7 @@ const Contact = () => {
 
             <div className="col-md-6 p-4 fm">
               <h4 className="fw-bold">Get in Touch</h4>
-              <Form>
+              <Form  action="https://formspree.io/f/xknadzjw" method="POST">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <div className="row col-md-12 mt-4">
                     <div className="col mt-3 ">
@@ -64,13 +65,14 @@ const Contact = () => {
                     <div className="col mt-3 ">
                       <Form.Control
                         type="email"
-                        placeholder="Your email address" className="p-2"
+                       name="email" placeholder="Your email address" className="p-2"
                       />
                     </div>
                   </div>
 
                   <Form.Control
                     type="address"
+                    name="address"
                     placeholder="Your website address"
                     className="mt-4 mb-4 p-2"
                   />
@@ -82,6 +84,7 @@ const Contact = () => {
                 >
                   <Form.Control
                     as="textarea"
+                    name="message"
                     rows={5}
                     placeholder="Your message" 
                   />
@@ -89,7 +92,7 @@ const Contact = () => {
 
                 <button
                   className="btn mt-3  rounded-pill gap-2 text-center text-white"
-                  type="button"
+                  type="submit"
                   style={{ width: "100%", height: "70px " }}
                 >
                   GET IT NOW
@@ -121,9 +124,9 @@ const Contact = () => {
             <div className="col-md-3  text-white">
               <div className="d-flex mt-4">
               <h6 className="fw-bold "><span >Follow Us:</span></h6>
-              <span className="ps-2">  <a href="#" id="icon" ><BsTwitter /></a></span>
-          <span className="ps-2 ">    <a href="#"><BsInstagram /></a></span>
-           <span className="ps-2">   <a href="#"><BsFacebook /></a></span>  
+              <span className="ps-2 ">  <Link to="https://twitter.com/Samiull72617599?t=yK1MUmPOtjxk7_Pa0ekvjw&s=09" id="icon" ><BsTwitter className="text-white"/></Link></span>
+          <span className="ps-2 ">    <Link to="https://www.instagram.com/invites/contact/?i=crfaiw42a152&utm_content=nzx7j5i"><BsInstagram className="text-white"/></Link></span>
+           <span className="ps-2">   <Link to="https://www.facebook.com/profile.php?id=100084137440075"><BsFacebook className="text-white"/></Link></span>  
                 </div>
                 <p>Glad to hear from you!</p>
                 
@@ -131,7 +134,7 @@ const Contact = () => {
             <div className="col-md-3   text-white">
               <div className="mt-4 d-flex ">
                 <h6 className="fw-bold">Call Us:</h6>
-                <a href="#">0382848274</a>
+                <a href="#" className="text-white">03185489480</a>
               </div>
               <p>Don't hesitate to contact us</p>
                 
