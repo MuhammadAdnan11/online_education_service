@@ -31,10 +31,10 @@ const Navbar = ({props, setShow}) => {
             <h6 >WELCOME </h6>
             <h6>
               {" "}
-              CALL <span className="iconcolor1">+44 300 303 0266</span>
+              CALL <span className="iconcolor1">+923169727859</span>
             </h6>
             <h6>FOLLOW US</h6>
-             <AiOutlineTwitter className="iconcolor1" />
+           <AiOutlineTwitter className="iconcolor1" />
             <FaInstagramSquare className="iconcolor1" />
             <FaFacebookF className="iconcolor1" />
           </div>
