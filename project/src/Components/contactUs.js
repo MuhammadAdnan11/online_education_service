@@ -40,7 +40,7 @@ const Contact = () => {
                 Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum,
                 facilisis vel mollis vitae, mollis nec ante. Quisque aliquam
                 dictumfacilisis vel mollis vitae. Lorem ipsum dolor sit amet,
-                ubique admodum euripidis has no, in luptatum nominati.
+                ubique admodum euripidis has no, on luptatum nominati.
               </p>
               <h6 className="fw-bold mt-4">New York Office</h6>
                <p className="mt-3"><BsTelephone/><span className="ps-2">1-677-124-44227</span></p>
