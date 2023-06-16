@@ -311,7 +311,7 @@ const  Counter=({className, ...rest})=> {
 
 
 
-<section id="contact">
+<form id="contact" action="https://formspree.io/f/xrgvnlag" method="POST">
 <div className="section-content">
 				<h1 className="section-header">Enroll in <span className="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Free Courses Now !</span></h1>
 			</div>
@@ -319,32 +319,32 @@ const  Counter=({className, ...rest})=> {
 			<div className="contact-section">
 			<div className="container">
       <div className="row">
-				
+				  
 					<div className="col-md-4 form-line">
               <h2 className="text-center">Courses for free</h2>
 			  			<div className="form-group">
 			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" className="form-control" id="" placeholder=" Enter Name" required/>
+					    	<input type="text" name="name" className="form-control" id="" placeholder=" Enter Name" required/>
 				  		</div>
 
 				  		<div className="form-group">
 					    	<label for="exampleInputEmail">Email Address</label>
-					    	<input type="email" className="form-control" id="exampleInputEmail" placeholder=" Enter Email id" required/>
+					    	<input type="email" name="email" className="form-control" id="exampleInputEmail" placeholder=" Enter Email id" required/>
 					  	</div>	
 
 					  	<div className="form-group">
 					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" className="form-control" id="telephone" placeholder=" Enter mobile no." pattern="[0-9]{10}" required/>
-                <button type="button" className="btn btn-default submit ">
+					    	<input type="tel" className="form-control" id="telephone" name='mobile no' placeholder=" Enter mobile no." pattern="[0-9]{10}" required/>
+                <button type="submit" className="btn btn-default submit ">
                 <i className="fa fa-paper-plane " aria-hidden="true">
                 </i>
                 GET IT NOW
                 </button>
 			  			</div>
               
-			  	
+              
 			  			</div>
-				
+              
               <div className="col-md-8">
 			           <h1 className="mt-4 p-2">Register Now</h1>
                  <p className="p-2">Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum, facilisis vel 
@@ -362,7 +362,7 @@ const  Counter=({className, ...rest})=> {
         
 			</div>
       </div>
-		</section>
+		</form>
 
 
 
