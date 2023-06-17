@@ -179,7 +179,7 @@ export default class Dashboard extends Component
     }).then((res)=>res.json())
     .then((data)=>{
       console.log(data,"userRegister");
-      if(data.status=="ok"){
+      if(data.status==="ok"){
         alert("Login Successfully !😄")
   
         window.localStorage.setItem("token", data.data);
