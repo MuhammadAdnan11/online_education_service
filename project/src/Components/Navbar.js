@@ -34,9 +34,9 @@ const Navbar = ({props, setShow}) => {
               CALL <span className="iconcolor1">+44 300 303 0266</span>
             </h6>
             <h6>FOLLOW US</h6>
-            <AiOutlineTwitter className="iconcolor1" />
-            <FaInstagramSquare className="iconcolor1" />
-            <FaFacebookF className="iconcolor1" />
+            <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank">  <AiOutlineTwitter className="iconcolor1" /></a>
+           <a href="https://www.instagram.com/sa.miullah194/"><FaInstagramSquare className="iconcolor1" /></a> 
+           <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank"> <FaFacebookF className="iconcolor1" /></a> 
           </div>
           <div className="col d-flex namargin flex-row justify-content-end ">
           <Link to="/login" > <button
