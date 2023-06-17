@@ -48,3 +48,5 @@ export const Context = (props) => {
     <Cartcontext.Provider value={info}>{props.children}</Cartcontext.Provider>
   );
 };
+
+//end here
