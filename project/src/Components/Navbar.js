@@ -104,12 +104,13 @@ const Navbar = ({props, setShow}) => {
 
 
             <div className="item">
-            <a class="nav-link  " to="#" data-bs-toggle="dropdown">EVENTS</a>
-		    <ul class="dropdown-menu">
+            <Link to="/Events" class="nav-link">EVENTS</Link>
+            {/* <a class="nav-link  " to="Events.js" data-bs-toggle="dropdown">EVENTS</a> */}
+		    {/* <ul class="dropdown-menu">
 			  <li><a className="dropdown-item" to="#"> EVENT CALENDER</a></li>
 			  <li><a className="dropdown-item" to="#"> EVENT LIST </a></li>
 			  <li><a className="dropdown-item" to="#"> EVENT SINGLE </a></li>
-		    </ul>
+		    </ul> */}
             </div>
 
             
@@ -251,13 +252,13 @@ const Navbar = ({props, setShow}) => {
                 </div>
 
                 <div className="mobile-modal-footer">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://twitter.com/Samiull72617599?s=09">
                     <AiOutlineTwitter className="iconcolor1" />
                   </a>
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==">
                     <FaInstagramSquare className="iconcolor1" />
                   </a>
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL">
                     <FaFacebookF className="iconcolor1" />
                   </a>
                 </div>
