@@ -7,7 +7,7 @@ const Events = () => {
       <Navbar />
       <div className='container-fluid color-blue'>
         <div>
-          <h1>Welcome back</h1>
+          <h1>working in progress</h1>
        </div>
      </div>
       </>
