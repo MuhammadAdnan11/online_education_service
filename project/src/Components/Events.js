@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import { EventsCard } from './EventsCard';
-import evt1 from "../Images/EventsDataApi/event-single-1.jpg";
-
+// import evt1 from "../Images/EventsDataApi/event-single-1.jpg";
+import evt1 from "../AssetsFolder/EventsDataApi/event-single-1.jpg";
 const gallerybackimage=require('../AssetsFolder/Gallery/title-area-background.png');
 const gallerybg={
   width: '100%',
