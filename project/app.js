@@ -165,6 +165,34 @@ app.post("/register", async(req,res)=>{
 });
 
 
+
+
+
+// API and model for free course enrollment form of the home page 👇
+const User1 = mongoose.model("FreeCourseEnrolUser");
+
+app.post("/freeenrol", async(req,res)=>{
+    const {fname,email,phone} = req.body;
+
+    
+        await User1.create({
+            fname,
+            email,
+            phone,
+        });
+        res.send({status:"ok"})
+        
+
+    });
+    
+
+
+
+
+
+
+
+
 // API for login page 👇
 
 app.post("/login", async (req,res)=>{

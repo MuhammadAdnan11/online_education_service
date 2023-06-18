@@ -13,7 +13,8 @@ const SearchBarRes = ({setResults}) => {
         value &&
          user && 
          user.instructor && 
-         user.instructor.toLowerCase().includes(value)
+         user.instructor.toLowerCase().includes(value) 
+
         );
       });
       setResults(results)
