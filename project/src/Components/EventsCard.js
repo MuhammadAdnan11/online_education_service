@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const EventsCard = () => {
+export const EventsCard = (props) => {
   return (
-    <div>EventsCards</div>
+      <>
+      <img src={props.image} alt=''></img>
+      
+      </>
   )
 }
