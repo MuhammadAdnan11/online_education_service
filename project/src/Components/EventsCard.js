@@ -11,8 +11,9 @@ export const EventsCard = (props) => {
     <div className='container mt-5'>
     <div className='row '>
       <div className='col-md-5'>
-      <a href='#'><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></a>
-      </div>
+      {/* <a href='#'><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></a> */}
+      <Link to={`/eventspecific/${props.id}`}><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></Link>
+                  </div>
       <div className='col-md-5'>
                       <h1 className='evheading fw-bold '>{props.name}</h1>
                       <div className='evparagraph mt-3'>
