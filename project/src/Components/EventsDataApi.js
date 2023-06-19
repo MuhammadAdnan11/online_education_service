@@ -7,8 +7,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../AssetsFolder/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 2,
@@ -18,8 +21,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../Images/EventsDataApi/event-single-11.jpg"
-        "image": "../Images/EventsDataApi/event-single-11.jpg"
+        "image": "../Images/EventsDataApi/event-single-11.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 3,
@@ -29,8 +35,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../Images/EventsDataApi/event-single-2.jpg"
-        "image": "../Images/EventsDataApi/event-single-2.jpg"
+        "image": "../Images/EventsDataApi/event-single-2.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 4,
@@ -40,8 +49,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../Images/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 5,
@@ -51,8 +63,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../Images/EventsDataApi/event-single-3.jpg"
-        "image": "../Images/EventsDataApi/event-single-3.jpg"
+        "image": "../Images/EventsDataApi/event-single-3.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 6,
@@ -62,8 +77,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../Images/EventsDataApi/event-single-6.jpg"
-        "image": "../Images/EventsDataApi/event-single-6.jpg"
+        "image": "../Images/EventsDataApi/event-single-6.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 7,
@@ -73,8 +91,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../AssetsFolder/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 8,
@@ -84,8 +105,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../AssetsFolder/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 9,
@@ -95,8 +119,11 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../AssetsFolder/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
     {
         "id": 10,
@@ -106,7 +133,10 @@ export default[
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
         "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
-        // "image": "../AssetsFolder/EventsDataApi/event-single-1.jpg"
-        "image": "../Images/EventsDataApi/event-single-1.jpg"
+        "image": "../Images/EventsDataApi/event-single-1.jpg",
+        "organization": "Qode Interactive",
+        "phone": "+923169727859",
+        "email": "adnan191022@gmail.com",
+        "website": "https://youtube.com/@information3214"
     },
 ]

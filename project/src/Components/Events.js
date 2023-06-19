@@ -13,6 +13,7 @@ import evt7 from "../AssetsFolder/EventsDataApi/event-single-6.jpg";
 import evt8 from "../AssetsFolder/EventsDataApi/event-single-7.jpg";
 import evt9 from "../AssetsFolder/EventsDataApi/event-single-77.jpg";
 import evt10 from "../AssetsFolder/EventsDataApi/event-single-44.jpg";
+import Footer from './Footer';
 const gallerybackimage=require('../AssetsFolder/Gallery/title-area-background.png');
 const gallerybg={
   width: '100%',
@@ -29,7 +30,7 @@ const Events = () => {
       <Navbar />
       <div className='container-fluid' style={gallerybg}>
 
-                <div className='container'>
+                <div className='container '>
                     <div className='row'>
                     <h1 className='fw-bolder text-white mt-5 pt-3  hcard' >Events Calendar</h1>
                     <div className='d-flex flex-row gap-2'>
@@ -157,7 +158,7 @@ const Events = () => {
         details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
         
         />
-
+<Footer/>
       </>
   )
 }
