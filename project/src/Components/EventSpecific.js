@@ -58,13 +58,13 @@ export const EventSpecific = () => {
             <div className="evspHeading">
               <span>
                 {" "}
-                <h1> {thisEvents.name}</h1>
+                <h2 className="fw-bold"> {thisEvents.name}</h2>
               </span>
             </div>
             <div className="mt-3">
-              <p>
+              <p >
                 {" "}
-                <GiAlarmClock />
+               <span id="evSpecAlarm"> <GiAlarmClock /></span>
                 {thisEvents.date}
               </p>
             </div>
