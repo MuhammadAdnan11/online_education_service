@@ -44,9 +44,9 @@ export const EventSpecific = () => {
       </div>
       {/* Banner End */}
 
-      <div className="container mt-5">
+      <div className="container mt-5  ">
         <div className="row ">
-          <div className="col-md-5 mt-5">
+          <div className="col-md-5 mt-5 ">
             <div className="evspHeading">
               <span>
                 {" "}
@@ -63,18 +63,18 @@ export const EventSpecific = () => {
           </div>
         </div>
 
-        <div className="row justify-content-center" >
+        <div className="row " >
           <div className="col-md-5 mt-4">
             <img
               src={thisEvents.image}
-              style={{ width: 560, height: 320 }}
+              style={{ width: 545, height: 335 }}
             ></img>
           </div>
-          <div className="col-md-5 mt-4">
+          <div className="col-md-5 mt-4 ms-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.7080055318957!2d71.47309257469168!3d34.000033120487174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d910d324a9cf0d%3A0xf2df847901c6501!2sIslamia%20College%20University%20Peshawar!5e0!3m2!1sen!2s!4v1687183593431!5m2!1sen!2s"
-              width="560"
-              height="320"
+              width="545"
+              height="335"
             //   style="border:0;"
               allowfullscreen=""
               loading="lazy"
