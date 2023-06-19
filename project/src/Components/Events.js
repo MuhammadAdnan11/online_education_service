@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import { EventsCard } from './EventsCard';
 // import evt1 from "../Images/EventsDataApi/event-single-1.jpg";
 import evt1 from "../AssetsFolder/EventsDataApi/event-single-1.jpg";
+import evt2 from "../AssetsFolder/EventsDataApi/event-single-11.jpg";
+import evt3 from "../AssetsFolder/EventsDataApi/event-single-2.jpg";
+import evt4 from "../AssetsFolder/EventsDataApi/event-single-22.jpg";
+import evt5 from "../AssetsFolder/EventsDataApi/event-single-3.jpg";
+import evt6 from "../AssetsFolder/EventsDataApi/event-single-4.jpg";
+import evt7 from "../AssetsFolder/EventsDataApi/event-single-6.jpg";
+import evt8 from "../AssetsFolder/EventsDataApi/event-single-7.jpg";
+import evt9 from "../AssetsFolder/EventsDataApi/event-single-77.jpg";
+import evt10 from "../AssetsFolder/EventsDataApi/event-single-44.jpg";
 const gallerybackimage=require('../AssetsFolder/Gallery/title-area-background.png');
 const gallerybg={
   width: '100%',
@@ -32,23 +41,122 @@ const Events = () => {
                     
                 </div>
          
-            </div>
-      {/* Events Cards */}
-      <div className='container-fluid mt-5'>
-        <div className='row bg-primary'>
-          <div className='col-md-5'>
-            <EventsCard
-            id="1"
-            image={evt1}
-            
-            
-            />
-          </div>
-          <div className='col-md-5'>
-
-          </div>
-        </div>
       </div>
+      
+
+      {/* Events Cards */}
+      <EventsCard
+        id="1"
+        image={evt4}
+        name={"Team Building"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+      
+      <EventsCard
+        id="2"
+        image={evt2}
+        name={"Networking Day"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+      
+      <EventsCard
+        id="3"
+        image={evt3}
+        name={"Open Door Days"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="4"
+        image={evt4}
+        name={"Personal Tutoring"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="5"
+        image={evt5}
+        name={"Friendship Day"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="6"
+        image={evt7}
+        name={"Children Day"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="7"
+        image={evt6}
+        name={"Team Building"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="8"
+        image={evt8}
+        name={"Team Building"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="9"
+        image={evt9}
+        name={"Team Building"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+      />
+       <EventsCard
+        id="10"
+        image={evt10}
+        name={"Team Building"}
+        date={"Date: 17.01.2024 @ 9:00 am"}
+        time={"Time: 9:00 am - 9:00 am"}
+        venue={"Venue:Harvard Education"}
+        address={"Address: Cambridge, MA 03243, USA"}
+        details={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. "}
+        
+        />
 
       </>
   )
