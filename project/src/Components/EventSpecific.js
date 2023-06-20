@@ -171,7 +171,7 @@ export const EventSpecific = () => {
                     <AiOutlineMail />
                   </span>
                   <span className="ps-2">Email: </span>
-                  {thisEvents.email}
+              {thisEvents.email}
                 </p>
               </span>
               <span>

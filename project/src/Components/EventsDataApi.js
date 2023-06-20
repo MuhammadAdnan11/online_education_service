@@ -129,6 +129,7 @@ export default[
         "id": 10,
         "name": "Team Building",
         "date": "17.01.2024 @ 9:00 am",
+        "date1":"17 Jan",
         "time": "9:00 am - 9:00 am",
         "venue": "Harward Education",
         "address": "Cambridge, MA 04245, USA",
