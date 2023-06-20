@@ -297,6 +297,7 @@ const Instructor = () => {
         </div>
       </div>
       {/* Carasoul Finished ✔✔✔ */}
+      
       {/* Teacher pictures 👇 */}
       <div className="container-fluid">
         <div className="container mt-5 mb-5 ">
