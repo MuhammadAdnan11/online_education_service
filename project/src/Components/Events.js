@@ -23,7 +23,6 @@ const gallerybg={
 };
 
 
-
 const Events = () => {
   return (
       <>
