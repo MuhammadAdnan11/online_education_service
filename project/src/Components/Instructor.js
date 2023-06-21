@@ -138,8 +138,7 @@ const Instructor = () => {
                   </a>
                 </span>
                 <span className="p-2">
-                  {" "}
-                  <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
+
                     {" "}
                     <BsFacebook />
                   </a>
@@ -182,8 +181,12 @@ const Instructor = () => {
                 </span>
                 <span className="p-2">
                   {" "}
+
                  
                     <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
+
+
+                  <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">
 
                     {" "}
                     <BsFacebook />
@@ -227,7 +230,11 @@ const Instructor = () => {
                 </span>
                 <span className="p-2">
                   {" "}
+
                   <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
+
+                  <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">
+
                     {" "}
                     <BsFacebook />
                   </a>
@@ -299,6 +306,7 @@ const Instructor = () => {
         </div>
       </div>
       {/* Carasoul Finished ✔✔✔ */}
+      
       {/* Teacher pictures 👇 */}
       <div className="container-fluid">
         <div className="container mt-5 mb-5 ">

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import HomeCard from "../Components/HomeCard"
@@ -13,7 +13,106 @@ import {FaRegComment } from "react-icons/fa";
 
 
 const  Counter=({className, ...rest})=> {
-    const [viewPortEntered,setViewPortEntered] = useState(false)
+ 
+  const [viewPortEntered,setViewPortEntered] = useState(false)
+    const [fname, setFname] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+  
+    const [countdown, setCountdown] = useState({
+      days: 55,
+      hours: 4,
+      minutes: 55,
+      seconds: 44
+    });
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCountdown((prevCountdown) => {
+          const { days, hours, minutes, seconds } = prevCountdown;
+  
+          if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+            clearInterval(interval);
+            return prevCountdown;
+          }
+  
+          let updatedDays = days;
+          let updatedHours = hours;
+          let updatedMinutes = minutes;
+          let updatedSeconds = seconds;
+  
+          if (seconds === 0) {
+            if (minutes === 0) {
+              if (hours === 0) {
+                updatedDays = days - 1;
+                updatedHours = 23;
+                updatedMinutes = 59;
+                updatedSeconds = 59;
+              } else {
+                updatedHours = hours - 1;
+                updatedMinutes = 59;
+                updatedSeconds = 59;
+              }
+            } else {
+              updatedMinutes = minutes - 1;
+              updatedSeconds = 59;
+            }
+          } else {
+            updatedSeconds = seconds - 1;
+          }
+  
+          return {
+            days: updatedDays,
+            hours: updatedHours,
+            minutes: updatedMinutes,
+            seconds: updatedSeconds
+          };
+        });
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    const { days, hours, minutes, seconds } = countdown;
+  
+    
+  
+  
+
+    const handleSubmit=()=>{
+      
+  
+        
+    
+    fetch("http://localhost:5000/freeenrol" ,{
+      method:"POST",
+      crossDomain:true,
+      headers:{
+        "Content-Type":"Application/json",
+        Accept:"application/json",
+        "Access-Control-Allow-Origin":"*",
+      },
+      body:JSON.stringify({
+        fname,
+        email,
+        phone,
+      }),
+    }).then((res)=>res.json())
+    .then((data)=>{
+      console.log(data,"userRegister for free course")
+     
+  
+    })
+  
+      };
+    
+  
+  
+     
+
+
+
+
   return (
     <>
     <section className="counter ">
@@ -227,7 +326,7 @@ const  Counter=({className, ...rest})=> {
   <div className="row text-center">
     <div className="col-md-4 mb-5 mb-md-0">
       <div className="d-flex justify-content-center mb-4 HoverDiv">
-        <img src="Images/HomepageTestimonial/test1.jpg"
+        <img src="Images/HomepageTestimonial/test1.jpg" alt=""
           className="rounded-circle shadow-1-strong" width="150" height="150"  />
       </div>
       <h5 className="mb-3 iconcolor1">Maria Smantha</h5>
@@ -239,21 +338,21 @@ const  Counter=({className, ...rest})=> {
       </p>
       <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2 ">
         <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+     <a href='https://twitter.com/Samiull72617599?s=09' target='blank'>   <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+       <a href='https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL'target='blank'> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+      <a href='https://www.instagram.com/sa.miullah194/'target='blank'>  <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
     </div>
     <div className="col-md-4 mb-5 mb-md-0">
       <div className="d-flex justify-content-center mb-4 HoverDiv">
-        <img src="Images/HomepageTestimonial/test2.jpg"
+        <img src="Images/HomepageTestimonial/test2.jpg" alt=""
           className="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 className="mb-3 iconcolor1">Lisa Cudrow</h5>
@@ -262,23 +361,23 @@ const  Counter=({className, ...rest})=> {
         <i className="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
         exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
       </p>
-      <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2">
+      <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2 ">
         <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+     <a href='https://twitter.com/Samiull72617599?s=09' target='blank'>   <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+       <a href='https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL'target='blank'> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+      <a href='https://www.instagram.com/sa.miullah194/'target='blank'>  <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
     </div>
     <div className="col-md-4 mb-0">
       <div className="d-flex justify-content-center mb-4  HoverDiv">
-        <img src="Images/HomepageTestimonial/test3.jpg"
+        <img src="Images/HomepageTestimonial/test3.jpg" alt=""
           className="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 className="mb-3 iconcolor1">John Smith</h5>
@@ -287,16 +386,16 @@ const  Counter=({className, ...rest})=> {
         <i className="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
         dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
       </p>
-      <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2">
+      <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2 ">
         <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+     <a href='https://twitter.com/Samiull72617599?s=09' target='blank'>   <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+       <a href='https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL'target='blank'> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+        <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">  <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
@@ -311,8 +410,9 @@ const  Counter=({className, ...rest})=> {
 
 
 
-<form id="contact" action="https://formspree.io/f/xrgvnlag" method="POST">
-<div className="section-content">
+<form id="contact" action="https://formspree.io/f/xrgvnlag" method="POST" >
+
+<div className="section-content"  >
 				<h1 className="section-header">Enroll in <span className="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Free Courses Now !</span></h1>
 			</div>
 
@@ -322,20 +422,21 @@ const  Counter=({className, ...rest})=> {
 				  
 					<div className="col-md-4 form-line">
               <h2 className="text-center">Courses for free</h2>
+              
 			  			<div className="form-group">
 			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" name="name" className="form-control" id="" placeholder=" Enter Name" required/>
+					    	<input type="text" name="name" className="form-control" id="" onChange={(e)=> setFname(e.target.value)} placeholder=" Enter Name" required/>
 				  		</div>
 
 				  		<div className="form-group">
 					    	<label for="exampleInputEmail">Email Address</label>
-					    	<input type="email" name="email" className="form-control" id="exampleInputEmail" placeholder=" Enter Email id" required/>
+					    	<input type="email" name="email" className="form-control" id="exampleInputEmail" onChange={(e)=> setEmail(e.target.value)} placeholder=" Enter Email id" required/>
 					  	</div>	
 
 					  	<div className="form-group">
 					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" className="form-control" id="telephone" name='mobile no' placeholder=" Enter mobile no." pattern="[0-9]{10}" required/>
-                <button type="submit" className="btn btn-default submit ">
+					    	<input type="tel" className="form-control" id="telephone" name='mobile no' onChange={(e)=> setPhone(e.target.value)} placeholder=" Enter mobile no." pattern="[0-9]{10}" required/>
+                <button type="submit" className="btn btn-default submit " onClick={handleSubmit}>
                 <i className="fa fa-paper-plane " aria-hidden="true">
                 </i>
                 GET IT NOW
@@ -350,10 +451,10 @@ const  Counter=({className, ...rest})=> {
                  <p className="p-2">Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum, facilisis vel 
                  mollis vitae, mollis nec ante. Quisque aliquam dictum.</p>
                  <div className="d-flex flex-row gap-4 p-2 ">
-                 <h1 className="display-4">00<span className="fs-5">Days</span></h1>
-                 <h1 className="display-4">00<span className="fs-5">Hours</span></h1>
-                 <h1 className="display-4">00<span className="fs-5">Minutes</span></h1>
-                 <h1 className="display-4">00<span className="fs-5">Seconds</span></h1>
+                 <h1 className="display-4">{days}<span className="fs-5">Days</span></h1>
+                 <h1 className="display-4">{hours}<span className="fs-5">Hours</span></h1>
+                 <h1 className="display-4">{minutes}<span className="fs-5">Minutes</span></h1>
+                 <h1 className="display-4">{seconds}<span className="fs-5">Seconds</span></h1>
 
 
                  </div>
@@ -362,7 +463,9 @@ const  Counter=({className, ...rest})=> {
         
 			</div>
       </div>
-		</form>
+      </form>
+		
+
 
 
 

@@ -78,9 +78,15 @@ const InstructorSpecific = () => {
               <span className="span2"> {thisInstructor.description}</span>
               <div className="d-flex flex-row gap-2 mt-3 ">
                 <span className="span3">
+
                 <a href="https://twitter.com/Samiull72617599?s=09" target="blank"><AiOutlineTwitter className="fs-4 widclass1 iconcolor1" />{" "}</a>  
                 <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank"><FaFacebookF className="fs-4 widclass1 iconcolor1" />{" "}  </a>
                 <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank"><TiSocialInstagram className="fs-4 widclass1 iconcolor1" /></a> 
+
+                <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank"> <AiOutlineTwitter className="fs-4 widclass1 iconcolor1" />{" "}</a> 
+                <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">  <FaFacebookF className="fs-4 widclass1 iconcolor1" />{" "}</a>
+                <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank"> <TiSocialInstagram className="fs-4 widclass1 iconcolor1" /></a>
+
                 </span>
               </div>
             </div>

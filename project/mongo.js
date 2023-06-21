@@ -66,3 +66,42 @@ const UserDetailsSchema = new mongoose.Schema(
 );
 
 mongoose.model("UserInfo", UserDetailsSchema)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const mongoose = require("mongoose");
+
+const UserDetailsSchema1 = new mongoose.Schema(
+    {
+        fname:String,
+        email:{
+            type:String,
+            unique:true
+        },
+        phone:Number,
+    },
+    {
+        collection: "FreeCourseEnrolUser",
+    }
+);
+
+mongoose.model("FreeCourseEnrolUser", UserDetailsSchema1)

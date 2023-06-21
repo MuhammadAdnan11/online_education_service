@@ -31,6 +31,10 @@ import Settings from './Components/AdminDashboard/Settings';
 import DarkMode_1 from './Components/AdminDashboard/DarkMode_1';
 import ResetPassword from './Components/ResetPassword';
 import UsersDetail from './Components/AdminDashboard/UsersDetail';
+import Events from './Components/Events';
+import { EventSpecific } from './Components/EventSpecific';
+
+import { EventsCard } from './Components/EventsCard';
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 const router = createBrowserRouter([
  
@@ -84,12 +88,7 @@ const router = createBrowserRouter([
     
   },
 
-  // {
-  //   path: "courses",
-  //   element: <AllCourses/>,
-    
-    
-  // },
+
   {
     path: "dashboard",
     element: <Dashboard/>,
@@ -152,7 +151,10 @@ const router = createBrowserRouter([
     
   },
 
-  
+  {
+    path: "/eventspecific/:EventId",
+    element:<EventSpecific/>
+  },
 
   
   
@@ -250,6 +252,14 @@ const router = createBrowserRouter([
     path: "/home",
     element: <App/>,
     
+  },
+  {
+    path: "events",
+    element: <Events/>,
+  },
+  {
+    path: "eventscard",
+    element:<EventsCard/>
   },
 ])
 
