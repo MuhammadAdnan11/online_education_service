@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 import React , {Component} from 'react';
 import "./dashboard.css";
 import Button from 'react-bootstrap/Button';
@@ -26,8 +15,6 @@ const Dashboardbg={
    backgroundImage: `url(${Dashboardbackimage})`,
     backgroundSize:'cover'
 };
-
-
 
 export default class Dashboard extends Component 
 {
