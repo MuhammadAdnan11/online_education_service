@@ -435,7 +435,7 @@ const  Counter=({className, ...rest})=> {
 
 					  	<div className="form-group">
 					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" className="form-control" id="telephone" name='mobile no' onChange={(e)=> setPhone(e.target.value)} placeholder=" Enter mobile no." pattern="[0-9]{10}" required/>
+					    	<input type="tel" className="form-control" id="telephone" name='mobile no' onChange={(e)=> setPhone(e.target.value)} placeholder=" Enter mobile no." pattern="[0-9]{11}" required/>
                 <button type="submit" className="btn btn-default submit " onClick={handleSubmit}>
                 <i className="fa fa-paper-plane " aria-hidden="true">
                 </i>
