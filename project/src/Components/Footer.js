@@ -25,7 +25,7 @@ import { BiTimeFive } from "react-icons/bi";
 					<p class="white-text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 text of the printing.
 					</p>
-          <MdPhoneCallback/><span className="iconcolor1"> +44 300 303 0266</span><br/>
+          <MdPhoneCallback/><span className="iconcolor1"> +92 316 9727859</span><br/>
           <BiTimeFive/><span className="iconcolor1"> Mon - Sat 8.00 - 18.00</span>
 				</div>
 
@@ -85,13 +85,13 @@ import { BiTimeFive } from "react-icons/bi";
 					<div class="footer-social-links m-t-30">
           
 						<li>
-							<a href="#">
+						<a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank">
 								<i><AiOutlineTwitter/></i>
 							</a>
-							<a href="#">
+							<a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">
 								<i><FaInstagramSquare/></i>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
 								<i><FaFacebookF/></i>
 							</a>
 							<a href="#">

@@ -132,20 +132,20 @@ const Instructor = () => {
                   </small>
                 </p>
                 <span className="p-2">
-                  <a href="#">
+                  <a href="https://twitter.com/Samiull72617599?s=09" target="blank">
                     {" "}
                     <BsTwitter />
                   </a>
                 </span>
                 <span className="p-2">
                   {" "}
-                  <a href="#">
+                  <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
                     {" "}
                     <BsFacebook />
                   </a>
                 </span>
                 <span className="p-2">
-                  <a href="#">
+                <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">
                     {" "}
                     <BsInstagram />
                   </a>
@@ -175,20 +175,20 @@ const Instructor = () => {
                   </small>
                 </p>
                 <span className="p-2">
-                  <a href="#">
+                <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank">
                     {" "}
                     <BsTwitter />
                   </a>
                 </span>
                 <span className="p-2">
                   {" "}
-                  <a href="#">
+                  <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
                     {" "}
                     <BsFacebook />
                   </a>
                 </span>
                 <span className="p-2">
-                  <a href="#">
+                <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">
                     {" "}
                     <BsInstagram />
                   </a>
@@ -218,20 +218,20 @@ const Instructor = () => {
                   </small>
                 </p>
                 <span className="p-2">
-                  <a href="#">
+                <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank">
                     {" "}
                     <BsTwitter />
                   </a>
                 </span>
                 <span className="p-2">
                   {" "}
-                  <a href="#">
+                  <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">
                     {" "}
                     <BsFacebook />
                   </a>
                 </span>
                 <span className="p-2">
-                  <a href="#">
+                <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">
                     {" "}
                     <BsInstagram />
                   </a>

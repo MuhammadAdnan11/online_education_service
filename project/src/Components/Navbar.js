@@ -31,12 +31,12 @@ const Navbar = ({props, setShow}) => {
             <h6 >WELCOME </h6>
             <h6>
               {" "}
-              CALL <span className="iconcolor1">+44 300 303 0266</span>
+              CALL <span className="iconcolor1">+92 316 9727859</span>
             </h6>
             <h6>FOLLOW US</h6>
-            <AiOutlineTwitter className="iconcolor1" />
-            <FaInstagramSquare className="iconcolor1" />
-            <FaFacebookF className="iconcolor1" />
+            <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank">   <AiOutlineTwitter className="iconcolor1" /></a> 
+            <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">  <FaInstagramSquare className="iconcolor1" /></a>
+         <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">  <FaFacebookF className="iconcolor1" /></a> 
           </div>
           <div className="col d-flex namargin flex-row justify-content-end ">
           <Link to="/login" > <button
@@ -190,9 +190,10 @@ const Navbar = ({props, setShow}) => {
                 <br />
                 <br />
                 <br />
-                <AiOutlineTwitter className="iconcolor2" />
-                <FaInstagramSquare className="iconcolor2" />
-                <FaFacebookF className="iconcolor2" />
+                <a href="https://twitter.com/Samiull72617599?s=09" target="blank">   <AiOutlineTwitter className="iconcolor2" /></a> 
+            <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">  <FaInstagramSquare className="iconcolor2" /></a>
+         <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">  <FaFacebookF className="iconcolor2" /></a>
+                
               </div>
             </div>
           </div>
@@ -254,13 +255,13 @@ const Navbar = ({props, setShow}) => {
 
                 <div className="mobile-modal-footer">
                   <a target="_blank" href="#">
-                    <AiOutlineTwitter className="iconcolor1" />
+               <a href="https://twitter.com/Samiull72617599?s=09" target="blank">    <AiOutlineTwitter className="iconcolor1" /></a> 
                   </a>
                   <a target="_blank" href="#">
-                    <FaInstagramSquare className="iconcolor1" />
+                  <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">   <FaInstagramSquare className="iconcolor1" /></a>
                   </a>
                   <a target="_blank" href="#">
-                    <FaFacebookF className="iconcolor1" />
+                  <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">    <FaFacebookF className="iconcolor1" /></a>
                   </a>
                 </div>
               </div>
