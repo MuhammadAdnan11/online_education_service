@@ -12,7 +12,7 @@ const SearchResult = ({result}) => {
   
   return (
     <>
-    <div className='search-result' onClick={(e)=>  window.location.href='/courses'}>{result.instructor}</div>
+    <div className='search-result' onClick={(e)=>  window.location.href='/courses'}>{result.course}</div>
     </>
   )
 }
