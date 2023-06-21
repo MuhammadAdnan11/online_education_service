@@ -104,12 +104,14 @@ const Navbar = ({props, setShow}) => {
 
 
             <div className="item">
-            <a class="nav-link  " to="#" data-bs-toggle="dropdown">EVENTS</a>
-		    <ul class="dropdown-menu">
+              {/* <a class="nav-link  " href="/events" data-bs-toggle="dropdown">EVENTS</a> */}
+              <Link to="/events" className="nav-link">EVENT</Link>
+              
+		    {/* <ul class="dropdown-menu">
 			  <li><a className="dropdown-item" to="#"> EVENT CALENDER</a></li>
 			  <li><a className="dropdown-item" to="#"> EVENT LIST </a></li>
 			  <li><a className="dropdown-item" to="#"> EVENT SINGLE </a></li>
-		    </ul>
+		    </ul> */}
             </div>
 
             
