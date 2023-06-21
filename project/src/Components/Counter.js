@@ -338,14 +338,14 @@ const  Counter=({className, ...rest})=> {
       </p>
       <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2 ">
         <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+       <a href='https://twitter.com/Samiull72617599?s=09'target='blank'> <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+        <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank"> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+        <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank"> <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
@@ -362,15 +362,15 @@ const  Counter=({className, ...rest})=> {
         exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
       </p>
       <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2">
-        <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+      <li>
+      <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank"> <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+        <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank"> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+        <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank"> <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
@@ -387,15 +387,15 @@ const  Counter=({className, ...rest})=> {
         dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
       </p>
       <ul className="list-unstyled d-flex justify-content-center mb-0 gap-2">
-        <li>
-        <AiOutlineTwitter classNameName="iconcolor1"/>
+      <li>
+      <a href="https://twitter.com/adnan191023?t=2-LnxvaGXXM4LfLpFBztjQ&s=09" target="blank"> <AiOutlineTwitter classNameName="iconcolor1"/></a>
         </li>
         
         <li>
-        <FaFacebookF classNameName="iconcolor1"/>
+        <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank"> <FaFacebookF classNameName="iconcolor1"/></a>
         </li>
         <li>
-        <FaInstagramSquare classNameName="iconcolor1"/>
+        <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank"> <FaInstagramSquare classNameName="iconcolor1"/></a>
         </li>
         
       </ul>
