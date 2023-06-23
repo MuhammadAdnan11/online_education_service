@@ -4,6 +4,7 @@ import { BiTimeFive, BiBuilding } from 'react-icons/bi';
 import { CiLocationOn } from 'react-icons/ci';
 import "./EventsCard.css";
 import { Link } from 'react-router-dom';
+
 export const EventsCard = (props) => {
   return (
       <>
@@ -13,7 +14,7 @@ export const EventsCard = (props) => {
       <div className='col-md-5'>
       {/* <a href='#'><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></a> */}
       <Link to={`/eventspecific/${props.id}`}><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></Link>
-     
+
           </div>
       <div className='col-md-5'>
                       <h1 className='evheading fw-bold '>{props.name}</h1>

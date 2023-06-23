@@ -253,7 +253,7 @@ header .mobile-toggler{
 .modal-body .modal-line:hover{
 
     color: #fefefe;
-    border-bottom: 1px solid #fefefe;
+    /* border-bottom: 1px solid #fefefe; */
 }
 
 .modal-line a{
