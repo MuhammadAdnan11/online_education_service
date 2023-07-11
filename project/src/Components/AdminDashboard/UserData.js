@@ -68,8 +68,7 @@
 import React,{ useEffect, useState} from "react";
 
 import App from "../../App";
-import Profile from "./Profile";
-// import Profile from "./Profile";
+import Admin from "./Admin";
 
 
  export default function UserData(){
@@ -108,7 +107,7 @@ import Profile from "./Profile";
         <>
         
           
-          {admin ? <Profile/>  :<App />}
+          {admin ? <Admin/>  :<App />}
           
 
         </>

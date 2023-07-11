@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import "./LoginForm.css"
 import {MdOutlineEmail} from "react-icons/md";
 import {Link } from 'react-router-dom';
@@ -12,6 +12,7 @@ import {Link } from 'react-router-dom';
 
 export default class LoginForm extends Component {
     
+  
 
   constructor(props){
     super (props)
@@ -21,6 +22,8 @@ export default class LoginForm extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  
   
 
   handleSubmit(e){
@@ -47,18 +50,23 @@ export default class LoginForm extends Component {
 
       window.localStorage.setItem("token", data.data);
       window.localStorage.setItem("loggedIn", true);
-
+      
+      
       window.location.href="/users";
       
 
 
     }
   });
+
+  
 }
   
 
    
 render(){
+
+  
   return (
     <>
     

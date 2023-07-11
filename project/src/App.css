@@ -4,6 +4,16 @@
 {
   color: white;
 }
+.iconcolor1{
+    color: black;
+}
+.iconcolor123{
+    color: white;
+}
+.iconcolor123:hover{
+    color: #18dcff;
+    cursor: pointer;
+  }
 .iconcolor1:hover{
   color: #18dcff;
   cursor: pointer;
@@ -699,6 +709,12 @@ header .mobile-toggler{
     color: white;
   
   } 
+
+  @media (max-width:600px){
+    #contact{
+        height: fit-content;
+    }
+  }
 
 
   

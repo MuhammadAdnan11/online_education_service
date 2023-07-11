@@ -9,3 +9,14 @@
 #evSpecAlarm{
     font-size: 22px;
 }
+
+@media (max-width:600px){
+
+    .mapclass{
+
+        width: auto;
+        height: auto;
+
+    }
+}
+

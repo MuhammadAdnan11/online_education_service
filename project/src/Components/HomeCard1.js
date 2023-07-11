@@ -2,12 +2,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {BiTimeFive} from "react-icons/bi"
 import {FiMapPin} from "react-icons/fi"
+import { Link } from 'react-router-dom';
 
 
 function HomeCard1(props) {
   return (
     <Card style={{ width: '23rem' }} className="HoverDiv">
-      <Card.Img variant="top" src={props.imgrsc1} />
+      <Link to="events"><Card.Img variant="top" src={props.imgrsc1} /></Link>
       
       <Button className=" datebtn bg-white text-black fs-5 fw-bold">{props.btnD}</Button>
       
@@ -19,7 +20,9 @@ function HomeCard1(props) {
         </div>
       </Card.Body>
     </Card>
+    
   );
+  
 }
 
 export default HomeCard1;

@@ -3,7 +3,9 @@ import UserData from './UserData';
 
 
 
+
 const Users = () => {
+ 
   return (
     <>
     
@@ -17,15 +19,6 @@ const Users = () => {
 }
 
 export default Users
-
-
-
-
-
-
-
-
-
 
 
 
