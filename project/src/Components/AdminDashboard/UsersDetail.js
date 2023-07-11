@@ -8,12 +8,18 @@ import "../../Dash.css";
 
 
 
+
 const UsersDetail = () => {
 
     const [data, setData] = useState([]);
     const [limit, setLimit]= useState(11);
     const [pageCount, setPageCount]= useState(1);
     const currentPage=useRef();
+
+      
+
+
+
 
 
 
@@ -154,6 +160,7 @@ const UsersDetail = () => {
             </div>
           </div>
           </div>
+          
     </>
   )
 }

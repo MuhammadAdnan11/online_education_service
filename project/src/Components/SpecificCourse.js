@@ -14,6 +14,7 @@ import ScrollButton from "./ScrollButton";
 import SpecificCourseAccordian from "./SpecificCourseAccordian";
 import SpecificCourseProgressBar from "./SpecificCourseProgressBar";
 
+
 const coursesbackimage = require("../AssetsFolder/AllCourses/allcoursespagebg.png");
 const coursesbg = {
   width: "100%",
@@ -24,6 +25,7 @@ const coursesbg = {
 
 const SpecificCourse = () => {
   const [data, setdata] = useState([]);
+  
   const { productId } = useParams();
   const thisProduct = productsData.find(
     (prod) => String(prod.id) === productId
@@ -44,6 +46,7 @@ const SpecificCourse = () => {
   return (
     <>
       <Navbar />
+      
 
       <div className="container-fluid " style={coursesbg}>
         <div className="container">
@@ -53,21 +56,21 @@ const SpecificCourse = () => {
             </h1>
             <div className="d-flex flex-row gap-2">
               <span className="text-white">
-                <Link to="/">Home</Link>
+                <Link to="/" className="text-white">Home</Link>
               </span>
               <span className="text-white"> /</span>
               <span className="text-white">
-                <Link to="/courses">All Courses</Link>
+                <Link to="/courses" className="text-white">All Courses</Link>
               </span>
               <span className="text-white"> /</span>
               <span className="text-white">
-                <Link to="/specificCourses">{thisProduct.course}</Link>
+                <Link to={`/specificCourse/${thisProduct.id}`} className="text-white">{thisProduct.course}</Link>
               </span>
             </div>
           </div>
         </div>
       </div>
-
+       
       <div className="container marginclass ">
         <div className="row media1 " key={thisProduct.id}>
           <div className="col-10 ">
@@ -113,7 +116,7 @@ const SpecificCourse = () => {
                   <button
                     className="btn btn-info rounded-pill text-white fw-bold buycourse"
                     onClick={() =>
-                      dispatch({ type: "ADD", payload: thisProduct })
+                      dispatch({ type: "ADD", payload: thisProduct})
                     }
                   >
                     {" "}
@@ -122,7 +125,7 @@ const SpecificCourse = () => {
                 </Link>
               </div>
             </div>
-
+      
             <div className="mt-4 ">
               <img src={thisProduct.image} alt="" className="courseImage" />
             </div>
@@ -176,7 +179,7 @@ const SpecificCourse = () => {
           </div>
         </div>
       </div>
-
+       
       <div className="container mt-5">
         <div className="row">
           <div className="col-10">
@@ -212,6 +215,7 @@ const SpecificCourse = () => {
           </div>
         </div>
       </div>
+      
       <SpecificCourseProgressBar/>
       <SpecificCourseAccordian/>
       
@@ -220,7 +224,9 @@ const SpecificCourse = () => {
 
       <Footer />
     </>
+      
   );
+      
 };
 
 export default SpecificCourse;

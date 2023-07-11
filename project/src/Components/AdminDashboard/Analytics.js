@@ -1,7 +1,7 @@
 
 
 
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import App_Bar from './App_Bar'
 import Header from './Header'
 import HbarChart from './Charts/HbarChart'
@@ -10,15 +10,23 @@ import PieChart from './Charts/PieChart'
 import CountUp from 'react-countup';
 
 
+
 const Analytics = () => {
+
+
+
+ 
+
+
   return (
     <>
+    
        <div className="bgcolor23">
          <App_Bar />
          <div className="d-flex">
            <Header />
 
-           <div className='container marginclass'>
+           <div className='container marginclass11'>
            <div class="row  mt-1 settingquery">
             <div className='col-lg-4  col-12  d-flex flex-row  gap-1'>
             <div className=' cardsmall'>

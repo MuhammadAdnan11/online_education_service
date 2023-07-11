@@ -4,6 +4,7 @@ import { BiTimeFive, BiBuilding } from 'react-icons/bi';
 import { CiLocationOn } from 'react-icons/ci';
 import "./EventsCard.css";
 import { Link } from 'react-router-dom';
+import ScrollButton from './ScrollButton';
 export const EventsCard = (props) => {
   return (
       <>
@@ -12,7 +13,7 @@ export const EventsCard = (props) => {
     <div className='row '>
       <div className='col-md-5'>
       {/* <a href='#'><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></a> */}
-      <Link to={`/eventspecific/${props.id}`}><img src={props.image} alt='' style={{ width: "500px", height: "310px" }}></img></Link>
+      <Link to={`/eventspecific/${props.id}`}><img src={props.image} alt='' style={{ width: "500px", height: "310px" }} className='img-fluid'></img></Link>
      
           </div>
       <div className='col-md-5'>
@@ -27,7 +28,7 @@ export const EventsCard = (props) => {
                               {props.time}</p></span>
                       <span><p >  <span className='pe-2'id='evIcon'><BiBuilding/></span>{props.venue}</p></span>
                       <span><p >  <span className='pe-2'id='evIcon'><CiLocationOn/></span>{props.address}</p></span>
-                      <span><p >{props.details}</p></span>
+                      <span><p>{props.details}</p></span>
                      
                     
                           
@@ -36,7 +37,7 @@ export const EventsCard = (props) => {
       </div>
     </div>
   </div>
-      
+      <ScrollButton/>
       </>
   )
 }

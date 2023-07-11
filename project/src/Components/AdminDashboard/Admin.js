@@ -1,4 +1,7 @@
+
+
 import React from "react";
+// import { useNavigate } from "react-router-dom";
 import App_Bar from "./App_Bar";
 import Header from "./Header";
 import { AiOutlineIdcard } from "react-icons/ai";
@@ -7,8 +10,9 @@ import BarChart from "./Charts/BarChart";
 import AccordianDash from "./AccordianDash";
 import CountUp from 'react-countup';
 
+const Admin = () => {
+  
 
-const Settings = () => {
   return (
     <>
       <div className="bgcolor23">
@@ -18,14 +22,13 @@ const Settings = () => {
           <div className="container marginclass11">
             <div className="row settingquery">
               <div className="col-4  ">
-                <div class="card mt-2 gradient colwidthcl" >
+                <div class="card mt-2 gradient colwidthcl">
                   <div class="card-body d-flex flex-column">
                     <span className="iconstyle fs-3">
                       <AiOutlineIdcard />
                     </span>
                     <span className="text-white fs-6 fw-bold">
-                    $ <CountUp delay={0.2} end={500} duration={.3} />
-                    
+                      $ <CountUp delay={0.2} end={500} duration={.3} />
                     </span>
                     <span className="text-white ">Total Earning</span>
                   </div>
@@ -33,14 +36,13 @@ const Settings = () => {
               </div>
 
               <div className="col-4">
-                <div class="card mt-2 gradientlight colwidthcl" >
+                <div class="card mt-2 gradientlight colwidthcl">
                   <div class="card-body d-flex flex-column">
                     <span className="iconstyle fs-3">
                       <AiOutlineIdcard />
                     </span>
                     <span className="text-white fs-6 fw-bold">
-                  $ <CountUp delay={0.2} end={900} duration={.3} />
-
+                      $ <CountUp delay={0.2} end={900} duration={.3} />
                     </span>
                     <span className="text-white ">Total Orders</span>
                   </div>
@@ -49,7 +51,6 @@ const Settings = () => {
               <div className="col-4 d-flex flex-column">
                 <div
                   class="card mt-2 setheight gradientlight colwidthcl"
-                  
                 >
                   <div class="card-body d-flex flex-row gap-2">
                     <span className="iconstyle1 text-white fs-3">
@@ -64,7 +65,7 @@ const Settings = () => {
                   </div>
                 </div>
 
-                <div class="card mt-2 setheight colwidthcl" >
+                <div class="card mt-2 setheight colwidthcl">
                   <div class="card-body d-flex flex-row gap-2">
                     <span className="iconstyle1 text-black fs-3">
                       <AiOutlineIdcard />
@@ -80,31 +81,34 @@ const Settings = () => {
               </div>
             </div>
 
-
             <div className="row mt-2 d-flex settingquery">
-                <div className="col-8">
-                <div class="card colwidthcl1" style={{ height:"440px" }}>
+              <div className="col-8">
+                <div class="card colwidthcl1" style={{ height: "440px" }}>
                   <div class="card-body">
-                    <BarChart/>
+                    <BarChart />
                   </div>
                 </div>
-                </div>
+              </div>
 
-                <div className="col-4">
-                   <div class="card accordheight colwidthcl " style={{ height:"440px" }}>
+              <div className="col-4">
+                <div
+                  class="card accordheight colwidthcl "
+                  style={{ height: "440px" }}
+                >
                   <div class="card-body">
-                    <AccordianDash/>
+                    <AccordianDash />
                   </div>
                 </div>
-                </div>
-
+              </div>
             </div>
           </div>
-          
         </div>
       </div>
     </>
   );
 };
 
-export default Settings;
+export default Admin;
+
+
+

@@ -24,6 +24,9 @@ import DarkMode_1 from './DarkMode_1';
 import Logout from './Logout';
 import LogoutIcon from '@mui/icons-material/Logout';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import MenuIcon from '@mui/icons-material/Menu';
+
+
 
 const drawerWidth = 240;
 
@@ -34,6 +37,7 @@ const openedMixin = (theme: Theme): CSSObject => ({
     duration: theme.transitions.duration.enteringScreen,
   }),
   overflowX: 'hidden',
+  
 });
 
 const closedMixin = (theme: Theme): CSSObject => ({
@@ -85,7 +89,9 @@ const Header =()=> {
   // const [open, setOpen] = React.useState(true);
   const navigate = useNavigate();
   // const updateOpen = useAppStore((state)=> state.updateOpen);
-  const open = useAppStore((state)=> state.dopen);
+   const open = useAppStore((state)=> state.dopen);
+  const updateOpen = useAppStore((state)=> state.updateOpen);
+  const dopen = useAppStore((state)=> state.dopen);
 
 
   return (
@@ -95,9 +101,18 @@ const Header =()=> {
      
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
-          <IconButton >
+          {/* <IconButton >
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-          </IconButton>
+          </IconButton> */}
+          <IconButton
+  size="large"
+  edge="start"
+  color="inherit"
+  aria-label="open drawer"
+  onClick={() => updateOpen(!dopen)}
+>
+  <MenuIcon />
+</IconButton>
         </DrawerHeader>
         <Divider />
         <List>

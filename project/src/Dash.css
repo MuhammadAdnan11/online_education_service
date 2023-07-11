@@ -1,5 +1,7 @@
 
-
+.marginclass11{
+    margin-top: 70px;
+}
 .paddingall{
     padding: 10px 10px 10px 10px;
 }
@@ -188,14 +190,14 @@
     --link-color: lightblue;
   }
   
-  body {
+  /* body {
     background-color: var(--background-color);
     color: var(--font-color);
   }
   
   a {
     color: var(--link-color);
-  }
+  } */
   
   /* Custom Dark Mode Toggle Element */
   
