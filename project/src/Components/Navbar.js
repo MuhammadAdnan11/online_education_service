@@ -85,6 +85,8 @@ const Navbar = ({props, setShow}) => {
         <li><Link className="dropdown-item" to="/coursevideo">Video Lectures</Link></li>  
         <li><Link className="dropdown-item" to="/admin">Admin Dashboard</Link></li>  
         <li><Link className="dropdown-item" to="/studymaterial">StudyMaterial</Link></li>
+        
+
 		    </ul>
             </div>
 
@@ -120,6 +122,8 @@ const Navbar = ({props, setShow}) => {
 		    <ul class="dropdown-menu">
 			  <li><Link className="dropdown-item" to="/about" > ABOUT US</Link></li>
 			  <li><Link className="dropdown-item" to="/contact"> CONTACT US </Link></li>
+			  
+
 			  <li><Link className="dropdown-item" to="/faq"> FAQ PAGE </Link></li>
 			  {/* <li><Link className="dropdown-item" to="/error"> 404 ERROR PAGE </Link></li> */}
 			  <li><Link className="dropdown-item" to="/gallery"> GALLERY</Link></li>

@@ -25,8 +25,8 @@ import { BiTimeFive } from "react-icons/bi";
 					<p class="white-text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 text of the printing.
 					</p>
-          <MdPhoneCallback/><span className="iconcolor1"> +92 316 9727859</span><br/>
-          <BiTimeFive/><span className="iconcolor1"> Mon - Sat 8.00 - 18.00</span>
+          <MdPhoneCallback/><span className="iconcolor123 "> +92 316 9727859</span><br/>
+          <BiTimeFive/><span className="iconcolor123 "> Mon - Sat 8.00 - 18.00</span>
 				</div>
 
 				<div class="col-md-3 m-b-30">

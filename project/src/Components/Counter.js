@@ -418,7 +418,7 @@ const  Counter=({className, ...rest})=> {
 
 			<div className="contact-section">
 			<div className="container">
-      <div className="row">
+      <div className="row ">
 				  
 					<div className="col-md-4 form-line">
               <h2 className="text-center">Courses for free</h2>
@@ -451,10 +451,10 @@ const  Counter=({className, ...rest})=> {
                  <p className="p-2">Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum, facilisis vel 
                  mollis vitae, mollis nec ante. Quisque aliquam dictum.</p>
                  <div className="d-flex flex-row gap-4 p-2 ">
-                 <h1 className="display-4">{days}<span className="fs-5">Days</span></h1>
-                 <h1 className="display-4">{hours}<span className="fs-5">Hours</span></h1>
-                 <h1 className="display-4">{minutes}<span className="fs-5">Minutes</span></h1>
-                 <h1 className="display-4">{seconds}<span className="fs-5">Seconds</span></h1>
+                 <h1 className="display-4">{days}<span className="fs-6">Days</span></h1>
+                 <h1 className="display-4">{hours}<span className="fs-6">Hours</span></h1>
+                 <h1 className="display-4">{minutes}<span className="fs-6">Minutes</span></h1>
+                 <h1 className="display-4">{seconds}<span className="fs-6">Seconds</span></h1>
 
 
                  </div>

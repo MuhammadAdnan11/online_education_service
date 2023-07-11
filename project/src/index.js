@@ -22,26 +22,32 @@ import CoursesCart from './CoursesCart';
 import { Context } from './Components/context/Context';
 import StripeContainer from './Components/StripeContainer';
 import InstructorSpecific from './Components/InstructorSpecific';
-import { CourseVideos } from './Components/CourseVideos';
+import  {CourseVideos}  from './Components/CourseVideos';
 import Header from './Components/AdminDashboard/Header';
-import Profile from './Components/AdminDashboard/Profile';
+import Profile1 from './Components/AdminDashboard/Profile1';
 import Users from './Components/AdminDashboard/Users';
-import Analytics from './Components/AdminDashboard/Analytics';
-import Settings from './Components/AdminDashboard/Settings';
+import Analytic1 from './Components/AdminDashboard/Analytic1';
+
 import DarkMode_1 from './Components/AdminDashboard/DarkMode_1';
 import ResetPassword from './Components/ResetPassword';
-import UsersDetail from './Components/AdminDashboard/UsersDetail';
+import UserDetail1 from './Components/AdminDashboard/UserDetail1';
 import Events from './Components/Events';
 import { EventSpecific } from './Components/EventSpecific';
+
 import { EventsCard } from './Components/EventsCard';
+import CheckOutNow from './Components/CheckOutNowPage';
+import Setting1 from './Components/AdminDashboard/Setting1';
+import Admin from './Components/AdminDashboard/Admin';
 import { StudyMaterial } from './Components/StudyMaterial';
 
 const isLoggedIn = window.localStorage.getItem("loggedIn");
+
+
 const router = createBrowserRouter([
  
   {
     path: "/",
-    element: <App/>
+    element: <App  />
   },
 
   
@@ -54,9 +60,40 @@ const router = createBrowserRouter([
     
   },
 
+ 
+
+  // {
+  //   path: "analytic",
+  //   element: <Analytics/>,
+    
+    
+  // },
+
+
   {
     path: "analytic",
-    element: <Analytics/>,
+    element: <Analytic1/>,
+    children:[
+      {
+        isLoggedIn:true ? <Analytic1/> : <LoginForm/>
+      }
+    ]
+    
+    
+  },
+
+
+
+  {
+    path: "success",
+    element: <Success/>,
+    
+    
+  },
+
+  {
+    path: "checkout",
+    element: <CheckOutNow/>,
     
     
   },
@@ -75,10 +112,23 @@ const router = createBrowserRouter([
     
   },
 
+  // {
+  //   path: "userdetails",
+  //   element: <UsersDetail/>,
+    
+    
+  // },
+
+
+
   {
     path: "userdetails",
-    element: <UsersDetail/>,
-    
+    element: <UserDetail1/>,
+    children:[
+      {
+        isLoggedIn:true ? <UserDetail1/> : <LoginForm/>
+      }
+    ]
     
   },
 
@@ -110,9 +160,21 @@ const router = createBrowserRouter([
     
   },
 
+  // {
+  //   path: "setting",
+  //   element: <Settings/>, 
+    
+  // },
+
+
   {
     path: "setting",
-    element: <Settings/>, 
+    element: <Setting1/>,
+    children:[
+      {
+        isLoggedIn:true ? <Setting1/> : <LoginForm/>
+      }
+    ]
     
   },
   
@@ -172,15 +234,26 @@ const router = createBrowserRouter([
     
     
   },
+  // {
+  //   path: "admin",
+  //   element: <Admin/>,
+    
+    
+  // },
 
+  
   {
     path: "admin",
-    element: <Header/>,
+    element: <Users/>,
+    children:[
+      {
+        isLoggedIn:true ? <Users/> : <LoginForm/>
+      }
+    ]
     
     
   },
 
-  
 
   {
     path: "faq",
@@ -221,6 +294,11 @@ const router = createBrowserRouter([
   },
 
 
+
+
+
+
+
   {
     path: "register",
     element: <Register/>,
@@ -234,10 +312,23 @@ const router = createBrowserRouter([
     
     
   },
+  // {
+  //   path: "profile",
+  //   element: <Profile/>,
+    
+    
+  // },
 
+
+  
   {
     path: "profile",
-    element: <Profile/>,
+    element: <Profile1/>,
+    children:[
+      {
+        isLoggedIn:true ? <Profile1/> : <LoginForm/>
+      }
+    ]
     
     
   },
@@ -270,7 +361,6 @@ const router = createBrowserRouter([
 
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
@@ -285,8 +375,8 @@ root.render(
   
   
 );
-
+  
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(); 

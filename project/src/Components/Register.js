@@ -1,8 +1,9 @@
 
-import React ,{Component, useState} from 'react'
+import React ,{ useState} from 'react'
 import "./LoginForm.css"
 import {MdOutlineEmail} from "react-icons/md";
 // import {useNavigate} from 'react-router
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Register(){
@@ -11,9 +12,9 @@ const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [userType, setUserType] = useState("");
 const [secretKey, setSecretKey] = useState("");
+const navigate = useNavigate();
 
  
-
    const handleSubmit=(e)=>{
     if(userType=="Admin" && secretKey!="191014191022"){
       e.preventDefault();
@@ -43,7 +44,10 @@ const [secretKey, setSecretKey] = useState("");
     console.log(data,"userRegister")
     if(data.status=="ok"){
       alert("User Registered Successfully! 😍")
-      window.location.href="/login";
+      
+      navigate("/login")
+      // OR 
+      // window.location.href="/login";
     }
     else{
       alert("something went wrong");

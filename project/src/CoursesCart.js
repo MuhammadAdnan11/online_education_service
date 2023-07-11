@@ -6,7 +6,7 @@ import { useContext , useState } from "react";
 import { Cartcontext } from "./Components/context/Context";
 import "./CoursesCart.css";
 import { Link } from "react-router-dom";
-// import StripeContainer from './Components/StripeContainer';
+import CheckOutNow from "./Components/CheckOutNowPage";
 
 import Navbar from "./Components/Navbar";
 
@@ -72,7 +72,8 @@ const CoursesCart = () => {
         <div className="total">
           <h2>total=${total}</h2>
 				
-        <Link to="/stripe"><button className="btn btn-sm rounded-pill " onClick={() => setShowItem(true)}>CheckOut Now</button></Link>
+        <button className="btn btn-sm rounded-pill " onClick={() => setShowItem(true)} ><CheckOutNow total={total}/></button>
+
 					
           
         </div>
@@ -93,3 +94,4 @@ const CoursesCart = () => {
 };
 
 export default CoursesCart;
+

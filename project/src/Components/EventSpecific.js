@@ -12,6 +12,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsGlobeCentralSouthAsia } from "react-icons/bs";
 import "./EventSpecific.css";
 import Footer from "./Footer";
+import ScrollButton from "./ScrollButton";
 
 const coursesbackimage = require("../AssetsFolder/AllCourses/allcoursespagebg.png");
 const coursesbg = {
@@ -40,11 +41,12 @@ export const EventSpecific = () => {
             </h1>
             <div className="d-flex flex-row gap-2">
               <span className="text-white">
-                <Link to="/">Home</Link>
+                <Link to="/" className="text-white">Home</Link>
               </span>
               <span className="text-white"> /</span>
               <span className="text-white">
-                <Link to="/events">Events</Link>
+
+                <Link to="/events" className="text-white">Events</Link>
               </span>
             </div>
           </div>
@@ -76,7 +78,7 @@ export const EventSpecific = () => {
             <img
               src={thisEvents.image}
               style={{ width: 545, height: 335 }}
-            ></img>
+            className="img-fluid"></img>
           </div>
           <div className="col-md-5 mt-4 ms-4">
             <iframe
@@ -87,11 +89,12 @@ export const EventSpecific = () => {
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              className="mapclass"
             ></iframe>
           </div>
           <div className="me-5 pe-5 ">
             <div className="me-5">
-              <p className="text-sm-start me-5 pe-5 mt-5">
+              <p className=" justify-content-center mt-5">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Maecenasporttitor congue massa. Fusce posuere, magna sed pulvina
                 ultricies, purus lectus malesuada libero, sit amet commodo magn
@@ -188,7 +191,7 @@ export const EventSpecific = () => {
           </div>
         </div>
       </div>
-
+      <ScrollButton/>
       <Footer />
     </>
   );
