@@ -33,8 +33,9 @@ import ResetPassword from './Components/ResetPassword';
 import UsersDetail from './Components/AdminDashboard/UsersDetail';
 import Events from './Components/Events';
 import { EventSpecific } from './Components/EventSpecific';
-
 import { EventsCard } from './Components/EventsCard';
+import { StudyMaterial } from './Components/StudyMaterial';
+
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 const router = createBrowserRouter([
  
@@ -260,6 +261,10 @@ const router = createBrowserRouter([
   {
     path: "eventscard",
     element:<EventsCard/>
+  },
+  {
+    path: "studymaterial",
+    element:<StudyMaterial/>
   },
 ])
 
