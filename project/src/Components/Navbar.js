@@ -62,7 +62,7 @@ const Navbar = ({props, setShow}) => {
       <header>
         <div className="container-fluid">
           <div className="navb-logo ">
-            {/* <img src="./Images/Oes Logo/logo7.jpeg" alt="Logo" /> */}
+           
             <img src="./Images/Oes Logo/1111.PNG" alt="Logo" id="navlogo" / >
           </div>
 
