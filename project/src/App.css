@@ -72,6 +72,10 @@ a:hover{
 
     color: currentColor;
 }
+#navlogo{
+    height: 191px;
+    width: 245px; 
+}
 
 header{
 
