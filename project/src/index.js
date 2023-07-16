@@ -40,6 +40,7 @@ import Setting1 from './Components/AdminDashboard/Setting1';
 import Admin from './Components/AdminDashboard/Admin';
 import { StudyMaterial } from './Components/StudyMaterial';
 import Success from './Components/Success';
+import { StudyMatSpecific } from './Components/StudyMatSpecific';
 
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 
@@ -213,10 +214,7 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "/eventspecific/:EventId",
-    element:<EventSpecific/>
-  },
+  
 
   
   
@@ -353,9 +351,18 @@ const router = createBrowserRouter([
     element:<EventsCard/>
   },
   {
+    path: "/eventspecific/:EventId",
+    element:<EventSpecific/>
+  },
+
+  {
     path: "studymaterial",
     element:<StudyMaterial/>
   },
+  {
+    path: "/studymatspecific/:MatId",
+    element:<StudyMatSpecific/>
+  }
 ])
 
 
