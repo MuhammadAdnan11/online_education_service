@@ -38,8 +38,9 @@ import { EventsCard } from './Components/EventsCard';
 import CheckOutNow from './Components/CheckOutNowPage';
 import Setting1 from './Components/AdminDashboard/Setting1';
 import Admin from './Components/AdminDashboard/Admin';
-import { StudyMaterial } from './Components/StudyMaterial';
+
 import Success from './Components/Success';
+
 
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 
@@ -213,10 +214,7 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "/eventspecific/:EventId",
-    element:<EventSpecific/>
-  },
+  
 
   
   
@@ -353,9 +351,11 @@ const router = createBrowserRouter([
     element:<EventsCard/>
   },
   {
-    path: "studymaterial",
-    element:<StudyMaterial/>
+    path: "/eventspecific/:EventId",
+    element:<EventSpecific/>
   },
+
+  
 ])
 
 
