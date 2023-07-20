@@ -231,6 +231,42 @@ const SpecificCourse = () => {
 
 export default SpecificCourse;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React from "react"
 // import {useParams} from "react-router-dom"
 // import productsData from "./productsData"

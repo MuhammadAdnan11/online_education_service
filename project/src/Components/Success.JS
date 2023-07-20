@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
-const Success = () => {
+const YourCourses = () => {
+  const location = useLocation();
+  const courseData = location.state?.courseData;
+
   return (
-    <div>payment Successfull</div>
-  )
-}
+    <div>
+      {courseData && (
+        <>
+          <h2>Your Courses</h2>
+          <div>
+            <img src={courseData.images} alt="Course Image" />
+            <p>Instructor: {courseData.instructors}</p>
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
-export default Success
+export default YourCourses;

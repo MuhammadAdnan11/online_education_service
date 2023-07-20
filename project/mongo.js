@@ -62,7 +62,8 @@ const UserDetailsSchema = new mongoose.Schema(
     },
     {
         collection: "UserInfo",
-    }
+    },
+    
 );
 
 mongoose.model("UserInfo", UserDetailsSchema)
