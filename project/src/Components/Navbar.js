@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { RiAdminLine } from "react-icons/ri";
 import { BsPencil } from "react-icons/bs";
-import { VscSearch } from "react-icons/vsc";
+import { BsBook } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
+import {FiLogIn} from "react-icons/fi"
 
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineMedicalServices } from "react-icons/md";
@@ -20,7 +21,10 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Navbar = ({props, setShow}) => {
+  
+
   
  
   return (
@@ -38,22 +42,24 @@ const Navbar = ({props, setShow}) => {
             <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">  <FaInstagramSquare className="iconcolor1" /></a>
          <a href="https://www.facebook.com/adnantechchannel?mibextid=ZbWKwL" target="blank">  <FaFacebookF className="iconcolor1" /></a> 
           </div>
-          <div className="col d-flex namargin flex-row justify-content-end ">
-          <Link to="/login" > <button
-              type="button"
-              className="btn btn-col btn-sm text-white rounded-pill" 
-            >
-              <RiAdminLine className="iconcolor" /> 
-              Login 
-            </button></Link>
 
-           <Link to="/register"> <button
-              type="button"
-              className="btn btn-col btn-sm text-white rounded-pill"
-            >
-              <BsPencil className="iconcolor" /> Register
-            </button></Link>
-          </div>
+           <div className="col d-flex namargin flex-row justify-content-end ">
+   
+        <Link to="/login">
+          <button type="button" className="btn btn-col btn-sm text-white rounded-pill">
+            <RiAdminLine className="iconcolor" /> Login
+          </button>
+        </Link>
+
+        <Link to="/register">
+          <button type="button" className="btn btn-col btn-sm text-white rounded-pill">
+            <BsPencil className="iconcolor" /> Register
+          </button>
+        </Link>
+      
+  </div>
+  
+
         </div>
       </div>
 
@@ -148,10 +154,10 @@ const Navbar = ({props, setShow}) => {
             </div> */}
 
             <div className="item">
-              <a href="">
-                <VscSearch />
-              </a>
-            </div>
+  <Link to="/your-courses">
+    <BsBook />
+  </Link>
+</div>
 
             <div className="item d-flex cart1">
              <Link to="/coursecart"> <span onClick={()=>setShow(false)}>
@@ -217,7 +223,7 @@ const Navbar = ({props, setShow}) => {
           >
             <div className="modal-dialog">
               <div className="modal-content">
-                <div className="modal-header">
+                {/* <div className="modal-header">
                   <img src="./Images/Oes Logo/logo7.jpeg" alt="logo" />
                   <button
                     type="button"
@@ -227,7 +233,7 @@ const Navbar = ({props, setShow}) => {
                   >
                     <i className="fa-solid fa-xmark"></i>
                   </button>
-                </div>
+                </div> */}
 
                 <div className="modal-body">
                   <div className="modal-line">
@@ -250,6 +256,12 @@ const Navbar = ({props, setShow}) => {
                     <a href="/about">About</a>
                   </div>
 
+                   
+                  <div className="modal-line">
+                    <FiLogIn classNameName="fs-1 colo " />
+                    <a href="/login">Login</a>
+                  </div>
+
                   <a href="/contact" className="navb-button" type="button">
                     Let's talk
                   </a>
@@ -257,13 +269,13 @@ const Navbar = ({props, setShow}) => {
 
                 <div className="mobile-modal-footer">
                   <a target="_blank" href="#">
-               <a href="https://twitter.com/Samiull72617599?s=09" target="blank">    <AiOutlineTwitter className="iconcolor1" /></a> 
+               <a href="https://twitter.com/Samiull72617599?s=09" target="blank">    <AiOutlineTwitter className="iconcolor1 text-white" /></a> 
                   </a>
                   <a target="_blank" href="#">
-                  <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">   <FaInstagramSquare className="iconcolor1" /></a>
+                  <a href="https://instagram.com/muhammadadnan5882?igshid=NGExMmI2YTkyZg==" target="blank">   <FaInstagramSquare className="iconcolor1 text-white" /></a>
                   </a>
                   <a target="_blank" href="#">
-                  <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">    <FaFacebookF className="iconcolor1" /></a>
+                  <a href="https://www.facebook.com/muhammadadnan.khan.5283?mibextid=ZbWKwL" target="blank">    <FaFacebookF className="iconcolor1 text-white" /></a>
                   </a>
                 </div>
               </div>
@@ -277,3 +289,5 @@ const Navbar = ({props, setShow}) => {
 };
 
 export default Navbar;
+
+

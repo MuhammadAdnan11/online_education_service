@@ -28,7 +28,6 @@ import Profile1 from './Components/AdminDashboard/Profile1';
 import Users from './Components/AdminDashboard/Users';
 import Analytic1 from './Components/AdminDashboard/Analytic1';
 
-import DarkMode_1 from './Components/AdminDashboard/DarkMode_1';
 import ResetPassword from './Components/ResetPassword';
 import UserDetail1 from './Components/AdminDashboard/UserDetail1';
 import Events from './Components/Events';
@@ -38,6 +37,8 @@ import { EventsCard } from './Components/EventsCard';
 import CheckOutNow from './Components/CheckOutNowPage';
 import Setting1 from './Components/AdminDashboard/Setting1';
 import Admin from './Components/AdminDashboard/Admin';
+import PaidCourses from './Components/AdminDashboard/PaidCourses';
+import YourCourses from './Components/YourCourses';
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 
 
@@ -96,12 +97,7 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "darkmode",
-    element: <DarkMode_1/>,
-    
-    
-  },
+  
 
   {
     path: "resetpassword",
@@ -158,6 +154,12 @@ const router = createBrowserRouter([
     
   },
 
+  {
+    path: "your-courses",
+    element: <YourCourses/>, 
+    
+  },
+
   // {
   //   path: "setting",
   //   element: <Settings/>, 
@@ -180,6 +182,15 @@ const router = createBrowserRouter([
   {
     path: "coursevideo",
     element: <CourseVideos/>,
+    
+    
+  },
+
+
+  
+  {
+    path: "paymentdata",
+    element: <PaidCourses/>,
     
     
   },
@@ -339,6 +350,8 @@ const router = createBrowserRouter([
     
     
   },
+
+  
 
   {
     path: "/home",
