@@ -68,7 +68,8 @@ const Navbar = ({props, setShow}) => {
       <header>
         <div className="container-fluid">
           <div className="navb-logo ">
-            <img src="./Images/Oes Logo/logo7.jpeg" alt="Logo" />
+           
+            <img src="./Images/Oes Logo/1111.PNG" alt="Logo" id="navlogo" / >
           </div>
 
           <div className="navb-items d-none d-xl-flex">
@@ -89,6 +90,8 @@ const Navbar = ({props, setShow}) => {
 			  <li><Link className="dropdown-item" to="/courses"> ALL COURSES </Link></li>
         <li><Link className="dropdown-item" to="/dashboard"> DASHBOARD </Link></li>
         <li><Link className="dropdown-item" to="/coursevideo">Video Lectures</Link></li>  
+        {/* <li><Link className="dropdown-item" to="/admin">Admin Dashboard</Link></li>   */}
+        <li><Link className="dropdown-item" to="/studymaterial">StudyMaterial</Link></li>
         
 
 		    </ul>

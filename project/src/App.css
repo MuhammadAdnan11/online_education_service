@@ -69,8 +69,11 @@ a{
 }
 
 a:hover{
-
     color: currentColor;
+}
+#navlogo{
+    height: 191px;
+    width: 245px; 
 }
 
 header{
@@ -263,7 +266,7 @@ header .mobile-toggler{
 .modal-body .modal-line:hover{
 
     color: #fefefe;
-    border-bottom: 1px solid #fefefe;
+    /* border-bottom: 1px solid #fefefe; */
 }
 
 .modal-line a{

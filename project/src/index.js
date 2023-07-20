@@ -32,13 +32,17 @@ import ResetPassword from './Components/ResetPassword';
 import UserDetail1 from './Components/AdminDashboard/UserDetail1';
 import Events from './Components/Events';
 import { EventSpecific } from './Components/EventSpecific';
-import Success from './Components/Success.JS';
+
 import { EventsCard } from './Components/EventsCard';
 import CheckOutNow from './Components/CheckOutNowPage';
 import Setting1 from './Components/AdminDashboard/Setting1';
 import Admin from './Components/AdminDashboard/Admin';
 import PaidCourses from './Components/AdminDashboard/PaidCourses';
 import YourCourses from './Components/YourCourses';
+import Success from './Components/Success';
+
+
+
 const isLoggedIn = window.localStorage.getItem("loggedIn");
 
 
@@ -80,8 +84,6 @@ const router = createBrowserRouter([
     
     
   },
-
-
 
   {
     path: "success",
@@ -223,10 +225,7 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "/eventspecific/:EventId",
-    element:<EventSpecific/>
-  },
+  
 
   
   
@@ -243,7 +242,6 @@ const router = createBrowserRouter([
     
     
   },
-
   // {
   //   path: "admin",
   //   element: <Admin/>,
@@ -322,7 +320,6 @@ const router = createBrowserRouter([
     
     
   },
-
   // {
   //   path: "profile",
   //   element: <Profile/>,
@@ -366,6 +363,12 @@ const router = createBrowserRouter([
     path: "eventscard",
     element:<EventsCard/>
   },
+  {
+    path: "/eventspecific/:EventId",
+    element:<EventSpecific/>
+  },
+
+  
 ])
 
 
