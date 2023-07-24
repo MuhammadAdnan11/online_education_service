@@ -347,7 +347,7 @@ const PaymentForm = () => {
   const searchParams = new URLSearchParams(location.search);
   const total = searchParams.get("total");
   const images = searchParams.get("images");
-  const instructors = searchParams.get("instructors");
+  const course = searchParams.get("course");
   const navigate = useNavigate();
 
 
@@ -366,7 +366,7 @@ const PaymentForm = () => {
           amount: total * 100,
           id,
           images,
-          instructors,
+          course,
         });
 
         if (response.data.success) {
@@ -378,7 +378,7 @@ const PaymentForm = () => {
           // Create a new object with the image and instructor information
           const newData = {
             image: images,
-            instructor: instructors,
+            course: course,
           };
         
           // Add the new data to the existing array

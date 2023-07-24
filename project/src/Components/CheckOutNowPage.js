@@ -95,15 +95,15 @@ import { Link } from 'react-router-dom';
 const CheckOutNowPage = ({ total, state }) => {
   // Extract image and instructor from each item in the state array
   const images = state.map(item => item.image);
-  const instructors = state.map(item => item.instructor);
+  const course = state.map(item => item.course);
 
   // Join the images and instructors arrays into strings
   const imageParam = images.join(',');
-  const instructorParam = instructors.join(',');
+  const courseParam = course.join(',');
 
   return (
     <>
-      <Link to={`/stripe?total=${total}&images=${imageParam}&instructors=${instructorParam}`}>
+      <Link to={`/stripe?total=${total}&images=${imageParam}&course=${courseParam}`}>
         <button className="btn btn-sm rounded-pill ">CheckOut Now</button>
       </Link>
     </>

@@ -37,10 +37,11 @@ import { EventsCard } from './Components/EventsCard';
 import CheckOutNow from './Components/CheckOutNowPage';
 import Setting1 from './Components/AdminDashboard/Setting1';
 import Admin from './Components/AdminDashboard/Admin';
-import PaidCourses from './Components/AdminDashboard/PaidCourses';
+import PaidCourses1 from './Components/AdminDashboard/PaidCourses1';
 import YourCourses from './Components/YourCourses';
 import Success from './Components/Success';
-
+// import CourseVideos from './Components/CourseVideos';
+import QuizPage from './Components/QuizPage';
 
 
 const isLoggedIn = window.localStorage.getItem("loggedIn");
@@ -63,6 +64,13 @@ const router = createBrowserRouter([
     
   },
 
+  {
+    path: "quiz",
+    element: <QuizPage/>,
+    
+    
+    
+  },
  
 
   // {
@@ -192,7 +200,7 @@ const router = createBrowserRouter([
   
   {
     path: "paymentdata",
-    element: <PaidCourses/>,
+    element: <PaidCourses1/>,
     
     
   },
@@ -275,6 +283,8 @@ const router = createBrowserRouter([
     
     
   },
+
+  
   {
     path: "instructor",
     element: <Instructor/>,
