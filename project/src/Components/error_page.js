@@ -12,7 +12,6 @@ const Errorbg = {
   backgroundSize: "cover",
 };
 
-
 const Error_page = () => {
   return (
     <>

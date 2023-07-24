@@ -5,6 +5,7 @@ const YourCourses = () => {
   const location = useLocation();
   const courseData = location.state?.courseData;
 
+  
   return (
     <div>
       {courseData && (
