@@ -36,6 +36,7 @@ const instructorimg = {
   height: "70vh",
   backgroundImage: `url(${instrbackimage})`,
   backgroundSize: "cover",
+  
 };
 
 const starimg = require("../AssetsFolder/Instructor/h2-backgoround-3.png");
@@ -53,7 +54,7 @@ const Instructor = () => {
       <div className="container-fluid mt-5 mb-5">
         <div className="container ">
           <div className="row-md-12 d-flex flex-md-row  flex-sm-column justify-content-evenly instrResponsive">
-            <div className="col-md-9 instrvideo mt-5" style={instructorimg}>
+            <div className="col-md-9 instrvideo mt-5 d-none d-sm-block" style={instructorimg}>
            <a href="#"  > <img src={imgbg} alt="" className="d-flex imgplyIcon" /></a>
             </div>
 

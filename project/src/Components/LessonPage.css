@@ -36,6 +36,14 @@
   .quiz-link{
     margin-left: 1300px;
   }
+  .assignmentbtn{
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .assignmentbtn:hover{
+    color: #18dcff;
+  }
 
   @media (max-width:1224px){
     .quiz-link{

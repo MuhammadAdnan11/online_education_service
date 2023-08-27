@@ -42,6 +42,8 @@ import YourCourses from './Components/YourCourses';
 import Success from './Components/Success';
 // import CourseVideos from './Components/CourseVideos';
 import QuizPage from './Components/QuizPage';
+import Assignments from './Components/AdminDashboard/Assignments';
+import NewsTicker from './Components/NewsTicker';
 
 
 const isLoggedIn = window.localStorage.getItem("loggedIn");
@@ -65,8 +67,25 @@ const router = createBrowserRouter([
   },
 
   {
+    path: "news",
+    element: <NewsTicker/>,
+    
+    
+    
+  },
+
+
+  {
     path: "quiz",
     element: <QuizPage/>,
+    
+    
+    
+  },
+
+  {
+    path: "assignments",
+    element: <Assignments/>,
     
     
     
