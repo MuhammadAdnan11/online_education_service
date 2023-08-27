@@ -102,6 +102,7 @@ const UsersDetail = () => {
         <div className="d-flex">
           <Header />
             <div className='container marginclass'>
+            
             <div className='row mt-2 '>
                 <table className='table settingquery'>
                 <thead class="thead-dark">

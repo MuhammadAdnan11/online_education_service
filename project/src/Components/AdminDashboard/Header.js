@@ -24,7 +24,7 @@ import Logout from './Logout';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-
+import AssignmentReturnedIcon from '@mui/icons-material/AssignmentReturned';
 
 const drawerWidth = 240;
 
@@ -240,6 +240,30 @@ const Header =()=> {
                   <AssessmentIcon />
                 </ListItemIcon>
                 <ListItemText primary="Analytics" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+
+
+
+
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/assignments")}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <AssignmentReturnedIcon />
+                </ListItemIcon>
+                <ListItemText primary="Assignments" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
 

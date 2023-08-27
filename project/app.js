@@ -964,13 +964,14 @@ const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 const stripe = require("stripe")("sk_test_51MmtPaEEVZHpyQqN3AkbIgIokWFCHiH4WLHpUKnqKVwmCGLf7pz6PY679adx7N2Akxbly8wY9rzu60VZD13gXrfI00DGUwGrfa");
 const bodyParser = require("body-parser");
+const multer = require('multer');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+const upload = multer();
 app.set("view engine", "ejs");
 
 const JWT_SECRET = "hjsjfsfsfkseruebew()akfasfjirjnfsfgreriejkloeywuwbns[]ddsn";
@@ -996,11 +997,85 @@ const paymentSchema = new mongoose.Schema({
   amount: Number,
   paymentMethodId: String,
   images: [String],
-  instructors: [String],
+  course: [String],
 });
 
 // Create a model based on the schema
 const Payment = mongoose.model("Payment", paymentSchema);
+
+
+
+// Define a schema for the uploaded file data
+const fileSchema = new mongoose.Schema({
+  fileName: String,
+  fileType: String,
+  fileData: Buffer,
+  courseName: String, // Add the courseName field to the schema
+});
+
+const File = mongoose.model('File', fileSchema);
+
+
+// API endpoint for uploading files
+app.post('/upload', upload.array('files'), async (req, res) => {
+  try {
+    // Handle file upload
+    console.log('Uploaded files:', req.files);
+
+    // Save the uploaded files to the database
+    const fileDataArray = req.files.map((file) => ({
+      fileName: file.originalname,
+      fileType: file.mimetype,
+      fileData: file.buffer,
+      courseName: req.body.courseName, // Get the courseName from the request body
+    }));
+
+    await File.insertMany(fileDataArray);
+
+    res.json({ message: 'Files uploaded and saved to the database successfully!' });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Failed to upload files and save to the database.' });
+  }
+});
+
+// API endpoint for fetching file data
+app.get('/files', async (req, res) => {
+  try {
+    // Fetch all file data from the database
+    const fileData = await File.find({});
+
+    res.json(fileData);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Failed to fetch file data from the database.' });
+  }
+});
+
+// API endpoint for downloading files
+app.get('/download/:fileId', async (req, res) => {
+  try {
+    const fileId = req.params.fileId;
+
+    // Fetch the file data from the database based on the fileId
+    const fileData = await File.findById(fileId);
+
+    if (!fileData) {
+      // If the file with the given ID is not found, respond with a 404 error
+      return res.status(404).json({ error: 'File not found.' });
+    }
+
+    // Set the appropriate response headers for file download
+    res.setHeader('Content-Type', fileData.fileType);
+    res.setHeader('Content-Disposition', `attachment; filename="${fileData.fileName}"`);
+
+    // Send the file data as the response
+    res.send(fileData.fileData);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Failed to download file.' });
+  }
+});
 
 
 
@@ -1217,7 +1292,7 @@ app.get("/paginatedUsers", async (req, res) => {
 });
 
 app.post("/payment", cors(), async (req, res) => {
-  const { amount, id, images, instructors } = req.body;
+  const { amount, id, images, course } = req.body;
   try {
     const payment = await stripe.paymentIntents.create({
       amount,
@@ -1232,7 +1307,7 @@ app.post("/payment", cors(), async (req, res) => {
       amount,
       paymentMethodId: id,
       images,
-      instructors,
+      course,
     });
 
     await newPayment.save();
@@ -1257,7 +1332,7 @@ app.get("/paid-courses", cors(), async (req, res) => {
     const paidCourses = payments.map((payment) => ({
       amount: payment.amount,
       images: payment.images,
-      instructors: payment.instructors,
+      course: payment.course,
     }));
 
     res.json({
@@ -1272,6 +1347,8 @@ app.get("/paid-courses", cors(), async (req, res) => {
     });
   }
 });
+
+
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("server started");

@@ -82,8 +82,11 @@ export default[
             options: ["O", "O2", "CO2", "H2O"],
             answer: "O",
           },
-          // Add more quiz questions and answers as needed (up to 10 questions)
+          
         ],
+        assignment:{
+          pdf:"./Pdf/assignment1.pdf"
+        }
         
 
     },
@@ -172,6 +175,10 @@ export default[
           },
           // Add more quiz questions and answers as needed (up to 10 questions)
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
+        
 
     },
 
@@ -259,6 +266,10 @@ export default[
           },
           // Add more quiz questions and answers as needed (up to 10 questions)
         ],
+        assignment:{
+          pdf:"./Pdf/assignment3.pdf"
+        }
+        
 
     },
 
@@ -346,6 +357,10 @@ export default[
           },
           
         ],
+        assignment:{
+          pdf:"./Pdf/assignment4.pdf"
+        }
+        
 
     },
 
@@ -434,6 +449,10 @@ export default[
           },
           
         ],
+        assignment:{
+          pdf:"./Pdf/assignment1.pdf"
+        }
+        
 
     },
 
@@ -521,6 +540,10 @@ export default[
           },
          
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
+        
 
     },
 
@@ -552,40 +575,6 @@ export default[
             lesson4: {
               lesson: 'Marketing Lesson 4',
               description: 'Description for Marketing Lesson 4 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
-              pdf: './Pdf/Discrete02.pdf',
-            },
-        }
-
-    },
-
-    {
-        "id":8,
-        "course" :"Business English",
-        "video1" : "./Videos/video17.mp4",
-        "video2" : "./Videos/video18.mp4",
-        "video3" : "./Videos/video19.mp4",
-        "video4" : "./Videos/video14.mp4",
-        "video5" : "./Videos/video19.mp4",
-
-        Lesson: {
-            lesson1: {
-              lesson: 'Business Lesson 1',
-              description: 'Description for Business Lesson 1 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
-              pdf: './Pdf/Discrete05.pdf',
-            },
-            lesson2: {
-              lesson: 'Business Lesson 2',
-              description: 'Description for Business Lesson 2 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
-              pdf: './Pdf/Discrete03.pdf',
-            },
-            lesson3: {
-              lesson: 'Business Lesson 3',
-              description: 'Description for Business Lesson 3 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
-              pdf: './Pdf/Discrete05.pdf',
-            },
-            lesson4: {
-              lesson: 'Business Lesson 4',
-              description: 'Description for Business Lesson 4 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
               pdf: './Pdf/Discrete02.pdf',
             },
         },
@@ -642,6 +631,100 @@ export default[
           },
           
         ],
+        assignment:{
+          pdf:"./Pdf/assignment3.pdf"
+        }
+
+    },
+
+    {
+        "id":8,
+        "course" :"Business English",
+        "video1" : "./Videos/video17.mp4",
+        "video2" : "./Videos/video18.mp4",
+        "video3" : "./Videos/video19.mp4",
+        "video4" : "./Videos/video14.mp4",
+        "video5" : "./Videos/video19.mp4",
+
+        Lesson: {
+            lesson1: {
+              lesson: 'Business Lesson 1',
+              description: 'Description for Business Lesson 1 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
+              pdf: './Pdf/Discrete05.pdf',
+            },
+            lesson2: {
+              lesson: 'Business Lesson 2',
+              description: 'Description for Business Lesson 2 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
+              pdf: './Pdf/Discrete03.pdf',
+            },
+            lesson3: {
+              lesson: 'Business Lesson 3',
+              description: 'Description for Business Lesson 3 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
+              pdf: './Pdf/Discrete05.pdf',
+            },
+            lesson4: {
+              lesson: 'Business Lesson 4',
+              description: 'Description for Business Lesson 4 is starting from here and will continue at the end of lesson 14. This lesson will boost your knowledge to the next level.',
+              pdf: './Pdf/Discrete02.pdf',
+            },
+
+        },
+        quiz: [
+          {
+            question: "Question 1: What is the term used for the language used in international business communication?",
+            options: ["Standard English", "Technical English", "Business English", "Academic English"],
+            answer: "Business English",
+          },
+          {
+            question: "Question 2: What is the correct way to address someone in a formal business email?",
+            options: ["Hey", "Dear Sir/Madam", "Hi", "Hello"],
+            answer: "Dear Sir/Madam",
+          },
+          {
+            question: "Question 3: Which type of business communication is commonly used for external announcements and press releases?",
+            options: ["Memo", "Email", "Report", "Press Release"],
+            answer: "Press Release",
+          },
+          {
+            question: "Question 4: In business writing, what does 'CC' stand for in the context of emails?",
+            options: ["Carbon Copy", "Courtesy Copy", "Correct Copy", "Company Copy"],
+            answer: "Carbon Copy",
+          },
+          {
+            question: "Question 5: What is the term for words or phrases that are used to link ideas and paragraphs in a business report?",
+            options: ["Grammar", "Transitions", "Tenses", "Punctuation"],
+            answer: "Transitions",
+          },
+          {
+            question: "Question 6: Which type of business communication is more suitable for handling internal matters within a company?",
+            options: ["Email", "Letter", "Memo", "Press Release"],
+            answer: "Memo",
+          },
+          {
+            question: "Question 7: What is the purpose of proofreading in business writing?",
+            options: ["Adding illustrations", "Removing sensitive information", "Checking for errors and mistakes", "Updating the font style"],
+            answer: "Checking for errors and mistakes",
+          },
+          {
+            question: "Question 8: Which part of a business letter comes after the body and contains the sender's contact information?",
+            options: ["Subject", "Greeting", "Salutation", "Signature"],
+            answer: "Signature",
+          },
+          {
+            question: "Question 9: When writing a business email, what should you include in the subject line?",
+            options: ["Your personal interests", "The recipient's hobbies", "The purpose of the email", "Your future plans"],
+            answer: "The purpose of the email",
+          },
+          {
+            question: "Question 10: What is the term used for the skills and knowledge required for effective communication in the business world?",
+            options: ["Business skills", "Language proficiency", "Business acumen", "Business communication skills"],
+            answer: "Business communication skills",
+          },
+          
+        ],
+        assignment:{
+          pdf:"./Pdf/assignment4.pdf"
+        }
 
     },
 
@@ -731,6 +814,9 @@ export default[
           },
           // Add more quiz questions and answers as needed (up to 10 questions)
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -817,6 +903,9 @@ export default[
             answer: 'To secure communication and protect data during transmission',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
     },
 
     {
@@ -903,6 +992,9 @@ export default[
             answer: 'To separate visual elements and improve readability',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -989,6 +1081,9 @@ export default[
             answer: 'Digital literacy and the ability to leverage technology',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -1075,6 +1170,9 @@ export default[
             answer: 'A framework used to create a well-balanced logo',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -1161,6 +1259,9 @@ export default[
             answer: 'To provide a platform for users to download and install apps',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -1247,6 +1348,9 @@ export default[
             answer: 'To provide a platform for users to download and install apps',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment3.pdf"
+        }
 
     },
 
@@ -1333,6 +1437,9 @@ export default[
             answer: 'Eating ice cream is fun.',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -1420,6 +1527,9 @@ export default[
             answer: 'Intelligible',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment3.pdf"
+        }
 
     },
 
@@ -1556,6 +1666,9 @@ export default[
             answer: 'Implementing CAPTCHA challenges',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment4.pdf"
+        }
 
 
     },
@@ -1678,6 +1791,9 @@ export default[
             answer: 'Present tense',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment2.pdf"
+        }
 
     },
 
@@ -1814,6 +1930,9 @@ export default[
             answer: 'Implementing CAPTCHA challenges',
           },
         ],
+        assignment:{
+          pdf:"./Pdf/assignment1.pdf"
+        }
 
     },
 ]

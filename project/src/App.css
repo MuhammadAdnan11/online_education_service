@@ -245,7 +245,7 @@ header .mobile-toggler{
 
     width: 88%;
     margin: 0 auto;
-    padding: 75px 0 0 0;
+    padding: 35px 0 0 0;
     flex: unset;
 }
 
@@ -255,7 +255,7 @@ header .mobile-toggler{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 7px 0;
+    padding: 1px 0;
     margin-bottom: 50px;
     cursor: pointer;
     transition: all .5s ease;
@@ -873,3 +873,5 @@ color: rgb(51, 51, 233);
 .text-green{
     color: rgb(54, 228, 54);
 }
+
+
