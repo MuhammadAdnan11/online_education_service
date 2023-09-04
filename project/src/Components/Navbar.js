@@ -97,12 +97,12 @@ const Navbar = ({ props, setShow }) => {
                 COURSES
               </a>
               <ul class="dropdown-menu">
-                <li>
+                {/* <li>
                   <a className="dropdown-item" to="#">
                     {" "}
                     FEATURERED
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <Link className="dropdown-item" to="/courses">
                     {" "}
@@ -176,12 +176,12 @@ const Navbar = ({ props, setShow }) => {
                     GALLERY
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a className="dropdown-item" to="#">
                     {" "}
                     SHOP{" "}
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
